@@ -1,0 +1,9 @@
+[
+  {
+    "id": "android-auto",
+    "displayName": "Android Auto",
+    "summary": "Runs Android Auto on the motorcycle's screen.",
+    "owner": "vincenzobpt",
+    "repository": "MOTO-HUB-modules"
+  }
+]
