@@ -1,0 +1,5 @@
+{
+  "cyber.grid.v1": { "kind": "ride", "tags": ["neon", "obd"] },
+  "vincenzobuonomano.ai-copilot": { "kind": "engine", "tags": ["hud", "telemetry"] },
+  "vincenzobuonomano.red-flash-obd-pov": { "kind": "engine", "tags": ["3d", "obd"] }
+}

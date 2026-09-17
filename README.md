@@ -1,6 +1,6 @@
 # MOTO-HUB modules
 
-Loadable modules for MOTO-HUB, and the list the app reads to find them.
+Loadable modules for MOTO-HUB, the community dashboards, and the lists the app reads to find them.
 
 MOTO-HUB ships knowing how to run a projection on a motorcycle's dashboard — the compositor, the
 encoder, the transport — but not what to project. A module supplies that, and arrives with its own
@@ -11,6 +11,8 @@ screens and its own name: an app with nothing installed here has nothing to offe
 - **`index.json`** — what the app fetches to know what exists. Adding a module to the offer is
   publishing a file here, not shipping an app update.
 - **Releases** — one `.mhm` package per module version, attached as a release asset.
+- **`dashboards/`** — the community dashboards: the `.mhd` files, and the index the app's
+  Community page reads. See [Community dashboards](#community-dashboards).
 
 Nothing else. The modules' source lives in their own repositories, under their own licences.
 
@@ -53,3 +55,50 @@ index promised.
 | Module | Licence | Source |
 | --- | --- | --- |
 | `android-auto` | AGPL-3.0-only | published with its release |
+
+## Community dashboards
+
+The dashboards riders share, shown in the app under **Ride → Dashboard map → Community**.
+
+```
+dashboards/
+  files/<id>.mhd        the dashboards, one file each, named after the id inside
+  listing.json          the only hand-written part: kind, tags, featured
+  index.json            generated - never edit
+  previews/<id>.png     generated - extracted from each file
+```
+
+### Adding a dashboard
+
+1. Make it in the MOTO-HUB Dashboard Editor and save it as `.mhd`, with a preview image.
+   Give it an id of your own (`yourname.alpine-split`): ids starting with `motohub.` belong to
+   the dashboards the app ships.
+2. Put the file in `dashboards/files/`, named `<id>.mhd`.
+3. Optionally describe it in `dashboards/listing.json`:
+
+   ```json
+   {
+     "yourname.alpine-split": { "kind": "touring", "tags": ["curves", "mountain"], "featured": false }
+   }
+   ```
+
+   `kind` is one of `ride`, `touring`, `engine`, `track`, `minimal` (default `ride`).
+4. Open a pull request. The workflow checks every file; once merged it rebuilds
+   `dashboards/index.json` and the previews.
+
+To check locally: `python3 tools/build_dashboard_index.py --check`.
+
+### What the index says, and where it comes from
+
+Everything the app filters on is read from the file itself, never typed by hand: canvas size and
+orientations, the map engine (the first map element decides; no map means the OBD session),
+whether an OBD adapter or a module is needed, the minimum app version, and the elements used.
+Published and updated dates are the file's first and last commit. Each entry carries the
+SHA-256 of the file and of its preview.
+
+### Why it can be trusted as far as it needs to be
+
+A dashboard carries no code: the worst a bad file can do is draw badly. The app fetches the index
+and the files from this repository's raw host (no GitHub API, no token), checks each download
+against the SHA-256 in the index, and then imports it through the same validator as a file picked
+from the phone's storage - where a dashboard came from changes nothing about what it may do.

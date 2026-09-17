@@ -1,0 +1,56 @@
+name: Dashboard index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "dashboards/files/**"
+      - "dashboards/listing.json"
+      - "tools/build_dashboard_index.py"
+      - ".github/workflows/dashboards.yml"
+  pull_request:
+    paths:
+      - "dashboards/files/**"
+      - "dashboards/listing.json"
+      - "tools/build_dashboard_index.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate every dashboard
+        run: python3 tools/build_dashboard_index.py --check
+
+  publish:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Published and updated dates come from each file's git history.
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild dashboards/index.json and the previews
+        run: python3 tools/build_dashboard_index.py
+      - name: Commit the index when it changed
+        run: |
+          git add dashboards/index.json dashboards/previews
+          if git diff --cached --quiet; then
+            echo "dashboards/index.json already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Rebuild dashboards/index.json"
+          git push

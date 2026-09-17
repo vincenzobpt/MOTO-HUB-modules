@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "dashboards": [
+    {
+      "id": "cyber.grid.v1",
+      "name": "Cyber Grid",
+      "author": "vincenzobuonomano",
+      "description": "A high-contrast, cyberpunk-inspired dashboard with neon accents and a central focus on gear and speed.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "neon",
+        "obd"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 800,
+        "height": 384
+      },
+      "orientations": [
+        "landscape"
+      ],
+      "requires": {
+        "obd": true,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "chrome.atmosphere",
+        "container.carousel",
+        "decor.clock",
+        "decor.rect",
+        "decor.text",
+        "nav.hazardSlot",
+        "signal.arc",
+        "signal.bar",
+        "signal.gear",
+        "signal.leds",
+        "signal.value",
+        "widget.navigation",
+        "widget.now_playing",
+        "widget.trip_metrics"
+      ],
+      "path": "dashboards/files/cyber.grid.v1.mhd",
+      "sha256": "39540a5b56795a8d0a96f8f016618c5dcfca46594290dd510cdd232fee607866",
+      "bytes": 21843,
+      "preview": "dashboards/previews/cyber.grid.v1.png",
+      "previewSha256": "666600b02e03c7537655f836297a7b9502791e7ede9a0bdfa4fc28d54c42c8ce"
+    },
+    {
+      "id": "vincenzobuonomano.ai-copilot",
+      "name": "MOTO-HUB AI Co-Pilot",
+      "author": "vincenzobuonomano",
+      "description": "MOTO-HUB AI Co-Pilot intelligent digital dashboard with real-time telemetry, neon HUD aesthetic, and dynamic navigation.",
+      "version": "1",
+      "kind": "engine",
+      "tags": [
+        "hud",
+        "telemetry"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "orientations": [
+        "landscape"
+      ],
+      "requires": {
+        "obd": true,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "decor.clock",
+        "decor.line",
+        "decor.rect",
+        "decor.text",
+        "signal.arc",
+        "signal.bar",
+        "signal.gear",
+        "signal.lamp",
+        "signal.leds",
+        "signal.trend",
+        "signal.value",
+        "widget.compass",
+        "widget.navigation",
+        "widget.now_playing"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.ai-copilot.mhd",
+      "sha256": "fb919cca9e4ec961c72753efe3e20cd35171fd2065ad4c0a3da9abbddc635e06",
+      "bytes": 35249,
+      "preview": "dashboards/previews/vincenzobuonomano.ai-copilot.png",
+      "previewSha256": "a1bcfd0dac68c9299c05660a01c37a919e571b8a163fae76298415f448a9f63e"
+    },
+    {
+      "id": "vincenzobuonomano.red-flash-obd-pov",
+      "name": "Red Flash OBD POV",
+      "author": "vincenzobuonomano",
+      "description": "Dark OBD dashboard with 3D POV map background and red flashing theme.",
+      "version": "1",
+      "kind": "engine",
+      "tags": [
+        "3d",
+        "obd"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "orientations": [
+        "landscape"
+      ],
+      "requires": {
+        "obd": true,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "decor.clock",
+        "decor.rect",
+        "decor.text",
+        "map.pov3d",
+        "signal.bar",
+        "signal.gear",
+        "signal.lamp",
+        "signal.leds",
+        "signal.text",
+        "signal.trend",
+        "signal.value"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.red-flash-obd-pov.mhd",
+      "sha256": "f31155f078188219b6f8f8a05878426dfbfed6f412b82b1198c1c969027fcd11",
+      "bytes": 34760,
+      "preview": "dashboards/previews/vincenzobuonomano.red-flash-obd-pov.png",
+      "previewSha256": "1e4a5d2975786d3998c3c93088eb5b6700af9ea03ca4f163b3d53ee8c0b5a11d"
+    }
+  ]
+}
