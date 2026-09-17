@@ -90,9 +90,31 @@ To check locally: `python3 tools/build_dashboard_index.py --check`.
 
 ### What the index says, and where it comes from
 
-Everything the app filters on is read from the file itself, never typed by hand: canvas size and
-orientations, the map engine (the first map element decides; no map means the OBD session),
-whether an OBD adapter or a module is needed, the minimum app version, and the elements used.
+Everything the app filters on is read from the file itself, never typed by hand:
+
+- **`layouts`** — every layout in the file, main canvas first and then each variant, with its
+  size, its shape (`orientation`) and the screens it is offered to (`when`: `landscape`,
+  `portrait` or `any`). "Fits my TFT" runs the same choice the phone makes when it draws, so a
+  landscape dashboard with a portrait variant fits a portrait TFT. `canvas` (the main layout) and
+  `orientations` stay for older app versions.
+- **`requires.obd`** — only when the author declared `"requires": {"obd": true}`: the dashboard
+  is meaningless without an ELM327 adapter.
+- **`usesObd`** — the dashboard reads engine values (an OBD gauge, signal or condition). Those stay
+  blank or hidden until an adapter is paired; the rest of the dashboard works without one.
+- the map engine (the first map element decides; no map means the OBD session), a module it
+  needs, the minimum app version, and the elements used.
+
+```json
+"canvas": { "width": 800, "height": 480 },
+"layouts": [
+  { "width": 800, "height": 480, "orientation": "landscape", "when": "landscape" },
+  { "width": 480, "height": 800, "orientation": "portrait", "when": "portrait" }
+],
+"orientations": ["landscape", "portrait"],
+"requires": { "obd": false, "module": null, "app": null },
+"usesObd": true
+```
+
 Published and updated dates are the file's first and last commit. Each entry carries the
 SHA-256 of the file and of its preview.
 

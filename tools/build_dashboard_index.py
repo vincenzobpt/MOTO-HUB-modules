@@ -5,10 +5,11 @@ Usage:
     python3 tools/build_dashboard_index.py           # validate, extract previews, write the index
     python3 tools/build_dashboard_index.py --check   # validate only, exit 1 on any problem
 
-Everything the app filters on - resolution, orientation, map engine, whether an OBD adapter or a
-module is needed, which elements are on it - is read from the file's own dashboard.json, never
-typed by hand, so a filter cannot promise what the dashboard does not do. The only hand-written
-part is dashboards/listing.json: the kind of dashboard, a few tags, and whether it is featured.
+Everything the app filters on - every layout's resolution and orientation, map engine, whether an
+OBD adapter is needed or merely used, whether a module is needed, which elements are on it - is
+read from the file's own dashboard.json, never typed by hand, so a filter cannot promise what the
+dashboard does not do. The only hand-written part is dashboards/listing.json: the kind of
+dashboard, a few tags, and whether it is featured.
 
 The rules mirror what MOTO-HUB accepts at import (DashboardPackage.read, DashboardLibrary.importBytes,
 DashboardEngine.sourceFor/usesObd). The app still validates whatever it downloads: this index only
@@ -82,7 +83,12 @@ def engine_of(document):
 
 
 def uses_obd(document):
-    """DashboardEngine.usesObd."""
+    """DashboardEngine.usesObd: the file reads engine values - an OBD element, signal or condition.
+
+    Not the same as needing the adapter: most of these dashboards draw a gauge that stays blank, or
+    hides, until an ELM327 is paired. The index keeps the two apart (`usesObd` here, `requires.obd`
+    only when the author said so) so the catalogue does not warn about hardware a rider can skip.
+    """
     if (document.get("requires") or {}).get("obd"):
         return True
     for element in all_elements(document):
@@ -106,6 +112,27 @@ def needs_module(document):
         if element.get("type") == "map.projection" or props.get("mapSource") == "projection":
             return "projection"
     return None
+
+
+def shape(canvas):
+    return "portrait" if canvas["height"] > canvas["width"] else "landscape"
+
+
+def layouts(document):
+    """Every layout in the file, main canvas first, as DashboardLayout.choose sees them.
+
+    The main canvas competes for the orientation of its own shape; a variant for the one its `when`
+    names (`any` matches every screen). The app runs the same choice against the rider's TFT, so
+    "fits my screen" means the layout the phone would really draw, not just the main canvas.
+    """
+    canvas = document["canvas"]
+    found = [{"width": canvas["width"], "height": canvas["height"], "orientation": shape(canvas), "when": shape(canvas)}]
+    for variant in document.get("variants") or []:
+        c = variant.get("canvas") or canvas
+        when = variant.get("when", "any")
+        found.append({"width": c["width"], "height": c["height"], "orientation": shape(c),
+                      "when": when if when in ("landscape", "portrait") else "any"})
+    return found
 
 
 def orientations(document):
@@ -214,6 +241,14 @@ def main():
         if not all(isinstance(canvas.get(k), int) and 64 <= canvas[k] <= 4096 for k in ("width", "height")):
             problems.append(f"{name}: canvas width/height must be whole numbers between 64 and 4096")
             continue
+        variants = document.get("variants") or []
+        if not isinstance(variants, list) or not all(
+                isinstance(v, dict) and all(isinstance((v.get("canvas") or {}).get(k), int) and 64 <= v["canvas"][k] <= 4096
+                                            for k in ("width", "height"))
+                and v.get("when", "any") in ("landscape", "portrait", "any")
+                for v in variants):
+            problems.append(f"{name}: every variant needs a canvas (64-4096) and a when of landscape, portrait or any")
+            continue
         if not str(document.get("name", "")).strip():
             problems.append(f"{name}: the dashboard has no name")
             continue
@@ -254,12 +289,15 @@ def main():
             "updated": updated,
             "engine": engine_of(document),
             "canvas": {"width": canvas["width"], "height": canvas["height"]},
+            "layouts": layouts(document),
             "orientations": orientations(document),
             "requires": {
-                "obd": uses_obd(document),
+                # Only what the author declared; reading OBD values when present is `usesObd`.
+                "obd": bool(requires.get("obd")),
                 "module": needs_module(document),
                 "app": requires.get("app"),
             },
+            "usesObd": uses_obd(document),
             "elements": elements,
             "path": f"dashboards/files/{name}",
             "sha256": hashlib.sha256(data).hexdigest(),

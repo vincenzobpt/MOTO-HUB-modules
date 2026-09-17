@@ -6,21 +6,21 @@
       "obd"
     ]
   },
-  "vincenzobuonomano.ai-copilot": {
+  "moto-hub-studio.ai-copilot": {
     "kind": "engine",
     "tags": [
       "hud",
       "telemetry"
     ]
   },
-  "vincenzobuonomano.red-flash-obd-pov": {
+  "moto-hub-studio.red-flash-obd-pov": {
     "kind": "engine",
     "tags": [
       "3d",
       "obd"
     ]
   },
-  "vincenzobuonomano.map-widgets": {
+  "moto-hub-studio.map-widgets": {
     "kind": "touring",
     "tags": [
       "3d",
@@ -28,7 +28,7 @@
       "obd"
     ]
   },
-  "vincenzobuonomano.twin-arc": {
+  "moto-hub-studio.twin-arc": {
     "kind": "ride",
     "tags": [
       "sport",
@@ -36,7 +36,7 @@
       "obd"
     ]
   },
-  "vincenzobuonomano.nouveau": {
+  "moto-hub-studio.nouveau": {
     "kind": "minimal",
     "tags": [
       "art-nouveau",
@@ -44,7 +44,7 @@
       "no-map"
     ]
   },
-  "vincenzobuonomano.potion-ride": {
+  "moto-hub-studio.potion-ride": {
     "kind": "minimal",
     "tags": [
       "comic",
@@ -52,7 +52,7 @@
       "no-map"
     ]
   },
-  "vincenzobuonomano.portrait-aviator-hud": {
+  "moto-hub-studio.portrait-aviator-hud": {
     "kind": "touring",
     "tags": [
       "hud",
@@ -60,7 +60,7 @@
       "portrait"
     ]
   },
-  "vincenzobuonomano.portrait-blueprint": {
+  "moto-hub-studio.portrait-blueprint": {
     "kind": "minimal",
     "tags": [
       "blueprint",
@@ -68,7 +68,7 @@
       "portrait"
     ]
   },
-  "vincenzobuonomano.portrait-explorer": {
+  "moto-hub-studio.portrait-explorer": {
     "kind": "touring",
     "tags": [
       "adventure",
@@ -76,7 +76,7 @@
       "portrait"
     ]
   },
-  "vincenzobuonomano.portrait-mission-control": {
+  "moto-hub-studio.portrait-mission-control": {
     "kind": "engine",
     "tags": [
       "telemetry",
@@ -84,7 +84,7 @@
       "portrait"
     ]
   },
-  "vincenzobuonomano.portrait-neon-grid": {
+  "moto-hub-studio.portrait-neon-grid": {
     "kind": "ride",
     "tags": [
       "synthwave",
@@ -92,7 +92,7 @@
       "portrait"
     ]
   },
-  "vincenzobuonomano.portrait-noir": {
+  "moto-hub-studio.portrait-noir": {
     "kind": "minimal",
     "tags": [
       "noir",
@@ -100,7 +100,7 @@
       "portrait"
     ]
   },
-  "vincenzobuonomano.portrait-obd-garage": {
+  "moto-hub-studio.portrait-obd-garage": {
     "kind": "engine",
     "tags": [
       "obd",
@@ -108,7 +108,7 @@
       "portrait"
     ]
   },
-  "vincenzobuonomano.portrait-retro-arcade": {
+  "moto-hub-studio.portrait-retro-arcade": {
     "kind": "minimal",
     "tags": [
       "arcade",
@@ -116,7 +116,7 @@
       "portrait"
     ]
   },
-  "vincenzobuonomano.portrait-sensor-lab": {
+  "moto-hub-studio.portrait-sensor-lab": {
     "kind": "engine",
     "tags": [
       "sensors",
@@ -124,11 +124,68 @@
       "portrait"
     ]
   },
-  "vincenzobuonomano.portrait-terminal": {
+  "moto-hub-studio.portrait-terminal": {
     "kind": "minimal",
     "tags": [
       "terminal",
       "nerd",
+      "portrait"
+    ]
+  },
+  "moto-hub-studio.night-ride": {
+    "kind": "minimal",
+    "tags": [
+      "night",
+      "minimal",
+      "high-contrast",
+      "portrait"
+    ]
+  },
+  "moto-hub-studio.touring": {
+    "kind": "touring",
+    "tags": [
+      "touring",
+      "range",
+      "weather",
+      "map",
+      "portrait"
+    ]
+  },
+  "moto-hub-studio.track-day": {
+    "kind": "track",
+    "tags": [
+      "track",
+      "lap-timer",
+      "lean",
+      "shift-lights",
+      "portrait"
+    ]
+  },
+  "moto-hub-studio.offroad": {
+    "kind": "ride",
+    "tags": [
+      "offroad",
+      "inclinometer",
+      "compass",
+      "adventure",
+      "portrait"
+    ]
+  },
+  "moto-hub-studio.big-and-bold": {
+    "kind": "minimal",
+    "tags": [
+      "accessibility",
+      "large-text",
+      "high-contrast",
+      "minimal",
+      "portrait"
+    ]
+  },
+  "moto-hub-studio.my-bike": {
+    "kind": "ride",
+    "tags": [
+      "photo",
+      "personal",
       "portrait"
     ]
   }

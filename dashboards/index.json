@@ -2,9 +2,9 @@
   "schema": 1,
   "dashboards": [
     {
-      "id": "vincenzobuonomano.map-widgets",
+      "id": "moto-hub-studio.map-widgets",
       "name": "3D POV & Widgets",
-      "author": "vincenzobuonomano",
+      "author": "moto-hub-studio",
       "description": "Rider's-eye 3D view framed by two columns: speed and revs with gear and coolant on the left, navigation and weather on the right, compass, altitude and phone status taking turns below the gauges.",
       "version": "3",
       "kind": "touring",
@@ -21,6 +21,14 @@
         "width": 1280,
         "height": 720
       },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        }
+      ],
       "orientations": [
         "landscape"
       ],
@@ -29,6 +37,7 @@
         "module": null,
         "app": null
       },
+      "usesObd": true,
       "elements": [
         "chrome.header",
         "container.carousel",
@@ -45,16 +54,16 @@
         "widget.navigation",
         "widget.weather"
       ],
-      "path": "dashboards/files/vincenzobuonomano.map-widgets.mhd",
-      "sha256": "965dcd1d822fe5e07eafb93b6f2458e612f6dabc472ad9c4ba5f53c243999f4b",
-      "bytes": 23818,
-      "preview": "dashboards/previews/vincenzobuonomano.map-widgets.png",
+      "path": "dashboards/files/moto-hub-studio.map-widgets.mhd",
+      "sha256": "22e0181376312e8c3e2c5356b398b025d0e822e3129a0003975773c987f36fc0",
+      "bytes": 23816,
+      "preview": "dashboards/previews/moto-hub-studio.map-widgets.png",
       "previewSha256": "1c5d1ca24c9d2717f38725d7c5c8bbd04f4e615fdd4a38eed4e9aff8045cbd63"
     },
     {
-      "id": "vincenzobuonomano.portrait-aviator-hud",
+      "id": "moto-hub-studio.portrait-aviator-hud",
       "name": "Aviator HUD",
-      "author": "vincenzobuonomano",
+      "author": "moto-hub-studio",
       "description": "A fighter-style head-up display over the 3D rider's-eye view: heading tape on top, speed and altitude tapes on the sides, a pitch ladder and flight-path marker in the middle, acceleration and vertical speed, the next turn card and a bracketed engine and trip row, all in HUD green.",
       "version": "1",
       "kind": "touring",
@@ -71,14 +80,23 @@
         "width": 1080,
         "height": 1920
       },
+      "layouts": [
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
       "orientations": [
         "portrait"
       ],
       "requires": {
-        "obd": true,
+        "obd": false,
         "module": null,
         "app": null
       },
+      "usesObd": true,
       "elements": [
         "container.group",
         "decor.clock",
@@ -91,18 +109,78 @@
         "signal.tape",
         "signal.value"
       ],
-      "path": "dashboards/files/vincenzobuonomano.portrait-aviator-hud.mhd",
-      "sha256": "9fccb75f204f7d9be72e5fdc68add985e282158f8e40f4a45b715a266f7fa1d0",
-      "bytes": 63744,
-      "preview": "dashboards/previews/vincenzobuonomano.portrait-aviator-hud.png",
+      "path": "dashboards/files/moto-hub-studio.portrait-aviator-hud.mhd",
+      "sha256": "4994cb0dca3a5193dd50c27d2c696637f7e612d30487ae52cc14a74ff288e42c",
+      "bytes": 63738,
+      "preview": "dashboards/previews/moto-hub-studio.portrait-aviator-hud.png",
       "previewSha256": "97ef1289916c5ac64f4d38f71845ec26bc08b3428b41c87844791618b9bf4295"
     },
     {
-      "id": "vincenzobuonomano.portrait-blueprint",
-      "name": "Blueprint",
-      "author": "vincenzobuonomano",
-      "description": "An engineering drawing that measures the ride: velocity as a needle on an 800 mm dial, engine revs and coolant as two smaller figures, gear in a detail box, and the route in a mini map, on blueprint paper with a title block. Without OBD, figure 2 shows altitude and phone battery.",
+      "id": "moto-hub-studio.big-and-bold",
+      "name": "Big & Bold",
+      "author": "moto-hub-studio",
+      "description": "Three huge numbers and nothing else, for reading at arm's length or through glasses: speed in your km/h or mph, the gear (or the trip distance when no OBD adapter is connected) and the time. White on black in the B612 cockpit typeface, with yellow labels. Landscape and portrait.",
       "version": "1",
+      "kind": "minimal",
+      "tags": [
+        "accessibility",
+        "large-text",
+        "high-contrast",
+        "minimal",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 1200,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.line",
+        "decor.text",
+        "signal.gear",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.big-and-bold.mhd",
+      "sha256": "843bf6dc8136245de834c7d67d14debd626beabfc8e0b9801529717f29aab4d4",
+      "bytes": 22729,
+      "preview": "dashboards/previews/moto-hub-studio.big-and-bold.png",
+      "previewSha256": "1ad1c89a7b0f43a2064228cb685eb42ec1f6962664dd603e5c4268194aa0a4d5"
+    },
+    {
+      "id": "moto-hub-studio.portrait-blueprint",
+      "name": "Blueprint",
+      "author": "moto-hub-studio",
+      "description": "An engineering drawing that measures the ride: velocity as a needle on an 800 mm dial, engine revs and coolant as two smaller figures, gear in a detail box, and the route in a mini map, on blueprint paper with a title block. Without OBD, figure 2 shows altitude and phone battery.",
+      "version": "2",
       "kind": "minimal",
       "tags": [
         "blueprint",
@@ -117,14 +195,23 @@
         "width": 1080,
         "height": 1920
       },
+      "layouts": [
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
       "orientations": [
         "portrait"
       ],
       "requires": {
-        "obd": true,
+        "obd": false,
         "module": null,
         "app": null
       },
+      "usesObd": true,
       "elements": [
         "decor.clock",
         "decor.image",
@@ -136,18 +223,18 @@
         "signal.gear",
         "signal.value"
       ],
-      "path": "dashboards/files/vincenzobuonomano.portrait-blueprint.mhd",
-      "sha256": "ebf96e6b249894904f047b1ec10c5c3aedf558e43a76806d50b0324efaedc688",
-      "bytes": 83541,
-      "preview": "dashboards/previews/vincenzobuonomano.portrait-blueprint.png",
-      "previewSha256": "0da5cbe5970d5c886e9ae2b34e3415c66ab1c746bc930c09cdd2f56822a9c024"
+      "path": "dashboards/files/moto-hub-studio.portrait-blueprint.mhd",
+      "sha256": "59aee2cca3ad5fece8f08cf5b793011fa22e530b101a4685239cf2a9d7517abd",
+      "bytes": 79835,
+      "preview": "dashboards/previews/moto-hub-studio.portrait-blueprint.png",
+      "previewSha256": "c39901f74bd7ab349ff53125fe4b462c27d2d187454646cf4d484b1414aeb60d"
     },
     {
       "id": "cyber.grid.v1",
       "name": "Cyber Grid",
-      "author": "vincenzobuonomano",
+      "author": "moto-hub-studio",
       "description": "A high-contrast, cyberpunk-inspired dashboard with neon accents and a central focus on gear and speed.",
-      "version": "1",
+      "version": "2",
       "kind": "ride",
       "tags": [
         "neon",
@@ -161,6 +248,14 @@
         "width": 800,
         "height": 384
       },
+      "layouts": [
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        }
+      ],
       "orientations": [
         "landscape"
       ],
@@ -169,6 +264,7 @@
         "module": null,
         "app": null
       },
+      "usesObd": true,
       "elements": [
         "chrome.atmosphere",
         "container.carousel",
@@ -186,15 +282,15 @@
         "widget.trip_metrics"
       ],
       "path": "dashboards/files/cyber.grid.v1.mhd",
-      "sha256": "39540a5b56795a8d0a96f8f016618c5dcfca46594290dd510cdd232fee607866",
-      "bytes": 21843,
+      "sha256": "459c1c7e69c3ba5832ed42132d41cbee0b522e34a818a3475b73c2e9ba5548f7",
+      "bytes": 22225,
       "preview": "dashboards/previews/cyber.grid.v1.png",
-      "previewSha256": "666600b02e03c7537655f836297a7b9502791e7ede9a0bdfa4fc28d54c42c8ce"
+      "previewSha256": "1f45d9ef8d101b21f64b0e20e5f33f092a1e0763cacd2b9ac3694aa82f88c3c9"
     },
     {
-      "id": "vincenzobuonomano.portrait-explorer",
+      "id": "moto-hub-studio.portrait-explorer",
       "name": "Explorer",
-      "author": "vincenzobuonomano",
+      "author": "moto-hub-studio",
       "description": "An adventure map on a topographic sheet: a big framed map with turn banners, a heading tape like a bearing compass, speed and altitude cards, the elevation profile of the route (or the last ten minutes of climb), and sunset and weather for deciding how far to push.",
       "version": "1",
       "kind": "touring",
@@ -211,6 +307,14 @@
         "width": 1080,
         "height": 1920
       },
+      "layouts": [
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
       "orientations": [
         "portrait"
       ],
@@ -219,6 +323,7 @@
         "module": null,
         "app": null
       },
+      "usesObd": false,
       "elements": [
         "container.panel",
         "decor.image",
@@ -231,18 +336,18 @@
         "widget.sun_daylight",
         "widget.weather"
       ],
-      "path": "dashboards/files/vincenzobuonomano.portrait-explorer.mhd",
-      "sha256": "ea6c83a50122eded00bdff40191f7b0ba74fc4218bc52416a0b44d0d74dbb8a8",
-      "bytes": 137668,
-      "preview": "dashboards/previews/vincenzobuonomano.portrait-explorer.png",
+      "path": "dashboards/files/moto-hub-studio.portrait-explorer.mhd",
+      "sha256": "edfcf863e5be748eca016d3df7d45289cdeae8f52f6d491a07c0e1a911ca6ae8",
+      "bytes": 137665,
+      "preview": "dashboards/previews/moto-hub-studio.portrait-explorer.png",
       "previewSha256": "0954e3ae7836eb616c41bceed1da2839cdd6d3f7ffde99a701eab63647d18c6e"
     },
     {
-      "id": "vincenzobuonomano.portrait-mission-control",
+      "id": "moto-hub-studio.portrait-mission-control",
       "name": "Mission Control",
-      "author": "vincenzobuonomano",
-      "description": "Ground-station telemetry for the road: status lamps for GPS, OBD link, route and check-engine, speed and altitude tapes either side of ground speed and heading, two live traces, and eight numbered cells with trip, engine and GPS quality.",
-      "version": "1",
+      "author": "moto-hub-studio",
+      "description": "Ground-station telemetry for the road: status lamps for GPS, OBD link, route and check-engine, speed and altitude tapes either side of ground speed and heading, two live traces, and eight numbered cells with trip, engine and GPS quality. Tall portrait, near-square portrait and 4:3 landscape layouts; speeds, distances and altitude follow the rider's units.",
+      "version": "2",
       "kind": "engine",
       "tags": [
         "telemetry",
@@ -257,35 +362,58 @@
         "width": 1080,
         "height": 1920
       },
+      "layouts": [
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 950,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
       "orientations": [
+        "landscape",
         "portrait"
       ],
       "requires": {
-        "obd": true,
+        "obd": false,
         "module": null,
         "app": null
       },
+      "usesObd": true,
       "elements": [
         "decor.clock",
         "decor.rect",
         "decor.text",
         "signal.lamp",
         "signal.tape",
+        "signal.text",
         "signal.trend",
         "signal.value"
       ],
-      "path": "dashboards/files/vincenzobuonomano.portrait-mission-control.mhd",
-      "sha256": "1dcfe3bad3977425780dd7725138630003411fd329142fc9043726a8ba2305b0",
-      "bytes": 77523,
-      "preview": "dashboards/previews/vincenzobuonomano.portrait-mission-control.png",
-      "previewSha256": "af699da8021eb5816e02ea4d319d53a5beb14ed6a11abd1076ee8d0c60b48a39"
+      "path": "dashboards/files/moto-hub-studio.portrait-mission-control.mhd",
+      "sha256": "f438a663d2394752185cc366b3072680c30b45dcac1133732e7d55bd1e7f95a8",
+      "bytes": 73013,
+      "preview": "dashboards/previews/moto-hub-studio.portrait-mission-control.png",
+      "previewSha256": "13234582b2c66d5546c6702d189bb505816ee9df3598e70d6956ff106e20e371"
     },
     {
-      "id": "vincenzobuonomano.ai-copilot",
+      "id": "moto-hub-studio.ai-copilot",
       "name": "MOTO-HUB AI Co-Pilot",
-      "author": "vincenzobuonomano",
+      "author": "moto-hub-studio",
       "description": "MOTO-HUB AI Co-Pilot intelligent digital dashboard with real-time telemetry, neon HUD aesthetic, and dynamic navigation.",
-      "version": "1",
+      "version": "2",
       "kind": "engine",
       "tags": [
         "hud",
@@ -299,6 +427,14 @@
         "width": 1280,
         "height": 720
       },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        }
+      ],
       "orientations": [
         "landscape"
       ],
@@ -307,6 +443,7 @@
         "module": null,
         "app": null
       },
+      "usesObd": true,
       "elements": [
         "decor.clock",
         "decor.line",
@@ -323,18 +460,80 @@
         "widget.navigation",
         "widget.now_playing"
       ],
-      "path": "dashboards/files/vincenzobuonomano.ai-copilot.mhd",
-      "sha256": "fb919cca9e4ec961c72753efe3e20cd35171fd2065ad4c0a3da9abbddc635e06",
-      "bytes": 35249,
-      "preview": "dashboards/previews/vincenzobuonomano.ai-copilot.png",
-      "previewSha256": "a1bcfd0dac68c9299c05660a01c37a919e571b8a163fae76298415f448a9f63e"
+      "path": "dashboards/files/moto-hub-studio.ai-copilot.mhd",
+      "sha256": "55cd34aaac626025f81a7d0c7e0291119ec923182bfb9e20cacfca09fedf41f6",
+      "bytes": 34041,
+      "preview": "dashboards/previews/moto-hub-studio.ai-copilot.png",
+      "previewSha256": "93eb7ac6167b56e38695d0f736c7168b6a5bb6d2c9995a34e9c2c37e4e407dfc"
     },
     {
-      "id": "vincenzobuonomano.portrait-neon-grid",
-      "name": "Neon Grid",
-      "author": "vincenzobuonomano",
-      "description": "Synthwave night drive in portrait: the speed rises over a striped sunset sun ringed by the revs, a neon-framed map floats over the perspective grid, and six glowing tiles hold gear, engine, throttle and the trip.",
+      "id": "moto-hub-studio.my-bike",
+      "name": "My Bike",
+      "author": "moto-hub-studio",
+      "description": "Your own motorcycle as the background: pick a photo on the phone (Dashboards, My Bike, Set photo) and it stays on your phone, never in the file. Speed, gear and trip distance and top speed sit on see-through panels that stay readable over any picture. Without an OBD adapter the gear panel shows your average speed. Landscape and portrait.",
       "version": "1",
+      "kind": "ride",
+      "tags": [
+        "photo",
+        "personal",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 1200,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.ellipse",
+        "decor.image",
+        "decor.line",
+        "decor.rect",
+        "decor.text",
+        "signal.gear",
+        "signal.lamp",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.my-bike.mhd",
+      "sha256": "c4edd6bf8502f44408d246283ae7f65b4bfbf854a48a90fa08589cd54b44145a",
+      "bytes": 32226,
+      "preview": "dashboards/previews/moto-hub-studio.my-bike.png",
+      "previewSha256": "86616db97af21005f8dbc84d343beb0bc910f3e5d5aab17582a95bbdc2ea284e"
+    },
+    {
+      "id": "moto-hub-studio.portrait-neon-grid",
+      "name": "Neon Grid",
+      "author": "moto-hub-studio",
+      "description": "Synthwave night drive: the speed rises over a striped sunset sun ringed by the revs, a neon-framed map floats over the perspective grid, and six glowing tiles hold gear, engine, throttle and the trip. Tall portrait, near-square portrait and 4:3 landscape layouts; speeds and distances follow the rider's km or miles.",
+      "version": "2",
       "kind": "ride",
       "tags": [
         "synthwave",
@@ -349,14 +548,36 @@
         "width": 1080,
         "height": 1920
       },
+      "layouts": [
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 950,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
       "orientations": [
+        "landscape",
         "portrait"
       ],
       "requires": {
-        "obd": true,
+        "obd": false,
         "module": null,
         "app": null
       },
+      "usesObd": true,
       "elements": [
         "decor.clock",
         "decor.image",
@@ -367,18 +588,80 @@
         "signal.gear",
         "signal.lamp",
         "signal.leds",
+        "signal.text",
         "signal.value"
       ],
-      "path": "dashboards/files/vincenzobuonomano.portrait-neon-grid.mhd",
-      "sha256": "08639efd8003ae1216f20aceb90d6bad41f889a47f8955037af7b4828cc67b2d",
-      "bytes": 197836,
-      "preview": "dashboards/previews/vincenzobuonomano.portrait-neon-grid.png",
-      "previewSha256": "69229355d29c9d7190bd0cfa8f1ce4992abb2194874124f135e2eea9ebba2f28"
+      "path": "dashboards/files/moto-hub-studio.portrait-neon-grid.mhd",
+      "sha256": "4de3e6118e095f8e08af3e3dc2c9d4e34dacbe472818806c060a672daa3fff6c",
+      "bytes": 392087,
+      "preview": "dashboards/previews/moto-hub-studio.portrait-neon-grid.png",
+      "previewSha256": "c7bff629d441ce9193f0627cc2458d0a355f64682c65ba46d8e3b478457f0c64"
     },
     {
-      "id": "vincenzobuonomano.portrait-noir",
+      "id": "moto-hub-studio.night-ride",
+      "name": "Night Ride",
+      "author": "moto-hub-studio",
+      "description": "For riding in the dark: a huge speed in your km/h or mph, the gear beside it, and the next turn only when a route is running. Warm amber by day, dim red at night so it never dazzles; no map, no clutter. Works without an OBD adapter (the clock takes the gear's place); with one you also get the gear and a hot-engine or check-engine lamp that appears only when needed. Landscape and portrait.",
+      "version": "1",
+      "kind": "minimal",
+      "tags": [
+        "night",
+        "minimal",
+        "high-contrast",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 1200,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.line",
+        "decor.text",
+        "nav.maneuverArrow",
+        "signal.gear",
+        "signal.lamp",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.night-ride.mhd",
+      "sha256": "005039a2cb0f19bba03c644be0da708334a1059e6cadc09f2a33fb62cd7ecf41",
+      "bytes": 20122,
+      "preview": "dashboards/previews/moto-hub-studio.night-ride.png",
+      "previewSha256": "606ce324e27910102c2caccbacfcce14900b2f89e15a1b9ef035621f79152e3e"
+    },
+    {
+      "id": "moto-hub-studio.portrait-noir",
       "name": "Noir",
-      "author": "vincenzobuonomano",
+      "author": "moto-hub-studio",
       "description": "A black-and-white detective film: blinds cast their shadows through the rain, the hour opens the chapter, the speed is the line everyone remembers, underlined in red, and the engine, the trip and the next turn are told as narration.",
       "version": "1",
       "kind": "minimal",
@@ -395,14 +678,23 @@
         "width": 1080,
         "height": 1920
       },
+      "layouts": [
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
       "orientations": [
         "portrait"
       ],
       "requires": {
-        "obd": true,
+        "obd": false,
         "module": null,
         "app": null
       },
+      "usesObd": true,
       "elements": [
         "decor.clock",
         "decor.image",
@@ -411,18 +703,18 @@
         "nav.turnLadder",
         "signal.value"
       ],
-      "path": "dashboards/files/vincenzobuonomano.portrait-noir.mhd",
-      "sha256": "9d60acc8ef0b5dc4e10e2f0c9aad33b70ea2930a3d7511e8309c828f93b7b979",
-      "bytes": 343753,
-      "preview": "dashboards/previews/vincenzobuonomano.portrait-noir.png",
+      "path": "dashboards/files/moto-hub-studio.portrait-noir.mhd",
+      "sha256": "ff0f6906a2ccac649772ec9d2a954e0fcef1f0e80c551373fbd951bf22ed08eb",
+      "bytes": 343750,
+      "preview": "dashboards/previews/moto-hub-studio.portrait-noir.png",
       "previewSha256": "73ad70239fdc39481d4537015309dc8347e9c20ba2e8e83f3b6815bd48b4b949"
     },
     {
-      "id": "vincenzobuonomano.nouveau",
+      "id": "moto-hub-studio.nouveau",
       "name": "Nouveau",
-      "author": "vincenzobuonomano",
-      "description": "Minimal and cheerful, after Art Nouveau: the speed on a Mucha halo crowned by the revs and ringed with mosaic beads, whiplash tendrils ending in spirals, leaves and flowers all around, two flower medallions in laurel wreaths for gear and next turn. Coral, peacock, marigold and leaf on ivory; gold on aubergine at night. Without an OBD adapter it shows altitude, satellites and average speed instead.",
-      "version": "2",
+      "author": "moto-hub-studio",
+      "description": "Minimal and cheerful, after Art Nouveau: the speed on a Mucha halo crowned by the revs and ringed with mosaic beads, whiplash tendrils ending in spirals, leaves and flowers all around, two flower medallions for gear and next turn. Coral, peacock, marigold and leaf on ivory; gold on aubergine at night. Layouts for 5:3, 4:3 and 2:1 landscape and near-square portrait; speeds and distances follow the rider's units. Without an OBD adapter it shows altitude, satellites and average speed instead.",
+      "version": "3",
       "kind": "minimal",
       "tags": [
         "art-nouveau",
@@ -437,14 +729,42 @@
         "width": 1200,
         "height": 720
       },
+      "layouts": [
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 950,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
       "orientations": [
-        "landscape"
+        "landscape",
+        "portrait"
       ],
       "requires": {
-        "obd": true,
+        "obd": false,
         "module": null,
         "app": null
       },
+      "usesObd": true,
       "elements": [
         "decor.clock",
         "decor.ellipse",
@@ -454,20 +774,21 @@
         "nav.maneuverArrow",
         "signal.arc",
         "signal.gear",
+        "signal.text",
         "signal.value"
       ],
-      "path": "dashboards/files/vincenzobuonomano.nouveau.mhd",
-      "sha256": "20bfe1b3ac1f286b9342c550daa0742176509e8c7429f1a9414bf47a6963d482",
-      "bytes": 650335,
-      "preview": "dashboards/previews/vincenzobuonomano.nouveau.png",
-      "previewSha256": "2cba28403e361fcf1afb1aae8637ccd930564c3c86c5d645fb85258a7d4e58e5"
+      "path": "dashboards/files/moto-hub-studio.nouveau.mhd",
+      "sha256": "ce6bfe7702877de71768c07bfc28e42bc90ed7922d8c3d9f61d0f806493ef91b",
+      "bytes": 1402222,
+      "preview": "dashboards/previews/moto-hub-studio.nouveau.png",
+      "previewSha256": "3f4848fb217bdabe2a718119f11e4961a54da67020d3cdc025207da17fc1fc79"
     },
     {
-      "id": "vincenzobuonomano.portrait-obd-garage",
+      "id": "moto-hub-studio.portrait-obd-garage",
       "name": "OBD Garage",
-      "author": "vincenzobuonomano",
+      "author": "moto-hub-studio",
       "description": "The workshop's diagnostic screen: link and check-engine lamps with the fault-code count, a big rev dial with gear and ECU speed, load, absolute load and throttle bars, fuel trims centred on zero, two oxygen sensor traces and five readings from manifold pressure to coolant. For riders with an ELM327 adapter.",
-      "version": "1",
+      "version": "2",
       "kind": "engine",
       "tags": [
         "obd",
@@ -482,6 +803,14 @@
         "width": 1080,
         "height": 1920
       },
+      "layouts": [
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
       "orientations": [
         "portrait"
       ],
@@ -490,6 +819,7 @@
         "module": null,
         "app": null
       },
+      "usesObd": true,
       "elements": [
         "decor.image",
         "decor.line",
@@ -502,16 +832,80 @@
         "signal.trend",
         "signal.value"
       ],
-      "path": "dashboards/files/vincenzobuonomano.portrait-obd-garage.mhd",
-      "sha256": "1cca1d5645f90d60900ca47fabbc0fab567f54bd2193f80e9821e0cd7bfa3b2e",
-      "bytes": 139912,
-      "preview": "dashboards/previews/vincenzobuonomano.portrait-obd-garage.png",
-      "previewSha256": "966ba29a72035bf55f5e9d55a3fd13e91072dcb1e934919afac01b0aa59f6008"
+      "path": "dashboards/files/moto-hub-studio.portrait-obd-garage.mhd",
+      "sha256": "8e333d5cfea0e3f02c2e52e6c244ed9b9b17c5222e4770f5f5b8ae689bec49a2",
+      "bytes": 138075,
+      "preview": "dashboards/previews/moto-hub-studio.portrait-obd-garage.png",
+      "previewSha256": "1c5792718e1555cf447e4151d09fc53b5bc94bea4cc7db83fad78fedbdf071de"
     },
     {
-      "id": "vincenzobuonomano.potion-ride",
+      "id": "moto-hub-studio.offroad",
+      "name": "Offroad",
+      "author": "moto-hub-studio",
+      "description": "For trails and dirt: lean and pitch inclinometers from the phone's sensors with the session's maximum lean, a heading tape and a compass, speed and altitude in your own units, and the satellite count. Park upright on flat ground and press SELECT on the handlebar to zero lean and pitch. No OBD adapter needed. Landscape and portrait.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "offroad",
+        "inclinometer",
+        "compass",
+        "adventure",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 1200,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": false,
+      "elements": [
+        "container.panel",
+        "decor.clock",
+        "decor.rect",
+        "decor.text",
+        "signal.arc",
+        "signal.lamp",
+        "signal.tape",
+        "signal.text",
+        "signal.value",
+        "widget.compass"
+      ],
+      "path": "dashboards/files/moto-hub-studio.offroad.mhd",
+      "sha256": "4474e76d94fcc5429d99300ae166aad595369de4173936c5b5f3278eaefd6639",
+      "bytes": 37589,
+      "preview": "dashboards/previews/moto-hub-studio.offroad.png",
+      "previewSha256": "7abdc60f51f00c1af9f5989c361ba5d15513848bf633f48ccccce4bc8202e03c"
+    },
+    {
+      "id": "moto-hub-studio.potion-ride",
       "name": "Potion Ride",
-      "author": "vincenzobuonomano",
+      "author": "moto-hub-studio",
       "description": "A comic page in four panels, after the open webcomic Pepper&Carrot by David Revoy (CC-BY 4.0): the speed bursts with PUTT PUTT, WHOOSH, VROOM or ZOOM as you ride, engine, phone and throttle fill three potion flasks, a cat tells you the next turn (or the time), and the trip runs as captions. Original drawings; without an OBD adapter the potions for engine and throttle stay empty.",
       "version": "1",
       "kind": "minimal",
@@ -528,14 +922,23 @@
         "width": 1200,
         "height": 720
       },
+      "layouts": [
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        }
+      ],
       "orientations": [
         "landscape"
       ],
       "requires": {
-        "obd": true,
+        "obd": false,
         "module": null,
         "app": null
       },
+      "usesObd": true,
       "elements": [
         "decor.clock",
         "decor.image",
@@ -546,18 +949,18 @@
         "signal.text",
         "signal.value"
       ],
-      "path": "dashboards/files/vincenzobuonomano.potion-ride.mhd",
-      "sha256": "d2ead5123247ecd267335e69610177b7cc3d425398f56f9532d9c159c69f2d1e",
-      "bytes": 736018,
-      "preview": "dashboards/previews/vincenzobuonomano.potion-ride.png",
+      "path": "dashboards/files/moto-hub-studio.potion-ride.mhd",
+      "sha256": "6094adf2f51fe09dacd8d1fd3c71a4920a625d675b3c36f6ac2aa0fa4cf89f7b",
+      "bytes": 736017,
+      "preview": "dashboards/previews/moto-hub-studio.potion-ride.png",
       "previewSha256": "0cebcb85632a6e34512db4c25e577ef55f0fcc505cf58509b343a5811434b50f"
     },
     {
-      "id": "vincenzobuonomano.red-flash-obd-pov",
+      "id": "moto-hub-studio.red-flash-obd-pov",
       "name": "Red Flash OBD POV",
-      "author": "vincenzobuonomano",
+      "author": "moto-hub-studio",
       "description": "Dark OBD dashboard with 3D POV map background and red flashing theme.",
-      "version": "1",
+      "version": "2",
       "kind": "engine",
       "tags": [
         "3d",
@@ -571,6 +974,14 @@
         "width": 1280,
         "height": 720
       },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        }
+      ],
       "orientations": [
         "landscape"
       ],
@@ -579,6 +990,7 @@
         "module": null,
         "app": null
       },
+      "usesObd": true,
       "elements": [
         "decor.clock",
         "decor.rect",
@@ -588,20 +1000,19 @@
         "signal.gear",
         "signal.lamp",
         "signal.leds",
-        "signal.text",
         "signal.trend",
         "signal.value"
       ],
-      "path": "dashboards/files/vincenzobuonomano.red-flash-obd-pov.mhd",
-      "sha256": "f31155f078188219b6f8f8a05878426dfbfed6f412b82b1198c1c969027fcd11",
-      "bytes": 34760,
-      "preview": "dashboards/previews/vincenzobuonomano.red-flash-obd-pov.png",
-      "previewSha256": "1e4a5d2975786d3998c3c93088eb5b6700af9ea03ca4f163b3d53ee8c0b5a11d"
+      "path": "dashboards/files/moto-hub-studio.red-flash-obd-pov.mhd",
+      "sha256": "63da696cc289f74efe013c6ab33f0d2adc926a02e0ac8c2ecdca3a0d1caa284b",
+      "bytes": 32665,
+      "preview": "dashboards/previews/moto-hub-studio.red-flash-obd-pov.png",
+      "previewSha256": "80ede6919b66f42aa3f82e3d4f2fcf452fcd9d75fbc142e9402c6dba919f1fa8"
     },
     {
-      "id": "vincenzobuonomano.portrait-retro-arcade",
+      "id": "moto-hub-studio.portrait-retro-arcade",
       "name": "Retro Arcade",
-      "author": "vincenzobuonomano",
+      "author": "moto-hub-studio",
       "description": "An 8-bit cabinet: 1UP is your trip, HI-SCORE your top speed, the speed in giant yellow digits, a POWER bar from the throttle, gear and revs, LEVEL is the altitude and a pixel-framed mini map, under a pixel border with hearts and coins. No GPS fix? INSERT COIN blinks.",
       "version": "1",
       "kind": "minimal",
@@ -618,14 +1029,23 @@
         "width": 1080,
         "height": 1920
       },
+      "layouts": [
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
       "orientations": [
         "portrait"
       ],
       "requires": {
-        "obd": true,
+        "obd": false,
         "module": null,
         "app": null
       },
+      "usesObd": true,
       "elements": [
         "decor.clock",
         "decor.image",
@@ -637,16 +1057,16 @@
         "signal.lamp",
         "signal.value"
       ],
-      "path": "dashboards/files/vincenzobuonomano.portrait-retro-arcade.mhd",
-      "sha256": "caba87a13e05e5d781923ea885be3588f274a5c9bb2948060b2b98ff48193986",
-      "bytes": 42958,
-      "preview": "dashboards/previews/vincenzobuonomano.portrait-retro-arcade.png",
+      "path": "dashboards/files/moto-hub-studio.portrait-retro-arcade.mhd",
+      "sha256": "3f3ed4bf9a852633fd17e1d702896f78a2c7fa8b214bec07dd20dbb47a03b609",
+      "bytes": 42954,
+      "preview": "dashboards/previews/moto-hub-studio.portrait-retro-arcade.png",
       "previewSha256": "7bd47e7e91531d86c867c310c397bb373a4bccf5fa3b65f6f3ae83190367775e"
     },
     {
-      "id": "vincenzobuonomano.portrait-sensor-lab",
+      "id": "moto-hub-studio.portrait-sensor-lab",
       "name": "Sensor Lab",
-      "author": "vincenzobuonomano",
+      "author": "moto-hub-studio",
       "description": "The phone as a lab bench: four oscilloscope channels trace acceleration, air pressure, vertical speed and speed on a graticule, a thermal strip keeps ten minutes of battery temperature, and six cells read satellites, GPS accuracy, peak acceleration, Wi-Fi, altitude and heading. Needs no adapter.",
       "version": "1",
       "kind": "engine",
@@ -663,6 +1083,14 @@
         "width": 1080,
         "height": 1920
       },
+      "layouts": [
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
       "orientations": [
         "portrait"
       ],
@@ -671,6 +1099,7 @@
         "module": null,
         "app": null
       },
+      "usesObd": false,
       "elements": [
         "decor.clock",
         "decor.image",
@@ -680,16 +1109,16 @@
         "signal.trend",
         "signal.value"
       ],
-      "path": "dashboards/files/vincenzobuonomano.portrait-sensor-lab.mhd",
-      "sha256": "e0ef2eea1859d3ddd39c57042223afce07e2a356982b2cdb517687032aee13df",
-      "bytes": 76231,
-      "preview": "dashboards/previews/vincenzobuonomano.portrait-sensor-lab.png",
+      "path": "dashboards/files/moto-hub-studio.portrait-sensor-lab.mhd",
+      "sha256": "0ae638b3f9cdb441eaaf0d938c9a61895013853de3a8720db2b3b5cb9cb84926",
+      "bytes": 76227,
+      "preview": "dashboards/previews/moto-hub-studio.portrait-sensor-lab.png",
       "previewSha256": "0d5690669e5f8ea85a09fbe0865996d7c82d0ca7eb8e44f9e5811ba219316a2d"
     },
     {
-      "id": "vincenzobuonomano.portrait-terminal",
+      "id": "moto-hub-studio.portrait-terminal",
       "name": "Terminal",
-      "author": "vincenzobuonomano",
+      "author": "moto-hub-studio",
       "description": "A green phosphor console: the speed as a huge readout under its command, the revs as an ASCII bar, ten key-value lines from gear to max speed, the next turn as the last line and a blinking cursor, under CRT scanlines. Without an OBD adapter the engine lines read n/a.",
       "version": "1",
       "kind": "minimal",
@@ -706,14 +1135,23 @@
         "width": 1080,
         "height": 1920
       },
+      "layouts": [
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
       "orientations": [
         "portrait"
       ],
       "requires": {
-        "obd": true,
+        "obd": false,
         "module": null,
         "app": null
       },
+      "usesObd": true,
       "elements": [
         "decor.clock",
         "decor.image",
@@ -723,16 +1161,142 @@
         "signal.text",
         "signal.value"
       ],
-      "path": "dashboards/files/vincenzobuonomano.portrait-terminal.mhd",
-      "sha256": "3f84e0c2da093568f69c6480d2b9ff4903830d60b229dc501dc382280c74282f",
-      "bytes": 136823,
-      "preview": "dashboards/previews/vincenzobuonomano.portrait-terminal.png",
+      "path": "dashboards/files/moto-hub-studio.portrait-terminal.mhd",
+      "sha256": "fd42190f37b510c2cd98cb66382aaced562677d0cf4af7c5042c2b482598acee",
+      "bytes": 136817,
+      "preview": "dashboards/previews/moto-hub-studio.portrait-terminal.png",
       "previewSha256": "6a1b6918ac65aa11c7e1b56c838a266618545319d5bd5e6ca7a591bacca0be6d"
     },
     {
-      "id": "vincenzobuonomano.twin-arc",
+      "id": "moto-hub-studio.touring",
+      "name": "Touring",
+      "author": "moto-hub-studio",
+      "description": "For long days in the saddle: speed and range left in your km or miles, a map, trip distance, riding time and average speed, distance and arrival time to your destination, and the weather in its own panel. Range left needs the tank range in your motorcycle profile (it assumes a full tank at the start of the trip); until then the dashboard says so. No OBD adapter needed. Landscape and portrait.",
+      "version": "1",
+      "kind": "touring",
+      "tags": [
+        "touring",
+        "range",
+        "weather",
+        "map",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1200,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": false,
+      "elements": [
+        "container.panel",
+        "decor.clock",
+        "decor.rect",
+        "decor.text",
+        "map.maplibre",
+        "signal.lamp",
+        "signal.text",
+        "signal.value",
+        "widget.weather"
+      ],
+      "path": "dashboards/files/moto-hub-studio.touring.mhd",
+      "sha256": "67a5351294e81de58ee2e55b1fbd21eaf67bbe0c3b94226bdde4cdb0d7b91a05",
+      "bytes": 38154,
+      "preview": "dashboards/previews/moto-hub-studio.touring.png",
+      "previewSha256": "df06b52b798bd158ee3ca40b2aed5dd77b5fd42fa2171c4e57870a315ecd4954"
+    },
+    {
+      "id": "moto-hub-studio.track-day",
+      "name": "Track Day",
+      "author": "moto-hub-studio",
+      "description": "A GPS lap timer for track days. Ride over the start line and press SELECT on the handlebar to set it; every pass after that closes a lap. Shows the running lap time, laps done, last and best lap and the gap to your best, and the maximum lean left and right from the phone's sensors. PREVIOUS resets the timer (SELECT again sets a new line and starts over). With an OBD adapter you also get shift lights, a rev arc and the gear; without one the speed fills that space. Landscape and portrait.",
+      "version": "1",
+      "kind": "track",
+      "tags": [
+        "track",
+        "lap-timer",
+        "lean",
+        "shift-lights",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 1200,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.line",
+        "decor.rect",
+        "decor.text",
+        "signal.arc",
+        "signal.gear",
+        "signal.leds",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.track-day.mhd",
+      "sha256": "1edded2ed64ec1ebb2828aa0a86d1073044ad71d9531f6aa0bdc5f22b46f60d3",
+      "bytes": 35394,
+      "preview": "dashboards/previews/moto-hub-studio.track-day.png",
+      "previewSha256": "2af85cdb0737d6172547165a47c28f19cd7119b1b10791ab916e97b9d1bf97c1"
+    },
+    {
+      "id": "moto-hub-studio.twin-arc",
       "name": "Twin Arc",
-      "author": "vincenzobuonomano",
+      "author": "moto-hub-studio",
       "description": "Two half-moon arcs close the screen: speed in orange on the left, revs in teal on the right with shift lights under a framed dark map. The riding mode reads CITY, CRUISE or SPORT from what the bike is doing.",
       "version": "1",
       "kind": "ride",
@@ -749,6 +1313,14 @@
         "width": 1280,
         "height": 720
       },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        }
+      ],
       "orientations": [
         "landscape"
       ],
@@ -757,6 +1329,7 @@
         "module": null,
         "app": null
       },
+      "usesObd": true,
       "elements": [
         "container.group",
         "decor.clock",
@@ -773,10 +1346,10 @@
         "signal.leds",
         "signal.value"
       ],
-      "path": "dashboards/files/vincenzobuonomano.twin-arc.mhd",
-      "sha256": "73ca481f05b0e9e148626f94d235c5ece109fc22250847df75ea274aab383a95",
-      "bytes": 35095,
-      "preview": "dashboards/previews/vincenzobuonomano.twin-arc.png",
+      "path": "dashboards/files/moto-hub-studio.twin-arc.mhd",
+      "sha256": "0f9c62700ac66be87205455915459da268872c054a28954af770b88dc3723a26",
+      "bytes": 35093,
+      "preview": "dashboards/previews/moto-hub-studio.twin-arc.png",
       "previewSha256": "4f58ea702e47ff1c8f2ca4019cccc8a22b5fbf1571dda46da7e35156d2fd542f"
     }
   ]
