@@ -27,5 +27,13 @@
       "widgets",
       "obd"
     ]
+  },
+  "vincenzobuonomano.twin-arc": {
+    "kind": "ride",
+    "tags": [
+      "sport",
+      "shift-lights",
+      "obd"
+    ]
   }
 }

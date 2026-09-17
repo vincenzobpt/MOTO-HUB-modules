@@ -194,6 +194,56 @@
       "bytes": 34760,
       "preview": "dashboards/previews/vincenzobuonomano.red-flash-obd-pov.png",
       "previewSha256": "1e4a5d2975786d3998c3c93088eb5b6700af9ea03ca4f163b3d53ee8c0b5a11d"
+    },
+    {
+      "id": "vincenzobuonomano.twin-arc",
+      "name": "Twin Arc",
+      "author": "vincenzobuonomano",
+      "description": "Two half-moon arcs close the screen: speed in orange on the left, revs in teal on the right with shift lights under a framed dark map. The riding mode reads CITY, CRUISE or SPORT from what the bike is doing.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "sport",
+        "shift-lights",
+        "obd"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "orientations": [
+        "landscape"
+      ],
+      "requires": {
+        "obd": true,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "container.group",
+        "decor.clock",
+        "decor.line",
+        "decor.rect",
+        "decor.text",
+        "map.maplibre",
+        "nav.locationCard",
+        "nav.remainingStrip",
+        "signal.arc",
+        "signal.bar",
+        "signal.gear",
+        "signal.lamp",
+        "signal.leds",
+        "signal.value"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.twin-arc.mhd",
+      "sha256": "73ca481f05b0e9e148626f94d235c5ece109fc22250847df75ea274aab383a95",
+      "bytes": 35095,
+      "preview": "dashboards/previews/vincenzobuonomano.twin-arc.png",
+      "previewSha256": "4f58ea702e47ff1c8f2ca4019cccc8a22b5fbf1571dda46da7e35156d2fd542f"
     }
   ]
 }
