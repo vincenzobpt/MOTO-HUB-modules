@@ -5,8 +5,8 @@
       "id": "moto-hub-studio.wow-3d-ride",
       "name": "WOW 3D Ride",
       "author": "moto-hub-studio",
-      "description": "The rider's-eye 3D view with the road ahead left clear, and a start-up that feels like a cockpit coming alive: the side columns fly in from the screen edges, numbers pop into place, warning lamps drop in and a lean horizon locks on over the road. The horizon tilts with the lean angle from the phone's sensors (mount the phone firmly, park upright and press SELECT to level it) and shows the maximum each side. Speed in your km/h or mph and the gear on the left, next turn and ETA on the right (clock and altitude without a route), revs along the bottom. Near a turn a big arrow drops down over the road; at high revs the column edges flash as a shift light. Works without an OBD adapter: trip distance replaces the gear and the rev strip hides. Wide, 16:9 and portrait.",
-      "version": "3",
+      "description": "The rider's-eye 3D view with the road ahead left clear, and a start-up that feels like a cockpit coming alive: the side columns fly in from the screen edges, numbers pop into place, warning lamps drop in and a lean horizon locks on over the road. The horizon tilts with the lean angle from the phone's sensors (mount the phone firmly, park upright and press SELECT to level it) and shows the maximum each side. Speed in your km/h or mph and the gear on the left, next turn and ETA on the right (clock and altitude without a route), revs along the bottom. Near a turn a big arrow drops down over the road; at high revs the column edges flash as a shift light. Works without an OBD adapter: trip distance replaces the gear and the rev strip hides. Wide, ultra-wide 1280x480, 16:9 and portrait.",
+      "version": "4",
       "kind": "ride",
       "tags": [
         "3d",
@@ -32,6 +32,12 @@
         {
           "width": 1280,
           "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
           "orientation": "landscape",
           "when": "landscape"
         },
@@ -68,8 +74,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.wow-3d-ride.mhd",
-      "sha256": "a8f0bd78fbab31cb572129a4890e200a463e76a088e57be9ab86fa4ab418b5fb",
-      "bytes": 32015,
+      "sha256": "fef0b9948791835173100c52b9d75cfcbedb1e5c12881c1816d1be26bebb7c6f",
+      "bytes": 32932,
       "preview": "dashboards/previews/moto-hub-studio.wow-3d-ride.png",
       "previewSha256": "b48ebd9b65d7a03e9cd757ad560455ac43d1969951d2ea65a876492bae0ff1bb"
     },
@@ -191,8 +197,8 @@
       "id": "moto-hub-studio.big-and-bold",
       "name": "Big & Bold",
       "author": "moto-hub-studio",
-      "description": "Three huge numbers and nothing else, for reading at arm's length or through glasses: speed in your km/h or mph, the gear (or the trip distance when no OBD adapter is connected) and the time. White on black in the B612 cockpit typeface, with yellow labels. Landscape and portrait.",
-      "version": "1",
+      "description": "Three huge numbers and nothing else, for reading at arm's length or through glasses: speed in your km/h or mph, the gear (or the trip distance when no OBD adapter is connected) and the time. White on black in the B612 cockpit typeface, with yellow labels. Landscape and portrait. Also laid out for ultra-wide 1280x480 screens.",
+      "version": "2",
       "kind": "minimal",
       "tags": [
         "accessibility",
@@ -213,6 +219,12 @@
         {
           "width": 1200,
           "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
           "orientation": "landscape",
           "when": "landscape"
         },
@@ -242,8 +254,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.big-and-bold.mhd",
-      "sha256": "843bf6dc8136245de834c7d67d14debd626beabfc8e0b9801529717f29aab4d4",
-      "bytes": 22729,
+      "sha256": "e5c0413a028e4a8cdd076f56db5abb83d9cafe14e6e18446cb4be274b9cd3c9a",
+      "bytes": 23064,
       "preview": "dashboards/previews/moto-hub-studio.big-and-bold.png",
       "previewSha256": "1ad1c89a7b0f43a2064228cb685eb42ec1f6962664dd603e5c4268194aa0a4d5"
     },
@@ -673,8 +685,8 @@
       "id": "moto-hub-studio.night-ride",
       "name": "Night Ride",
       "author": "moto-hub-studio",
-      "description": "For riding in the dark: a huge speed in your km/h or mph, the gear beside it, and the next turn only when a route is running. Warm amber by day, dim red at night so it never dazzles; no map, no clutter. Works without an OBD adapter (the clock takes the gear's place); with one you also get the gear and a hot-engine or check-engine lamp that appears only when needed. Landscape and portrait.",
-      "version": "1",
+      "description": "For riding in the dark: a huge speed in your km/h or mph, the gear beside it, and the next turn only when a route is running. Warm amber by day, dim red at night so it never dazzles; no map, no clutter. Works without an OBD adapter (the clock takes the gear's place); with one you also get the gear and a hot-engine or check-engine lamp that appears only when needed. Landscape and portrait. Also laid out for ultra-wide 1280x480 screens.",
+      "version": "2",
       "kind": "minimal",
       "tags": [
         "night",
@@ -694,6 +706,12 @@
         {
           "width": 1200,
           "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
           "orientation": "landscape",
           "when": "landscape"
         },
@@ -725,8 +743,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.night-ride.mhd",
-      "sha256": "005039a2cb0f19bba03c644be0da708334a1059e6cadc09f2a33fb62cd7ecf41",
-      "bytes": 20122,
+      "sha256": "9f834b635dd76db805a43a255e8743221ad4b3d443f35a203e10ae66c42b2642",
+      "bytes": 20481,
       "preview": "dashboards/previews/moto-hub-studio.night-ride.png",
       "previewSha256": "606ce324e27910102c2caccbacfcce14900b2f89e15a1b9ef035621f79152e3e"
     },
@@ -785,8 +803,8 @@
       "id": "moto-hub-studio.nouveau",
       "name": "Nouveau",
       "author": "moto-hub-studio",
-      "description": "Minimal and cheerful, after Art Nouveau: the speed on a Mucha halo crowned by the revs and ringed with mosaic beads, whiplash tendrils ending in spirals, leaves and flowers all around, two flower medallions for gear and next turn. Coral, peacock, marigold and leaf on ivory; gold on aubergine at night. Layouts for 5:3, 4:3 and 2:1 landscape and near-square portrait; speeds and distances follow the rider's units. Without an OBD adapter it shows altitude, satellites and average speed instead.",
-      "version": "3",
+      "description": "Minimal and cheerful, after Art Nouveau: the speed on a Mucha halo crowned by the revs and ringed with mosaic beads, whiplash tendrils ending in spirals, leaves and flowers all around, two flower medallions for gear and next turn. Coral, peacock, marigold and leaf on ivory; gold on aubergine at night. Layouts for 5:3, 4:3, 2:1 and ultra-wide 1280x480 landscape and near-square portrait; speeds and distances follow the rider's units. Without an OBD adapter it shows altitude, satellites and average speed instead.",
+      "version": "4",
       "kind": "minimal",
       "tags": [
         "art-nouveau",
@@ -805,6 +823,12 @@
         {
           "width": 1200,
           "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
           "orientation": "landscape",
           "when": "landscape"
         },
@@ -850,8 +874,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.nouveau.mhd",
-      "sha256": "ce6bfe7702877de71768c07bfc28e42bc90ed7922d8c3d9f61d0f806493ef91b",
-      "bytes": 1402222,
+      "sha256": "2bf06b8de6dffcbaf7ad814cfbf36ca5ae801c8f53fdb192c6b4f5308162d42d",
+      "bytes": 1655133,
       "preview": "dashboards/previews/moto-hub-studio.nouveau.png",
       "previewSha256": "3f4848fb217bdabe2a718119f11e4961a54da67020d3cdc025207da17fc1fc79"
     },
@@ -1306,8 +1330,8 @@
       "id": "moto-hub-studio.track-day",
       "name": "Track Day",
       "author": "moto-hub-studio",
-      "description": "A GPS lap timer for track days. Ride over the start line and press SELECT on the handlebar to set it; every pass after that closes a lap. Shows the running lap time, laps done, last and best lap and the gap to your best, and the maximum lean left and right from the phone's sensors. PREVIOUS resets the timer (SELECT again sets a new line and starts over). With an OBD adapter you also get shift lights, a rev arc and the gear; without one the speed fills that space. Landscape and portrait.",
-      "version": "1",
+      "description": "A GPS lap timer for track days. Ride over the start line and press SELECT on the handlebar to set it; every pass after that closes a lap. Shows the running lap time, laps done, last and best lap and the gap to your best, and the maximum lean left and right from the phone's sensors. PREVIOUS resets the timer (SELECT again sets a new line and starts over). With an OBD adapter you also get shift lights, a rev arc and the gear; without one the speed fills that space. Landscape and portrait. Also laid out for ultra-wide 1280x480 screens.",
+      "version": "2",
       "kind": "track",
       "tags": [
         "track",
@@ -1328,6 +1352,12 @@
         {
           "width": 1200,
           "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
           "orientation": "landscape",
           "when": "landscape"
         },
@@ -1360,8 +1390,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.track-day.mhd",
-      "sha256": "1edded2ed64ec1ebb2828aa0a86d1073044ad71d9531f6aa0bdc5f22b46f60d3",
-      "bytes": 35394,
+      "sha256": "a8abab16ea5a4bd8dd478746953258f605229a3ff5b7482133766daf17cb9695",
+      "bytes": 36238,
       "preview": "dashboards/previews/moto-hub-studio.track-day.png",
       "previewSha256": "2af85cdb0737d6172547165a47c28f19cd7119b1b10791ab916e97b9d1bf97c1"
     },
