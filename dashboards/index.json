@@ -2,6 +2,78 @@
   "schema": 1,
   "dashboards": [
     {
+      "id": "moto-hub-studio.wow-3d-ride",
+      "name": "WOW 3D Ride",
+      "author": "moto-hub-studio",
+      "description": "The rider's-eye 3D view with the road ahead left clear, and a start-up that feels like a cockpit coming alive: the side columns fly in from the screen edges, numbers pop into place, warning lamps drop in and a lean horizon locks on over the road. The horizon tilts with the lean angle from the phone's sensors (mount the phone firmly, park upright and press SELECT to level it) and shows the maximum each side. Speed in your km/h or mph and the gear on the left, next turn and ETA on the right (clock and altitude without a route), revs along the bottom. Near a turn a big arrow drops down over the road; at high revs the column edges flash as a shift light. Works without an OBD adapter: trip distance replaces the gear and the rev strip hides. Wide, 16:9 and portrait.",
+      "version": "3",
+      "kind": "ride",
+      "tags": [
+        "3d",
+        "animated",
+        "lean",
+        "hud"
+      ],
+      "featured": true,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 800,
+        "height": 384
+      },
+      "layouts": [
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "container.panel",
+        "decor.clock",
+        "decor.line",
+        "decor.rect",
+        "decor.text",
+        "map.pov3d",
+        "nav.maneuverArrow",
+        "signal.bar",
+        "signal.gear",
+        "signal.horizon",
+        "signal.lamp",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.wow-3d-ride.mhd",
+      "sha256": "a8f0bd78fbab31cb572129a4890e200a463e76a088e57be9ab86fa4ab418b5fb",
+      "bytes": 32015,
+      "preview": "dashboards/previews/moto-hub-studio.wow-3d-ride.png",
+      "previewSha256": "b48ebd9b65d7a03e9cd757ad560455ac43d1969951d2ea65a876492bae0ff1bb"
+    },
+    {
       "id": "moto-hub-studio.map-widgets",
       "name": "3D POV & Widgets",
       "author": "moto-hub-studio",

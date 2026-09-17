@@ -188,5 +188,15 @@
       "personal",
       "portrait"
     ]
+  },
+  "moto-hub-studio.wow-3d-ride": {
+    "kind": "ride",
+    "tags": [
+      "3d",
+      "animated",
+      "lean",
+      "hud"
+    ],
+    "featured": true
   }
 }
