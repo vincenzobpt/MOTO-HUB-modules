@@ -198,5 +198,25 @@
       "hud"
     ],
     "featured": true
+  },
+  "moto-hub-studio.ride-modes": {
+    "kind": "ride",
+    "tags": [
+      "menu",
+      "modes",
+      "animated",
+      "ultra-wide"
+    ],
+    "featured": true
+  },
+  "moto-hub-studio.sport-strip": {
+    "kind": "engine",
+    "tags": [
+      "rpm",
+      "strip",
+      "shift light",
+      "ultra-wide"
+    ],
+    "featured": false
   }
 }
