@@ -2,6 +2,56 @@
   "schema": 1,
   "dashboards": [
     {
+      "id": "vincenzobuonomano.map-widgets",
+      "name": "3D POV & Widgets",
+      "author": "vincenzobuonomano",
+      "description": "Rider's-eye 3D view framed by two columns: speed and revs with gear and coolant on the left, navigation and weather on the right, compass, altitude and phone status taking turns below the gauges.",
+      "version": "3",
+      "kind": "touring",
+      "tags": [
+        "3d",
+        "widgets",
+        "obd"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "orientations": [
+        "landscape"
+      ],
+      "requires": {
+        "obd": true,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "chrome.header",
+        "container.carousel",
+        "container.panel",
+        "decor.line",
+        "decor.text",
+        "map.pov3d",
+        "signal.arc",
+        "signal.gear",
+        "signal.value",
+        "widget.altitude",
+        "widget.battery",
+        "widget.compass",
+        "widget.navigation",
+        "widget.weather"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.map-widgets.mhd",
+      "sha256": "965dcd1d822fe5e07eafb93b6f2458e612f6dabc472ad9c4ba5f53c243999f4b",
+      "bytes": 23818,
+      "preview": "dashboards/previews/vincenzobuonomano.map-widgets.png",
+      "previewSha256": "1c5d1ca24c9d2717f38725d7c5c8bbd04f4e615fdd4a38eed4e9aff8045cbd63"
+    },
+    {
       "id": "cyber.grid.v1",
       "name": "Cyber Grid",
       "author": "vincenzobuonomano",
