@@ -51,5 +51,85 @@
       "pepper-and-carrot",
       "no-map"
     ]
+  },
+  "vincenzobuonomano.portrait-aviator-hud": {
+    "kind": "touring",
+    "tags": [
+      "hud",
+      "3d",
+      "portrait"
+    ]
+  },
+  "vincenzobuonomano.portrait-blueprint": {
+    "kind": "minimal",
+    "tags": [
+      "blueprint",
+      "engineering",
+      "portrait"
+    ]
+  },
+  "vincenzobuonomano.portrait-explorer": {
+    "kind": "touring",
+    "tags": [
+      "adventure",
+      "topo",
+      "portrait"
+    ]
+  },
+  "vincenzobuonomano.portrait-mission-control": {
+    "kind": "engine",
+    "tags": [
+      "telemetry",
+      "space",
+      "portrait"
+    ]
+  },
+  "vincenzobuonomano.portrait-neon-grid": {
+    "kind": "ride",
+    "tags": [
+      "synthwave",
+      "neon",
+      "portrait"
+    ]
+  },
+  "vincenzobuonomano.portrait-noir": {
+    "kind": "minimal",
+    "tags": [
+      "noir",
+      "cinema",
+      "portrait"
+    ]
+  },
+  "vincenzobuonomano.portrait-obd-garage": {
+    "kind": "engine",
+    "tags": [
+      "obd",
+      "diagnostics",
+      "portrait"
+    ]
+  },
+  "vincenzobuonomano.portrait-retro-arcade": {
+    "kind": "minimal",
+    "tags": [
+      "arcade",
+      "8-bit",
+      "portrait"
+    ]
+  },
+  "vincenzobuonomano.portrait-sensor-lab": {
+    "kind": "engine",
+    "tags": [
+      "sensors",
+      "lab",
+      "portrait"
+    ]
+  },
+  "vincenzobuonomano.portrait-terminal": {
+    "kind": "minimal",
+    "tags": [
+      "terminal",
+      "nerd",
+      "portrait"
+    ]
   }
 }

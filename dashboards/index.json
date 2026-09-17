@@ -52,6 +52,97 @@
       "previewSha256": "1c5d1ca24c9d2717f38725d7c5c8bbd04f4e615fdd4a38eed4e9aff8045cbd63"
     },
     {
+      "id": "vincenzobuonomano.portrait-aviator-hud",
+      "name": "Aviator HUD",
+      "author": "vincenzobuonomano",
+      "description": "A fighter-style head-up display over the 3D rider's-eye view: heading tape on top, speed and altitude tapes on the sides, a pitch ladder and flight-path marker in the middle, acceleration and vertical speed, the next turn card and a bracketed engine and trip row, all in HUD green.",
+      "version": "1",
+      "kind": "touring",
+      "tags": [
+        "hud",
+        "3d",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1080,
+        "height": 1920
+      },
+      "orientations": [
+        "portrait"
+      ],
+      "requires": {
+        "obd": true,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "container.group",
+        "decor.clock",
+        "decor.ellipse",
+        "decor.line",
+        "decor.rect",
+        "map.pov3d",
+        "nav.maneuverCard",
+        "signal.gear",
+        "signal.tape",
+        "signal.value"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.portrait-aviator-hud.mhd",
+      "sha256": "9fccb75f204f7d9be72e5fdc68add985e282158f8e40f4a45b715a266f7fa1d0",
+      "bytes": 63744,
+      "preview": "dashboards/previews/vincenzobuonomano.portrait-aviator-hud.png",
+      "previewSha256": "97ef1289916c5ac64f4d38f71845ec26bc08b3428b41c87844791618b9bf4295"
+    },
+    {
+      "id": "vincenzobuonomano.portrait-blueprint",
+      "name": "Blueprint",
+      "author": "vincenzobuonomano",
+      "description": "An engineering drawing that measures the ride: velocity as a needle on an 800 mm dial, engine revs and coolant as two smaller figures, gear in a detail box, and the route in a mini map, on blueprint paper with a title block. Without OBD, figure 2 shows altitude and phone battery.",
+      "version": "1",
+      "kind": "minimal",
+      "tags": [
+        "blueprint",
+        "engineering",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 1080,
+        "height": 1920
+      },
+      "orientations": [
+        "portrait"
+      ],
+      "requires": {
+        "obd": true,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "decor.clock",
+        "decor.image",
+        "decor.rect",
+        "decor.text",
+        "map.mini",
+        "nav.remainingStrip",
+        "signal.arc",
+        "signal.gear",
+        "signal.value"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.portrait-blueprint.mhd",
+      "sha256": "ebf96e6b249894904f047b1ec10c5c3aedf558e43a76806d50b0324efaedc688",
+      "bytes": 83541,
+      "preview": "dashboards/previews/vincenzobuonomano.portrait-blueprint.png",
+      "previewSha256": "0da5cbe5970d5c886e9ae2b34e3415c66ab1c746bc930c09cdd2f56822a9c024"
+    },
+    {
       "id": "cyber.grid.v1",
       "name": "Cyber Grid",
       "author": "vincenzobuonomano",
@@ -99,6 +190,95 @@
       "bytes": 21843,
       "preview": "dashboards/previews/cyber.grid.v1.png",
       "previewSha256": "666600b02e03c7537655f836297a7b9502791e7ede9a0bdfa4fc28d54c42c8ce"
+    },
+    {
+      "id": "vincenzobuonomano.portrait-explorer",
+      "name": "Explorer",
+      "author": "vincenzobuonomano",
+      "description": "An adventure map on a topographic sheet: a big framed map with turn banners, a heading tape like a bearing compass, speed and altitude cards, the elevation profile of the route (or the last ten minutes of climb), and sunset and weather for deciding how far to push.",
+      "version": "1",
+      "kind": "touring",
+      "tags": [
+        "adventure",
+        "topo",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1080,
+        "height": 1920
+      },
+      "orientations": [
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "container.panel",
+        "decor.image",
+        "decor.rect",
+        "map.maplibre",
+        "nav.elevation",
+        "signal.tape",
+        "signal.trend",
+        "signal.value",
+        "widget.sun_daylight",
+        "widget.weather"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.portrait-explorer.mhd",
+      "sha256": "ea6c83a50122eded00bdff40191f7b0ba74fc4218bc52416a0b44d0d74dbb8a8",
+      "bytes": 137668,
+      "preview": "dashboards/previews/vincenzobuonomano.portrait-explorer.png",
+      "previewSha256": "0954e3ae7836eb616c41bceed1da2839cdd6d3f7ffde99a701eab63647d18c6e"
+    },
+    {
+      "id": "vincenzobuonomano.portrait-mission-control",
+      "name": "Mission Control",
+      "author": "vincenzobuonomano",
+      "description": "Ground-station telemetry for the road: status lamps for GPS, OBD link, route and check-engine, speed and altitude tapes either side of ground speed and heading, two live traces, and eight numbered cells with trip, engine and GPS quality.",
+      "version": "1",
+      "kind": "engine",
+      "tags": [
+        "telemetry",
+        "space",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 1080,
+        "height": 1920
+      },
+      "orientations": [
+        "portrait"
+      ],
+      "requires": {
+        "obd": true,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "decor.clock",
+        "decor.rect",
+        "decor.text",
+        "signal.lamp",
+        "signal.tape",
+        "signal.trend",
+        "signal.value"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.portrait-mission-control.mhd",
+      "sha256": "1dcfe3bad3977425780dd7725138630003411fd329142fc9043726a8ba2305b0",
+      "bytes": 77523,
+      "preview": "dashboards/previews/vincenzobuonomano.portrait-mission-control.png",
+      "previewSha256": "af699da8021eb5816e02ea4d319d53a5beb14ed6a11abd1076ee8d0c60b48a39"
     },
     {
       "id": "vincenzobuonomano.ai-copilot",
@@ -150,6 +330,94 @@
       "previewSha256": "a1bcfd0dac68c9299c05660a01c37a919e571b8a163fae76298415f448a9f63e"
     },
     {
+      "id": "vincenzobuonomano.portrait-neon-grid",
+      "name": "Neon Grid",
+      "author": "vincenzobuonomano",
+      "description": "Synthwave night drive in portrait: the speed rises over a striped sunset sun ringed by the revs, a neon-framed map floats over the perspective grid, and six glowing tiles hold gear, engine, throttle and the trip.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "synthwave",
+        "neon",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1080,
+        "height": 1920
+      },
+      "orientations": [
+        "portrait"
+      ],
+      "requires": {
+        "obd": true,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "decor.clock",
+        "decor.image",
+        "decor.rect",
+        "decor.text",
+        "map.maplibre",
+        "signal.arc",
+        "signal.gear",
+        "signal.lamp",
+        "signal.leds",
+        "signal.value"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.portrait-neon-grid.mhd",
+      "sha256": "08639efd8003ae1216f20aceb90d6bad41f889a47f8955037af7b4828cc67b2d",
+      "bytes": 197836,
+      "preview": "dashboards/previews/vincenzobuonomano.portrait-neon-grid.png",
+      "previewSha256": "69229355d29c9d7190bd0cfa8f1ce4992abb2194874124f135e2eea9ebba2f28"
+    },
+    {
+      "id": "vincenzobuonomano.portrait-noir",
+      "name": "Noir",
+      "author": "vincenzobuonomano",
+      "description": "A black-and-white detective film: blinds cast their shadows through the rain, the hour opens the chapter, the speed is the line everyone remembers, underlined in red, and the engine, the trip and the next turn are told as narration.",
+      "version": "1",
+      "kind": "minimal",
+      "tags": [
+        "noir",
+        "cinema",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 1080,
+        "height": 1920
+      },
+      "orientations": [
+        "portrait"
+      ],
+      "requires": {
+        "obd": true,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "decor.clock",
+        "decor.image",
+        "decor.line",
+        "decor.text",
+        "nav.turnLadder",
+        "signal.value"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.portrait-noir.mhd",
+      "sha256": "9d60acc8ef0b5dc4e10e2f0c9aad33b70ea2930a3d7511e8309c828f93b7b979",
+      "bytes": 343753,
+      "preview": "dashboards/previews/vincenzobuonomano.portrait-noir.png",
+      "previewSha256": "73ad70239fdc39481d4537015309dc8347e9c20ba2e8e83f3b6815bd48b4b949"
+    },
+    {
       "id": "vincenzobuonomano.nouveau",
       "name": "Nouveau",
       "author": "vincenzobuonomano",
@@ -193,6 +461,52 @@
       "bytes": 650335,
       "preview": "dashboards/previews/vincenzobuonomano.nouveau.png",
       "previewSha256": "2cba28403e361fcf1afb1aae8637ccd930564c3c86c5d645fb85258a7d4e58e5"
+    },
+    {
+      "id": "vincenzobuonomano.portrait-obd-garage",
+      "name": "OBD Garage",
+      "author": "vincenzobuonomano",
+      "description": "The workshop's diagnostic screen: link and check-engine lamps with the fault-code count, a big rev dial with gear and ECU speed, load, absolute load and throttle bars, fuel trims centred on zero, two oxygen sensor traces and five readings from manifold pressure to coolant. For riders with an ELM327 adapter.",
+      "version": "1",
+      "kind": "engine",
+      "tags": [
+        "obd",
+        "diagnostics",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 1080,
+        "height": 1920
+      },
+      "orientations": [
+        "portrait"
+      ],
+      "requires": {
+        "obd": true,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "decor.image",
+        "decor.line",
+        "decor.rect",
+        "decor.text",
+        "signal.arc",
+        "signal.bar",
+        "signal.gear",
+        "signal.lamp",
+        "signal.trend",
+        "signal.value"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.portrait-obd-garage.mhd",
+      "sha256": "1cca1d5645f90d60900ca47fabbc0fab567f54bd2193f80e9821e0cd7bfa3b2e",
+      "bytes": 139912,
+      "preview": "dashboards/previews/vincenzobuonomano.portrait-obd-garage.png",
+      "previewSha256": "966ba29a72035bf55f5e9d55a3fd13e91072dcb1e934919afac01b0aa59f6008"
     },
     {
       "id": "vincenzobuonomano.potion-ride",
@@ -283,6 +597,137 @@
       "bytes": 34760,
       "preview": "dashboards/previews/vincenzobuonomano.red-flash-obd-pov.png",
       "previewSha256": "1e4a5d2975786d3998c3c93088eb5b6700af9ea03ca4f163b3d53ee8c0b5a11d"
+    },
+    {
+      "id": "vincenzobuonomano.portrait-retro-arcade",
+      "name": "Retro Arcade",
+      "author": "vincenzobuonomano",
+      "description": "An 8-bit cabinet: 1UP is your trip, HI-SCORE your top speed, the speed in giant yellow digits, a POWER bar from the throttle, gear and revs, LEVEL is the altitude and a pixel-framed mini map, under a pixel border with hearts and coins. No GPS fix? INSERT COIN blinks.",
+      "version": "1",
+      "kind": "minimal",
+      "tags": [
+        "arcade",
+        "8-bit",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 1080,
+        "height": 1920
+      },
+      "orientations": [
+        "portrait"
+      ],
+      "requires": {
+        "obd": true,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "decor.clock",
+        "decor.image",
+        "decor.rect",
+        "decor.text",
+        "map.mini",
+        "signal.bar",
+        "signal.gear",
+        "signal.lamp",
+        "signal.value"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.portrait-retro-arcade.mhd",
+      "sha256": "caba87a13e05e5d781923ea885be3588f274a5c9bb2948060b2b98ff48193986",
+      "bytes": 42958,
+      "preview": "dashboards/previews/vincenzobuonomano.portrait-retro-arcade.png",
+      "previewSha256": "7bd47e7e91531d86c867c310c397bb373a4bccf5fa3b65f6f3ae83190367775e"
+    },
+    {
+      "id": "vincenzobuonomano.portrait-sensor-lab",
+      "name": "Sensor Lab",
+      "author": "vincenzobuonomano",
+      "description": "The phone as a lab bench: four oscilloscope channels trace acceleration, air pressure, vertical speed and speed on a graticule, a thermal strip keeps ten minutes of battery temperature, and six cells read satellites, GPS accuracy, peak acceleration, Wi-Fi, altitude and heading. Needs no adapter.",
+      "version": "1",
+      "kind": "engine",
+      "tags": [
+        "sensors",
+        "lab",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 1080,
+        "height": 1920
+      },
+      "orientations": [
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "decor.clock",
+        "decor.image",
+        "decor.rect",
+        "decor.text",
+        "signal.heat",
+        "signal.trend",
+        "signal.value"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.portrait-sensor-lab.mhd",
+      "sha256": "e0ef2eea1859d3ddd39c57042223afce07e2a356982b2cdb517687032aee13df",
+      "bytes": 76231,
+      "preview": "dashboards/previews/vincenzobuonomano.portrait-sensor-lab.png",
+      "previewSha256": "0d5690669e5f8ea85a09fbe0865996d7c82d0ca7eb8e44f9e5811ba219316a2d"
+    },
+    {
+      "id": "vincenzobuonomano.portrait-terminal",
+      "name": "Terminal",
+      "author": "vincenzobuonomano",
+      "description": "A green phosphor console: the speed as a huge readout under its command, the revs as an ASCII bar, ten key-value lines from gear to max speed, the next turn as the last line and a blinking cursor, under CRT scanlines. Without an OBD adapter the engine lines read n/a.",
+      "version": "1",
+      "kind": "minimal",
+      "tags": [
+        "terminal",
+        "nerd",
+        "portrait"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 1080,
+        "height": 1920
+      },
+      "orientations": [
+        "portrait"
+      ],
+      "requires": {
+        "obd": true,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "decor.clock",
+        "decor.image",
+        "decor.text",
+        "signal.bar",
+        "signal.lamp",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.portrait-terminal.mhd",
+      "sha256": "3f84e0c2da093568f69c6480d2b9ff4903830d60b229dc501dc382280c74282f",
+      "bytes": 136823,
+      "preview": "dashboards/previews/vincenzobuonomano.portrait-terminal.png",
+      "previewSha256": "6a1b6918ac65aa11c7e1b56c838a266618545319d5bd5e6ca7a591bacca0be6d"
     },
     {
       "id": "vincenzobuonomano.twin-arc",
