@@ -35,5 +35,13 @@
       "shift-lights",
       "obd"
     ]
+  },
+  "vincenzobuonomano.nouveau": {
+    "kind": "minimal",
+    "tags": [
+      "art-nouveau",
+      "colourful",
+      "no-map"
+    ]
   }
 }

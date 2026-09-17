@@ -150,6 +150,51 @@
       "previewSha256": "a1bcfd0dac68c9299c05660a01c37a919e571b8a163fae76298415f448a9f63e"
     },
     {
+      "id": "vincenzobuonomano.nouveau",
+      "name": "Nouveau",
+      "author": "vincenzobuonomano",
+      "description": "Minimal and cheerful, after Art Nouveau: the speed on a Mucha halo crowned by the revs and ringed with mosaic beads, whiplash tendrils ending in spirals, leaves and flowers all around, two flower medallions in laurel wreaths for gear and next turn. Coral, peacock, marigold and leaf on ivory; gold on aubergine at night. Without an OBD adapter it shows altitude, satellites and average speed instead.",
+      "version": "2",
+      "kind": "minimal",
+      "tags": [
+        "art-nouveau",
+        "colourful",
+        "no-map"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 1200,
+        "height": 720
+      },
+      "orientations": [
+        "landscape"
+      ],
+      "requires": {
+        "obd": true,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "decor.clock",
+        "decor.ellipse",
+        "decor.image",
+        "decor.rect",
+        "decor.text",
+        "nav.maneuverArrow",
+        "signal.arc",
+        "signal.gear",
+        "signal.value"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.nouveau.mhd",
+      "sha256": "20bfe1b3ac1f286b9342c550daa0742176509e8c7429f1a9414bf47a6963d482",
+      "bytes": 650335,
+      "preview": "dashboards/previews/vincenzobuonomano.nouveau.png",
+      "previewSha256": "2cba28403e361fcf1afb1aae8637ccd930564c3c86c5d645fb85258a7d4e58e5"
+    },
+    {
       "id": "vincenzobuonomano.red-flash-obd-pov",
       "name": "Red Flash OBD POV",
       "author": "vincenzobuonomano",
