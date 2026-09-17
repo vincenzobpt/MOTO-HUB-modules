@@ -195,6 +195,50 @@
       "previewSha256": "2cba28403e361fcf1afb1aae8637ccd930564c3c86c5d645fb85258a7d4e58e5"
     },
     {
+      "id": "vincenzobuonomano.potion-ride",
+      "name": "Potion Ride",
+      "author": "vincenzobuonomano",
+      "description": "A comic page in four panels, after the open webcomic Pepper&Carrot by David Revoy (CC-BY 4.0): the speed bursts with PUTT PUTT, WHOOSH, VROOM or ZOOM as you ride, engine, phone and throttle fill three potion flasks, a cat tells you the next turn (or the time), and the trip runs as captions. Original drawings; without an OBD adapter the potions for engine and throttle stay empty.",
+      "version": "1",
+      "kind": "minimal",
+      "tags": [
+        "comic",
+        "pepper-and-carrot",
+        "no-map"
+      ],
+      "featured": false,
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "engine": "obd",
+      "canvas": {
+        "width": 1200,
+        "height": 720
+      },
+      "orientations": [
+        "landscape"
+      ],
+      "requires": {
+        "obd": true,
+        "module": null,
+        "app": null
+      },
+      "elements": [
+        "decor.clock",
+        "decor.image",
+        "decor.text",
+        "nav.maneuverArrow",
+        "signal.bar",
+        "signal.gear",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/vincenzobuonomano.potion-ride.mhd",
+      "sha256": "d2ead5123247ecd267335e69610177b7cc3d425398f56f9532d9c159c69f2d1e",
+      "bytes": 736018,
+      "preview": "dashboards/previews/vincenzobuonomano.potion-ride.png",
+      "previewSha256": "0cebcb85632a6e34512db4c25e577ef55f0fcc505cf58509b343a5811434b50f"
+    },
+    {
       "id": "vincenzobuonomano.red-flash-obd-pov",
       "name": "Red Flash OBD POV",
       "author": "vincenzobuonomano",

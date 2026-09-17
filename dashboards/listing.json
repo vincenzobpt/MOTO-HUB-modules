@@ -43,5 +43,13 @@
       "colourful",
       "no-map"
     ]
+  },
+  "vincenzobuonomano.potion-ride": {
+    "kind": "minimal",
+    "tags": [
+      "comic",
+      "pepper-and-carrot",
+      "no-map"
+    ]
   }
 }
