@@ -151,8 +151,8 @@
       "id": "moto-hub-studio.map-widgets",
       "name": "3D POV & Widgets",
       "author": "moto-hub-studio",
-      "description": "Rider's-eye 3D view framed by two columns: speed and revs with gear and coolant on the left, navigation and weather on the right, compass, altitude and phone status taking turns below the gauges. Handlebar: UP/DOWN turn the widget carousel, SELECT zooms the map, double SELECT goes back to the previous dashboard.",
-      "version": "4",
+      "description": "The 3D rider's-eye view with widgets around it: a speed dial with gear, revs and coolant on the left, navigation and weather on the right, and a panel that turns between compass, altitude, phone status and trip. Without an OBD adapter the strip under the dial shows trip distance, average speed and altitude. On 2:1 and ultra-wide screens all the widgets share one turning panel on the right. Speeds, distances and altitude follow the rider's units. Layouts for 16:9, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN turn the widget panel, SELECT zooms the map, double SELECT goes back to the previous dashboard.",
+      "version": "5",
       "kind": "touring",
       "tags": [
         "3d",
@@ -173,38 +173,60 @@
           "height": 720,
           "orientation": "landscape",
           "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
         }
       ],
       "orientations": [
-        "landscape"
+        "landscape",
+        "portrait"
       ],
       "requires": {
-        "obd": true,
+        "obd": false,
         "module": null,
         "app": null
       },
       "usesObd": true,
       "elements": [
-        "chrome.header",
         "container.carousel",
-        "container.panel",
+        "decor.clock",
         "decor.line",
+        "decor.rect",
         "decor.text",
         "map.pov3d",
         "signal.arc",
         "signal.gear",
+        "signal.lamp",
+        "signal.text",
         "signal.value",
         "widget.altitude",
         "widget.battery",
         "widget.compass",
         "widget.navigation",
+        "widget.trip_metrics",
         "widget.weather"
       ],
       "path": "dashboards/files/moto-hub-studio.map-widgets.mhd",
-      "sha256": "f35920b887bd9e36f4d7607e2a5a750d5256b07e04d6fabfce2e0d0ae9e46696",
-      "bytes": 23893,
+      "sha256": "38b0a2f6911be36ddaf9a2727a47509219311ccf9eed367572771b05e1dc0a3e",
+      "bytes": 28607,
       "preview": "dashboards/previews/moto-hub-studio.map-widgets.png",
-      "previewSha256": "1c5d1ca24c9d2717f38725d7c5c8bbd04f4e615fdd4a38eed4e9aff8045cbd63"
+      "previewSha256": "ef32a95c59fd751fce1c04c4a030f8ed084372148f2ce08787341f8816a461e2"
     },
     {
       "id": "moto-hub-studio.portrait-aviator-hud",
@@ -385,8 +407,8 @@
       "id": "cyber.grid.v1",
       "name": "Cyber Grid",
       "author": "moto-hub-studio",
-      "description": "A high-contrast, cyberpunk-inspired dashboard with neon accents and a central focus on gear and speed. Handlebar: UP/DOWN (or a tap on a touch TFT) turn the navigation / media / trip panel, double SELECT goes back to the previous dashboard.",
-      "version": "3",
+      "description": "Cyberpunk neon on black: the speed in the middle of a rev arc with the gear above it, shift lights on top, engine temperature, voltage and throttle on the left, and a panel on the right that turns between navigation, music and trip. Without an OBD adapter the arc follows the speed, the gear box shows the heading and the left column reads the phone, altitude and satellites. Speeds, distances and altitude follow the rider's units. Layouts for 2:1, 16:9, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN (or a tap on a touch TFT) turn the right panel, double SELECT goes back to the previous dashboard.",
+      "version": "4",
       "kind": "ride",
       "tags": [
         "neon",
@@ -406,13 +428,32 @@
           "height": 384,
           "orientation": "landscape",
           "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
         }
       ],
       "orientations": [
-        "landscape"
+        "landscape",
+        "portrait"
       ],
       "requires": {
-        "obd": true,
+        "obd": false,
         "module": null,
         "app": null
       },
@@ -420,6 +461,7 @@
       "elements": [
         "chrome.atmosphere",
         "container.carousel",
+        "container.panel",
         "decor.clock",
         "decor.rect",
         "decor.text",
@@ -428,16 +470,17 @@
         "signal.bar",
         "signal.gear",
         "signal.leds",
+        "signal.text",
         "signal.value",
         "widget.navigation",
         "widget.now_playing",
         "widget.trip_metrics"
       ],
       "path": "dashboards/files/cyber.grid.v1.mhd",
-      "sha256": "ca01f37de22e0707a722ff334a6a0570ba87944e494c9d757809b99ebd610d95",
-      "bytes": 22353,
+      "sha256": "9d939182fd2740f301f2ee20cfdd6258a6a3f0a7cc33b0e1541a6aacecea0fdd",
+      "bytes": 33491,
       "preview": "dashboards/previews/cyber.grid.v1.png",
-      "previewSha256": "1f45d9ef8d101b21f64b0e20e5f33f092a1e0763cacd2b9ac3694aa82f88c3c9"
+      "previewSha256": "dc4f9ee2c34b8bcaf493abae3b6ed43f9792ea5de4caef3dfca8b16baecee0a6"
     },
     {
       "id": "moto-hub-studio.portrait-explorer",
@@ -564,8 +607,8 @@
       "id": "moto-hub-studio.ai-copilot",
       "name": "MOTO-HUB AI Co-Pilot",
       "author": "moto-hub-studio",
-      "description": "MOTO-HUB AI Co-Pilot intelligent digital dashboard with real-time telemetry, neon HUD aesthetic, and dynamic navigation. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
-      "version": "3",
+      "description": "A neon HUD in three columns: speed, gear and engine readings on the left, a rev dial with shift lights, throttle and a live rev trace in the middle, navigation on the right above a panel that turns between music, trip and weather. Without an OBD adapter the dial follows the speed around the trip distance, the trace follows the speed, and the left column shows heading, altitude, acceleration and outside temperature. Speeds, distances and altitude follow the rider's units. Layouts for 16:9, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN turn the right panel, double SELECT goes back to the previous dashboard.",
+      "version": "4",
       "kind": "engine",
       "tags": [
         "hud",
@@ -585,18 +628,38 @@
           "height": 720,
           "orientation": "landscape",
           "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
         }
       ],
       "orientations": [
-        "landscape"
+        "landscape",
+        "portrait"
       ],
       "requires": {
-        "obd": true,
+        "obd": false,
         "module": null,
         "app": null
       },
       "usesObd": true,
       "elements": [
+        "container.carousel",
         "decor.clock",
         "decor.line",
         "decor.rect",
@@ -606,17 +669,19 @@
         "signal.gear",
         "signal.lamp",
         "signal.leds",
+        "signal.text",
         "signal.trend",
         "signal.value",
-        "widget.compass",
         "widget.navigation",
-        "widget.now_playing"
+        "widget.now_playing",
+        "widget.trip_metrics",
+        "widget.weather"
       ],
       "path": "dashboards/files/moto-hub-studio.ai-copilot.mhd",
-      "sha256": "341fe13b1aaff868ecdf53ca911ab88b99977352c333ef5b324e34cad1cef7aa",
-      "bytes": 34142,
+      "sha256": "df9e2bd06dba8b9ffaddd97d452ab41ee77b67ac29e5bbac7251853c18282b92",
+      "bytes": 37883,
       "preview": "dashboards/previews/moto-hub-studio.ai-copilot.png",
-      "previewSha256": "93eb7ac6167b56e38695d0f736c7168b6a5bb6d2c9995a34e9c2c37e4e407dfc"
+      "previewSha256": "441b552fa42a5e56eda03431bc5c0d731457f877c85d69c180d80034f7ded124"
     },
     {
       "id": "moto-hub-studio.my-bike",
@@ -1123,8 +1188,8 @@
       "id": "moto-hub-studio.red-flash-obd-pov",
       "name": "Red Flash OBD POV",
       "author": "moto-hub-studio",
-      "description": "Dark OBD dashboard with 3D POV map background and red flashing theme. Handlebar: UP/DOWN switch dashboard, double SELECT goes back, SELECT zooms the map.",
-      "version": "3",
+      "description": "The 3D rider's-eye view fills the screen, with two dark red panels at the sides: speed, gear and a rev column on the left, coolant, throttle, battery voltage and trip on the right, shift lights on top. Past 9000 rpm the top and bottom edges flash red. Without an OBD adapter the left panel shows average and top speed and the right one altitude, heading and phone battery. Speeds, distances and altitude follow the rider's units. Layouts for 16:9, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN switch dashboard, SELECT zooms the map, double SELECT goes back.",
+      "version": "4",
       "kind": "engine",
       "tags": [
         "3d",
@@ -1144,13 +1209,32 @@
           "height": 720,
           "orientation": "landscape",
           "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
         }
       ],
       "orientations": [
-        "landscape"
+        "landscape",
+        "portrait"
       ],
       "requires": {
-        "obd": true,
+        "obd": false,
         "module": null,
         "app": null
       },
@@ -1164,14 +1248,14 @@
         "signal.gear",
         "signal.lamp",
         "signal.leds",
-        "signal.trend",
+        "signal.text",
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.red-flash-obd-pov.mhd",
-      "sha256": "83d8f3da0e0b85e72fcf8838aebf4d8049dde7721f06375080741b283fd19308",
-      "bytes": 32783,
+      "sha256": "4ab99b494bc94f2e235b0ddfcc49663ecefbce341628a5a9f513b507615de4d5",
+      "bytes": 36259,
       "preview": "dashboards/previews/moto-hub-studio.red-flash-obd-pov.png",
-      "previewSha256": "80ede6919b66f42aa3f82e3d4f2fcf452fcd9d75fbc142e9402c6dba919f1fa8"
+      "previewSha256": "57def552f6e84bb39137ea02fbb6c1e9e87ef0ab835165d27b78c92f01ed7f82"
     },
     {
       "id": "moto-hub-studio.portrait-retro-arcade",
@@ -1534,8 +1618,8 @@
       "id": "moto-hub-studio.twin-arc",
       "name": "Twin Arc",
       "author": "moto-hub-studio",
-      "description": "Two half-moon arcs close the screen: speed in orange on the left, revs in teal on the right with shift lights under a framed dark map. The riding mode reads CITY, CRUISE or SPORT from what the bike is doing. Handlebar: UP/DOWN switch dashboard, double SELECT goes back, SELECT zooms the map.",
-      "version": "2",
+      "description": "Two half-moon arcs close the screen around a framed map: speed in orange on the left, revs in teal on the right with shift lights under the map, and CITY, CRUISE or SPORT read from how you are riding. Without an OBD adapter the right arc becomes the altitude, the gear box shows the heading and the bars read the phone's battery and temperature. Speeds, distances and altitude follow the rider's units. Layouts for 16:9, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN switch dashboard, SELECT zooms the map, double SELECT goes back.",
+      "version": "3",
       "kind": "ride",
       "tags": [
         "sport",
@@ -1556,19 +1640,37 @@
           "height": 720,
           "orientation": "landscape",
           "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
         }
       ],
       "orientations": [
-        "landscape"
+        "landscape",
+        "portrait"
       ],
       "requires": {
-        "obd": true,
+        "obd": false,
         "module": null,
         "app": null
       },
       "usesObd": true,
       "elements": [
-        "container.group",
         "decor.clock",
         "decor.line",
         "decor.rect",
@@ -1581,13 +1683,14 @@
         "signal.gear",
         "signal.lamp",
         "signal.leds",
+        "signal.text",
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.twin-arc.mhd",
-      "sha256": "e21a1e3c641f0f6d0b7f71222b2755d15d08a3e2067b3b1ce161b09e260c4406",
-      "bytes": 35179,
+      "sha256": "a9c1039805b0ca9626712d2f0a05d4bc267dc71ea1b28f48eaeaebce9e1dc120",
+      "bytes": 42621,
       "preview": "dashboards/previews/moto-hub-studio.twin-arc.png",
-      "previewSha256": "4f58ea702e47ff1c8f2ca4019cccc8a22b5fbf1571dda46da7e35156d2fd542f"
+      "previewSha256": "a519e21ffa00b55f1f96aba72606eecc201ef4ba9c8912f4cf19ac6010258425"
     }
   ]
 }
