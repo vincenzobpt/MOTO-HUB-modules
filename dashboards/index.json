@@ -73,8 +73,8 @@
       "id": "moto-hub-studio.wow-3d-ride",
       "name": "WOW 3D Ride",
       "author": "moto-hub-studio",
-      "description": "The rider's-eye 3D view with the road ahead left clear, and a start-up that feels like a cockpit coming alive: the side columns fly in from the screen edges, numbers pop into place, warning lamps drop in and a lean horizon locks on over the road. The horizon tilts with the lean angle from the phone's sensors (mount the phone firmly, park upright and press SELECT to level it) and shows the maximum each side. Speed in your km/h or mph and the gear on the left, next turn and ETA on the right (clock and altitude without a route), revs along the bottom. Near a turn a big arrow drops down over the road; at high revs the column edges flash as a shift light. Works without an OBD adapter: trip distance replaces the gear and the rev strip hides. Wide, ultra-wide 1280x480, 16:9 and portrait.",
-      "version": "4",
+      "description": "The rider's-eye 3D view with the road ahead left clear, and a start-up that feels like a cockpit coming alive: the side columns fly in from the screen edges, numbers pop into place, warning lamps drop in and a lean horizon locks on over the road. The horizon tilts with the lean angle from the phone's sensors (mount the phone firmly, park upright and press SELECT to level it) and shows the maximum each side. Speed in your km/h or mph and the gear on the left, next turn and ETA on the right (clock and altitude without a route), revs along the bottom. Near a turn a big arrow drops down over the road; at high revs the column edges flash as a shift light. Works without an OBD adapter: trip distance replaces the gear and the rev strip hides. Wide, ultra-wide 1280x480, 16:9 and portrait. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
+      "version": "5",
       "kind": "ride",
       "tags": [
         "3d",
@@ -142,8 +142,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.wow-3d-ride.mhd",
-      "sha256": "fef0b9948791835173100c52b9d75cfcbedb1e5c12881c1816d1be26bebb7c6f",
-      "bytes": 32932,
+      "sha256": "dc6d90c844ab55587824c9ecf9ddfef231cafb5f7e9deafee320379fbc04fb7c",
+      "bytes": 33016,
       "preview": "dashboards/previews/moto-hub-studio.wow-3d-ride.png",
       "previewSha256": "b48ebd9b65d7a03e9cd757ad560455ac43d1969951d2ea65a876492bae0ff1bb"
     },
@@ -151,8 +151,8 @@
       "id": "moto-hub-studio.map-widgets",
       "name": "3D POV & Widgets",
       "author": "moto-hub-studio",
-      "description": "Rider's-eye 3D view framed by two columns: speed and revs with gear and coolant on the left, navigation and weather on the right, compass, altitude and phone status taking turns below the gauges.",
-      "version": "3",
+      "description": "Rider's-eye 3D view framed by two columns: speed and revs with gear and coolant on the left, navigation and weather on the right, compass, altitude and phone status taking turns below the gauges. Handlebar: UP/DOWN turn the widget carousel, SELECT zooms the map, double SELECT goes back to the previous dashboard.",
+      "version": "4",
       "kind": "touring",
       "tags": [
         "3d",
@@ -201,8 +201,8 @@
         "widget.weather"
       ],
       "path": "dashboards/files/moto-hub-studio.map-widgets.mhd",
-      "sha256": "22e0181376312e8c3e2c5356b398b025d0e822e3129a0003975773c987f36fc0",
-      "bytes": 23816,
+      "sha256": "f35920b887bd9e36f4d7607e2a5a750d5256b07e04d6fabfce2e0d0ae9e46696",
+      "bytes": 23893,
       "preview": "dashboards/previews/moto-hub-studio.map-widgets.png",
       "previewSha256": "1c5d1ca24c9d2717f38725d7c5c8bbd04f4e615fdd4a38eed4e9aff8045cbd63"
     },
@@ -210,8 +210,8 @@
       "id": "moto-hub-studio.portrait-aviator-hud",
       "name": "Aviator HUD",
       "author": "moto-hub-studio",
-      "description": "A fighter-style head-up display over the 3D rider's-eye view: heading tape on top, speed and altitude tapes on the sides, a pitch ladder and flight-path marker in the middle, acceleration and vertical speed, the next turn card and a bracketed engine and trip row, all in HUD green.",
-      "version": "1",
+      "description": "A fighter-style head-up display over the 3D rider's-eye view: heading tape on top, speed and altitude tapes on the sides, a pitch ladder and flight-path marker in the middle, acceleration and vertical speed, the next turn card and a bracketed engine and trip row, all in HUD green. Handlebar: UP/DOWN switch dashboard, double SELECT goes back, SELECT zooms the map.",
+      "version": "2",
       "kind": "touring",
       "tags": [
         "hud",
@@ -256,8 +256,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.portrait-aviator-hud.mhd",
-      "sha256": "4994cb0dca3a5193dd50c27d2c696637f7e612d30487ae52cc14a74ff288e42c",
-      "bytes": 63738,
+      "sha256": "c472022e3ceacffaf127abb2a58773337af56ad36e3b7b9e03e2108e05aedcd3",
+      "bytes": 63869,
       "preview": "dashboards/previews/moto-hub-studio.portrait-aviator-hud.png",
       "previewSha256": "97ef1289916c5ac64f4d38f71845ec26bc08b3428b41c87844791618b9bf4295"
     },
@@ -265,8 +265,8 @@
       "id": "moto-hub-studio.big-and-bold",
       "name": "Big & Bold",
       "author": "moto-hub-studio",
-      "description": "Three huge numbers and nothing else, for reading at arm's length or through glasses: speed in your km/h or mph, the gear (or the trip distance when no OBD adapter is connected) and the time. White on black in the B612 cockpit typeface, with yellow labels. Landscape and portrait. Also laid out for ultra-wide 1280x480 screens.",
-      "version": "2",
+      "description": "Three huge numbers and nothing else, for reading at arm's length or through glasses: speed in your km/h or mph, the gear (or the trip distance when no OBD adapter is connected) and the time. White on black in the B612 cockpit typeface, with yellow labels. Landscape and portrait. Also laid out for ultra-wide 1280x480 screens. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
+      "version": "3",
       "kind": "minimal",
       "tags": [
         "accessibility",
@@ -322,8 +322,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.big-and-bold.mhd",
-      "sha256": "e5c0413a028e4a8cdd076f56db5abb83d9cafe14e6e18446cb4be274b9cd3c9a",
-      "bytes": 23064,
+      "sha256": "4e5583bdfb6af465f31204edccce261c940db3690c676a78283f9fc2d9e287d3",
+      "bytes": 23173,
       "preview": "dashboards/previews/moto-hub-studio.big-and-bold.png",
       "previewSha256": "1ad1c89a7b0f43a2064228cb685eb42ec1f6962664dd603e5c4268194aa0a4d5"
     },
@@ -331,8 +331,8 @@
       "id": "moto-hub-studio.portrait-blueprint",
       "name": "Blueprint",
       "author": "moto-hub-studio",
-      "description": "An engineering drawing that measures the ride: velocity as a needle on an 800 mm dial, engine revs and coolant as two smaller figures, gear in a detail box, and the route in a mini map, on blueprint paper with a title block. Without OBD, figure 2 shows altitude and phone battery.",
-      "version": "2",
+      "description": "An engineering drawing that measures the ride: velocity as a needle on an 800 mm dial, engine revs and coolant as two smaller figures, gear in a detail box, and the route in a mini map, on blueprint paper with a title block. Without OBD, figure 2 shows altitude and phone battery. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
+      "version": "3",
       "kind": "minimal",
       "tags": [
         "blueprint",
@@ -376,8 +376,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.portrait-blueprint.mhd",
-      "sha256": "59aee2cca3ad5fece8f08cf5b793011fa22e530b101a4685239cf2a9d7517abd",
-      "bytes": 79835,
+      "sha256": "b880f398334d64ffaace3862af3cc4203818bb4010b4a54c9283d580fc332f8d",
+      "bytes": 79940,
       "preview": "dashboards/previews/moto-hub-studio.portrait-blueprint.png",
       "previewSha256": "c39901f74bd7ab349ff53125fe4b462c27d2d187454646cf4d484b1414aeb60d"
     },
@@ -385,8 +385,8 @@
       "id": "cyber.grid.v1",
       "name": "Cyber Grid",
       "author": "moto-hub-studio",
-      "description": "A high-contrast, cyberpunk-inspired dashboard with neon accents and a central focus on gear and speed.",
-      "version": "2",
+      "description": "A high-contrast, cyberpunk-inspired dashboard with neon accents and a central focus on gear and speed. Handlebar: UP/DOWN (or a tap on a touch TFT) turn the navigation / media / trip panel, double SELECT goes back to the previous dashboard.",
+      "version": "3",
       "kind": "ride",
       "tags": [
         "neon",
@@ -434,8 +434,8 @@
         "widget.trip_metrics"
       ],
       "path": "dashboards/files/cyber.grid.v1.mhd",
-      "sha256": "459c1c7e69c3ba5832ed42132d41cbee0b522e34a818a3475b73c2e9ba5548f7",
-      "bytes": 22225,
+      "sha256": "ca01f37de22e0707a722ff334a6a0570ba87944e494c9d757809b99ebd610d95",
+      "bytes": 22353,
       "preview": "dashboards/previews/cyber.grid.v1.png",
       "previewSha256": "1f45d9ef8d101b21f64b0e20e5f33f092a1e0763cacd2b9ac3694aa82f88c3c9"
     },
@@ -443,8 +443,8 @@
       "id": "moto-hub-studio.portrait-explorer",
       "name": "Explorer",
       "author": "moto-hub-studio",
-      "description": "An adventure map on a topographic sheet: a big framed map with turn banners, a heading tape like a bearing compass, speed and altitude cards, the elevation profile of the route (or the last ten minutes of climb), and sunset and weather for deciding how far to push.",
-      "version": "1",
+      "description": "An adventure map on a topographic sheet: a big framed map with turn banners, a heading tape like a bearing compass, speed and altitude cards, the elevation profile of the route (or the last ten minutes of climb), and sunset and weather for deciding how far to push. Handlebar: UP/DOWN switch dashboard, double SELECT goes back, SELECT zooms the map.",
+      "version": "2",
       "kind": "touring",
       "tags": [
         "adventure",
@@ -489,8 +489,8 @@
         "widget.weather"
       ],
       "path": "dashboards/files/moto-hub-studio.portrait-explorer.mhd",
-      "sha256": "edfcf863e5be748eca016d3df7d45289cdeae8f52f6d491a07c0e1a911ca6ae8",
-      "bytes": 137665,
+      "sha256": "869bba26da3d51cf9f10a9b86347cd6ccdba8e9b3935fe0cfc4cd1489a2bb2e2",
+      "bytes": 137787,
       "preview": "dashboards/previews/moto-hub-studio.portrait-explorer.png",
       "previewSha256": "0954e3ae7836eb616c41bceed1da2839cdd6d3f7ffde99a701eab63647d18c6e"
     },
@@ -498,8 +498,8 @@
       "id": "moto-hub-studio.portrait-mission-control",
       "name": "Mission Control",
       "author": "moto-hub-studio",
-      "description": "Ground-station telemetry for the road: status lamps for GPS, OBD link, route and check-engine, speed and altitude tapes either side of ground speed and heading, two live traces, and eight numbered cells with trip, engine and GPS quality. Tall portrait, near-square portrait and 4:3 landscape layouts; speeds, distances and altitude follow the rider's units.",
-      "version": "2",
+      "description": "Ground-station telemetry for the road: status lamps for GPS, OBD link, route and check-engine, speed and altitude tapes either side of ground speed and heading, two live traces, and eight numbered cells with trip, engine and GPS quality. Tall portrait, near-square portrait and 4:3 landscape layouts; speeds, distances and altitude follow the rider's units. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
+      "version": "3",
       "kind": "engine",
       "tags": [
         "telemetry",
@@ -555,8 +555,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.portrait-mission-control.mhd",
-      "sha256": "f438a663d2394752185cc366b3072680c30b45dcac1133732e7d55bd1e7f95a8",
-      "bytes": 73013,
+      "sha256": "81edb70dab14e42982c8f7be6f47ce25994d671c0443a99c823d1cbe1be92050",
+      "bytes": 73131,
       "preview": "dashboards/previews/moto-hub-studio.portrait-mission-control.png",
       "previewSha256": "13234582b2c66d5546c6702d189bb505816ee9df3598e70d6956ff106e20e371"
     },
@@ -564,8 +564,8 @@
       "id": "moto-hub-studio.ai-copilot",
       "name": "MOTO-HUB AI Co-Pilot",
       "author": "moto-hub-studio",
-      "description": "MOTO-HUB AI Co-Pilot intelligent digital dashboard with real-time telemetry, neon HUD aesthetic, and dynamic navigation.",
-      "version": "2",
+      "description": "MOTO-HUB AI Co-Pilot intelligent digital dashboard with real-time telemetry, neon HUD aesthetic, and dynamic navigation. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
+      "version": "3",
       "kind": "engine",
       "tags": [
         "hud",
@@ -613,8 +613,8 @@
         "widget.now_playing"
       ],
       "path": "dashboards/files/moto-hub-studio.ai-copilot.mhd",
-      "sha256": "55cd34aaac626025f81a7d0c7e0291119ec923182bfb9e20cacfca09fedf41f6",
-      "bytes": 34041,
+      "sha256": "341fe13b1aaff868ecdf53ca911ab88b99977352c333ef5b324e34cad1cef7aa",
+      "bytes": 34142,
       "preview": "dashboards/previews/moto-hub-studio.ai-copilot.png",
       "previewSha256": "93eb7ac6167b56e38695d0f736c7168b6a5bb6d2c9995a34e9c2c37e4e407dfc"
     },
@@ -622,8 +622,8 @@
       "id": "moto-hub-studio.my-bike",
       "name": "My Bike",
       "author": "moto-hub-studio",
-      "description": "Your own motorcycle as the background: pick a photo on the phone (Dashboards, My Bike, Set photo) and it stays on your phone, never in the file. Speed, gear and trip distance and top speed sit on see-through panels that stay readable over any picture. Without an OBD adapter the gear panel shows your average speed. Landscape and portrait.",
-      "version": "1",
+      "description": "Your own motorcycle as the background: pick a photo on the phone (Dashboards, My Bike, Set photo) and it stays on your phone, never in the file. Speed, gear and trip distance and top speed sit on see-through panels that stay readable over any picture. Without an OBD adapter the gear panel shows your average speed. Landscape and portrait. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
+      "version": "2",
       "kind": "ride",
       "tags": [
         "photo",
@@ -675,8 +675,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.my-bike.mhd",
-      "sha256": "c4edd6bf8502f44408d246283ae7f65b4bfbf854a48a90fa08589cd54b44145a",
-      "bytes": 32226,
+      "sha256": "e90ac1f9cebcfce9e565047411ab5839299a7333e9dbb7a84817027f69614a45",
+      "bytes": 32335,
       "preview": "dashboards/previews/moto-hub-studio.my-bike.png",
       "previewSha256": "86616db97af21005f8dbc84d343beb0bc910f3e5d5aab17582a95bbdc2ea284e"
     },
@@ -684,8 +684,8 @@
       "id": "moto-hub-studio.portrait-neon-grid",
       "name": "Neon Grid",
       "author": "moto-hub-studio",
-      "description": "Synthwave night drive: the speed rises over a striped sunset sun ringed by the revs, a neon-framed map floats over the perspective grid, and six glowing tiles hold gear, engine, throttle and the trip. Tall portrait, near-square portrait and 4:3 landscape layouts; speeds and distances follow the rider's km or miles.",
-      "version": "2",
+      "description": "Synthwave night drive: the speed rises over a striped sunset sun ringed by the revs, a neon-framed map floats over the perspective grid, and six glowing tiles hold gear, engine, throttle and the trip. Tall portrait, near-square portrait and 4:3 landscape layouts; speeds and distances follow the rider's km or miles. Handlebar: UP/DOWN switch dashboard, double SELECT goes back, SELECT zooms the map.",
+      "version": "3",
       "kind": "ride",
       "tags": [
         "synthwave",
@@ -744,8 +744,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.portrait-neon-grid.mhd",
-      "sha256": "4de3e6118e095f8e08af3e3dc2c9d4e34dacbe472818806c060a672daa3fff6c",
-      "bytes": 392087,
+      "sha256": "c9b46185fb1653ee887f75d578dd89eae69446e1fdff302684fc80465dd67501",
+      "bytes": 392225,
       "preview": "dashboards/previews/moto-hub-studio.portrait-neon-grid.png",
       "previewSha256": "c7bff629d441ce9193f0627cc2458d0a355f64682c65ba46d8e3b478457f0c64"
     },
@@ -753,8 +753,8 @@
       "id": "moto-hub-studio.night-ride",
       "name": "Night Ride",
       "author": "moto-hub-studio",
-      "description": "For riding in the dark: a huge speed in your km/h or mph, the gear beside it, and the next turn only when a route is running. Warm amber by day, dim red at night so it never dazzles; no map, no clutter. Works without an OBD adapter (the clock takes the gear's place); with one you also get the gear and a hot-engine or check-engine lamp that appears only when needed. Landscape and portrait. Also laid out for ultra-wide 1280x480 screens.",
-      "version": "2",
+      "description": "For riding in the dark: a huge speed in your km/h or mph, the gear beside it, and the next turn only when a route is running. Warm amber by day, dim red at night so it never dazzles; no map, no clutter. Works without an OBD adapter (the clock takes the gear's place); with one you also get the gear and a hot-engine or check-engine lamp that appears only when needed. Landscape and portrait. Also laid out for ultra-wide 1280x480 screens. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
+      "version": "3",
       "kind": "minimal",
       "tags": [
         "night",
@@ -811,8 +811,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.night-ride.mhd",
-      "sha256": "9f834b635dd76db805a43a255e8743221ad4b3d443f35a203e10ae66c42b2642",
-      "bytes": 20481,
+      "sha256": "f36e3596f46b29259c7adc3d602e35778a51b1f6fb48f02065491b9eddf16e24",
+      "bytes": 20590,
       "preview": "dashboards/previews/moto-hub-studio.night-ride.png",
       "previewSha256": "606ce324e27910102c2caccbacfcce14900b2f89e15a1b9ef035621f79152e3e"
     },
@@ -820,8 +820,8 @@
       "id": "moto-hub-studio.portrait-noir",
       "name": "Noir",
       "author": "moto-hub-studio",
-      "description": "A black-and-white detective film: blinds cast their shadows through the rain, the hour opens the chapter, the speed is the line everyone remembers, underlined in red, and the engine, the trip and the next turn are told as narration.",
-      "version": "1",
+      "description": "A black-and-white detective film: blinds cast their shadows through the rain, the hour opens the chapter, the speed is the line everyone remembers, underlined in red, and the engine, the trip and the next turn are told as narration. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
+      "version": "2",
       "kind": "minimal",
       "tags": [
         "noir",
@@ -862,8 +862,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.portrait-noir.mhd",
-      "sha256": "ff0f6906a2ccac649772ec9d2a954e0fcef1f0e80c551373fbd951bf22ed08eb",
-      "bytes": 343750,
+      "sha256": "9e54a818004de88d03fbf43bf6eb85ec776eff502af40fac7212a0e610a68d57",
+      "bytes": 343853,
       "preview": "dashboards/previews/moto-hub-studio.portrait-noir.png",
       "previewSha256": "73ad70239fdc39481d4537015309dc8347e9c20ba2e8e83f3b6815bd48b4b949"
     },
@@ -871,8 +871,8 @@
       "id": "moto-hub-studio.nouveau",
       "name": "Nouveau",
       "author": "moto-hub-studio",
-      "description": "Minimal and cheerful, after Art Nouveau: the speed on a Mucha halo crowned by the revs and ringed with mosaic beads, whiplash tendrils ending in spirals, leaves and flowers all around, two flower medallions for gear and next turn. Coral, peacock, marigold and leaf on ivory; gold on aubergine at night. Layouts for 5:3, 4:3, 2:1 and ultra-wide 1280x480 landscape and near-square portrait; speeds and distances follow the rider's units. Without an OBD adapter it shows altitude, satellites and average speed instead.",
-      "version": "4",
+      "description": "Minimal and cheerful, after Art Nouveau: the speed on a Mucha halo crowned by the revs and ringed with mosaic beads, whiplash tendrils ending in spirals, leaves and flowers all around, two flower medallions for gear and next turn. Coral, peacock, marigold and leaf on ivory; gold on aubergine at night. Layouts for 5:3, 4:3, 2:1 and ultra-wide 1280x480 landscape and near-square portrait; speeds and distances follow the rider's units. Without an OBD adapter it shows altitude, satellites and average speed instead. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
+      "version": "5",
       "kind": "minimal",
       "tags": [
         "art-nouveau",
@@ -942,8 +942,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.nouveau.mhd",
-      "sha256": "2bf06b8de6dffcbaf7ad814cfbf36ca5ae801c8f53fdb192c6b4f5308162d42d",
-      "bytes": 1655133,
+      "sha256": "481c05eac601c4af3488514aec3c51a722d4ea49d81932171705805f5bebc94f",
+      "bytes": 1655255,
       "preview": "dashboards/previews/moto-hub-studio.nouveau.png",
       "previewSha256": "3f4848fb217bdabe2a718119f11e4961a54da67020d3cdc025207da17fc1fc79"
     },
@@ -951,8 +951,8 @@
       "id": "moto-hub-studio.portrait-obd-garage",
       "name": "OBD Garage",
       "author": "moto-hub-studio",
-      "description": "The workshop's diagnostic screen: link and check-engine lamps with the fault-code count, a big rev dial with gear and ECU speed, load, absolute load and throttle bars, fuel trims centred on zero, two oxygen sensor traces and five readings from manifold pressure to coolant. For riders with an ELM327 adapter.",
-      "version": "2",
+      "description": "The workshop's diagnostic screen: link and check-engine lamps with the fault-code count, a big rev dial with gear and ECU speed, load, absolute load and throttle bars, fuel trims centred on zero, two oxygen sensor traces and five readings from manifold pressure to coolant. For riders with an ELM327 adapter. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
+      "version": "3",
       "kind": "engine",
       "tags": [
         "obd",
@@ -997,8 +997,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.portrait-obd-garage.mhd",
-      "sha256": "8e333d5cfea0e3f02c2e52e6c244ed9b9b17c5222e4770f5f5b8ae689bec49a2",
-      "bytes": 138075,
+      "sha256": "e81565854b1398d7f27c7a5d9b47a576c9799268042eee7963b03f0e46a24551",
+      "bytes": 138181,
       "preview": "dashboards/previews/moto-hub-studio.portrait-obd-garage.png",
       "previewSha256": "1c5792718e1555cf447e4151d09fc53b5bc94bea4cc7db83fad78fedbdf071de"
     },
@@ -1006,8 +1006,8 @@
       "id": "moto-hub-studio.offroad",
       "name": "Offroad",
       "author": "moto-hub-studio",
-      "description": "For trails and dirt: lean and pitch inclinometers from the phone's sensors with the session's maximum lean, a heading tape and a compass, speed and altitude in your own units, and the satellite count. Park upright on flat ground and press SELECT on the handlebar to zero lean and pitch. No OBD adapter needed. Landscape and portrait.",
-      "version": "1",
+      "description": "For trails and dirt: lean and pitch inclinometers from the phone's sensors with the session's maximum lean, a heading tape and a compass, speed and altitude in your own units, and the satellite count. Park upright on flat ground and press SELECT on the handlebar to zero lean and pitch. No OBD adapter needed. Landscape and portrait. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
+      "version": "2",
       "kind": "ride",
       "tags": [
         "offroad",
@@ -1061,8 +1061,8 @@
         "widget.compass"
       ],
       "path": "dashboards/files/moto-hub-studio.offroad.mhd",
-      "sha256": "4474e76d94fcc5429d99300ae166aad595369de4173936c5b5f3278eaefd6639",
-      "bytes": 37589,
+      "sha256": "388543e26df681b4fb2e43f6e07d11208ee43ccfdb57810af53afaa08e7bf58d",
+      "bytes": 37662,
       "preview": "dashboards/previews/moto-hub-studio.offroad.png",
       "previewSha256": "7abdc60f51f00c1af9f5989c361ba5d15513848bf633f48ccccce4bc8202e03c"
     },
@@ -1070,8 +1070,8 @@
       "id": "moto-hub-studio.potion-ride",
       "name": "Potion Ride",
       "author": "moto-hub-studio",
-      "description": "A comic page in four panels, after the open webcomic Pepper&Carrot by David Revoy (CC-BY 4.0): the speed bursts with PUTT PUTT, WHOOSH, VROOM or ZOOM as you ride, engine, phone and throttle fill three potion flasks, a cat tells you the next turn (or the time), and the trip runs as captions. Original drawings; without an OBD adapter the potions for engine and throttle stay empty.",
-      "version": "1",
+      "description": "A comic page in four panels, after the open webcomic Pepper&Carrot by David Revoy (CC-BY 4.0): the speed bursts with PUTT PUTT, WHOOSH, VROOM or ZOOM as you ride, engine, phone and throttle fill three potion flasks, a cat tells you the next turn (or the time), and the trip runs as captions. Original drawings; without an OBD adapter the potions for engine and throttle stay empty. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
+      "version": "2",
       "kind": "minimal",
       "tags": [
         "comic",
@@ -1114,8 +1114,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.potion-ride.mhd",
-      "sha256": "6094adf2f51fe09dacd8d1fd3c71a4920a625d675b3c36f6ac2aa0fa4cf89f7b",
-      "bytes": 736017,
+      "sha256": "df4cc7d8e44892d5c488bdf3c4ae9ce83f6f636b1464186e59b81e6a63a04fb5",
+      "bytes": 736124,
       "preview": "dashboards/previews/moto-hub-studio.potion-ride.png",
       "previewSha256": "0cebcb85632a6e34512db4c25e577ef55f0fcc505cf58509b343a5811434b50f"
     },
@@ -1123,8 +1123,8 @@
       "id": "moto-hub-studio.red-flash-obd-pov",
       "name": "Red Flash OBD POV",
       "author": "moto-hub-studio",
-      "description": "Dark OBD dashboard with 3D POV map background and red flashing theme.",
-      "version": "2",
+      "description": "Dark OBD dashboard with 3D POV map background and red flashing theme. Handlebar: UP/DOWN switch dashboard, double SELECT goes back, SELECT zooms the map.",
+      "version": "3",
       "kind": "engine",
       "tags": [
         "3d",
@@ -1168,8 +1168,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.red-flash-obd-pov.mhd",
-      "sha256": "63da696cc289f74efe013c6ab33f0d2adc926a02e0ac8c2ecdca3a0d1caa284b",
-      "bytes": 32665,
+      "sha256": "83d8f3da0e0b85e72fcf8838aebf4d8049dde7721f06375080741b283fd19308",
+      "bytes": 32783,
       "preview": "dashboards/previews/moto-hub-studio.red-flash-obd-pov.png",
       "previewSha256": "80ede6919b66f42aa3f82e3d4f2fcf452fcd9d75fbc142e9402c6dba919f1fa8"
     },
@@ -1177,8 +1177,8 @@
       "id": "moto-hub-studio.portrait-retro-arcade",
       "name": "Retro Arcade",
       "author": "moto-hub-studio",
-      "description": "An 8-bit cabinet: 1UP is your trip, HI-SCORE your top speed, the speed in giant yellow digits, a POWER bar from the throttle, gear and revs, LEVEL is the altitude and a pixel-framed mini map, under a pixel border with hearts and coins. No GPS fix? INSERT COIN blinks.",
-      "version": "1",
+      "description": "An 8-bit cabinet: 1UP is your trip, HI-SCORE your top speed, the speed in giant yellow digits, a POWER bar from the throttle, gear and revs, LEVEL is the altitude and a pixel-framed mini map, under a pixel border with hearts and coins. No GPS fix? INSERT COIN blinks. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
+      "version": "2",
       "kind": "minimal",
       "tags": [
         "arcade",
@@ -1222,8 +1222,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.portrait-retro-arcade.mhd",
-      "sha256": "3f3ed4bf9a852633fd17e1d702896f78a2c7fa8b214bec07dd20dbb47a03b609",
-      "bytes": 42954,
+      "sha256": "a09f4bfd27bdde5cc99ce77d15643bf4a2e8994f860f329b05dcbfdbda395f1a",
+      "bytes": 43054,
       "preview": "dashboards/previews/moto-hub-studio.portrait-retro-arcade.png",
       "previewSha256": "7bd47e7e91531d86c867c310c397bb373a4bccf5fa3b65f6f3ae83190367775e"
     },
@@ -1231,8 +1231,8 @@
       "id": "moto-hub-studio.portrait-sensor-lab",
       "name": "Sensor Lab",
       "author": "moto-hub-studio",
-      "description": "The phone as a lab bench: four oscilloscope channels trace acceleration, air pressure, vertical speed and speed on a graticule, a thermal strip keeps ten minutes of battery temperature, and six cells read satellites, GPS accuracy, peak acceleration, Wi-Fi, altitude and heading. Needs no adapter.",
-      "version": "1",
+      "description": "The phone as a lab bench: four oscilloscope channels trace acceleration, air pressure, vertical speed and speed on a graticule, a thermal strip keeps ten minutes of battery temperature, and six cells read satellites, GPS accuracy, peak acceleration, Wi-Fi, altitude and heading. Needs no adapter. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
+      "version": "2",
       "kind": "engine",
       "tags": [
         "sensors",
@@ -1274,8 +1274,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.portrait-sensor-lab.mhd",
-      "sha256": "0ae638b3f9cdb441eaaf0d938c9a61895013853de3a8720db2b3b5cb9cb84926",
-      "bytes": 76227,
+      "sha256": "826c981c4b67c4ee28a17855177d0db14832535926154637b3cfc4ca64c472f4",
+      "bytes": 76333,
       "preview": "dashboards/previews/moto-hub-studio.portrait-sensor-lab.png",
       "previewSha256": "0d5690669e5f8ea85a09fbe0865996d7c82d0ca7eb8e44f9e5811ba219316a2d"
     },
@@ -1284,7 +1284,7 @@
       "name": "Sport Strip",
       "author": "moto-hub-studio",
       "description": "The riding screen of the Ride Modes menu: a wide rev strip numbered 1-11 that fills from the left with a marker on the revs and a red zone, the gear and a three-digit speed in your km/h or mph, then OBD status, estimated range with a bar and the ride mode. Past 10500 rpm the whole screen flashes. Without an adapter the strip shows trip distance, average and top speed instead. SELECT opens the Ride Modes menu, BACK returns to it. Ultra-wide 1280x480, 800x384 and 16:9 layouts.",
-      "version": "1",
+      "version": "2",
       "kind": "engine",
       "tags": [
         "rpm",
@@ -1341,8 +1341,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.sport-strip.mhd",
-      "sha256": "cdcc77d94e9faf05b8f953bda6266394ead8d8c0e5e74931ed027d8b3c7aa70f",
-      "bytes": 17021,
+      "sha256": "a45a72c44359e58f7163d051335171a32e2b9b9a4f4ed8f79aa3c423cccdb4de",
+      "bytes": 17038,
       "preview": "dashboards/previews/moto-hub-studio.sport-strip.png",
       "previewSha256": "bfb58cb37dfec054672cb09bc9595c8dd55fcdcf1121b9f5747c1914734798e3"
     },
@@ -1350,8 +1350,8 @@
       "id": "moto-hub-studio.portrait-terminal",
       "name": "Terminal",
       "author": "moto-hub-studio",
-      "description": "A green phosphor console: the speed as a huge readout under its command, the revs as an ASCII bar, ten key-value lines from gear to max speed, the next turn as the last line and a blinking cursor, under CRT scanlines. Without an OBD adapter the engine lines read n/a.",
-      "version": "1",
+      "description": "A green phosphor console: the speed as a huge readout under its command, the revs as an ASCII bar, ten key-value lines from gear to max speed, the next turn as the last line and a blinking cursor, under CRT scanlines. Without an OBD adapter the engine lines read n/a. Handlebar: UP/DOWN switch dashboard, double SELECT goes back.",
+      "version": "2",
       "kind": "minimal",
       "tags": [
         "terminal",
@@ -1393,8 +1393,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.portrait-terminal.mhd",
-      "sha256": "fd42190f37b510c2cd98cb66382aaced562677d0cf4af7c5042c2b482598acee",
-      "bytes": 136817,
+      "sha256": "b64798f7cad3ec7ff0aadc62acf66e234e0d10454f21f46110ed7885848c6f81",
+      "bytes": 136920,
       "preview": "dashboards/previews/moto-hub-studio.portrait-terminal.png",
       "previewSha256": "6a1b6918ac65aa11c7e1b56c838a266618545319d5bd5e6ca7a591bacca0be6d"
     },
@@ -1402,8 +1402,8 @@
       "id": "moto-hub-studio.touring",
       "name": "Touring",
       "author": "moto-hub-studio",
-      "description": "For long days in the saddle: speed and range left in your km or miles, a map, trip distance, riding time and average speed, distance and arrival time to your destination, and the weather in its own panel. Range left needs the tank range in your motorcycle profile (it assumes a full tank at the start of the trip); until then the dashboard says so. No OBD adapter needed. Landscape and portrait.",
-      "version": "1",
+      "description": "For long days in the saddle: speed and range left in your km or miles, a map, trip distance, riding time and average speed, distance and arrival time to your destination, and the weather in its own panel. Range left needs the tank range in your motorcycle profile (it assumes a full tank at the start of the trip); until then the dashboard says so. No OBD adapter needed. Landscape and portrait. Handlebar: UP/DOWN switch dashboard, double SELECT goes back, SELECT zooms the map.",
+      "version": "2",
       "kind": "touring",
       "tags": [
         "touring",
@@ -1456,8 +1456,8 @@
         "widget.weather"
       ],
       "path": "dashboards/files/moto-hub-studio.touring.mhd",
-      "sha256": "67a5351294e81de58ee2e55b1fbd21eaf67bbe0c3b94226bdde4cdb0d7b91a05",
-      "bytes": 38154,
+      "sha256": "359d89ce7ced4c6715a931aa29322cdad919a6e3104d38af46672e5bca110f83",
+      "bytes": 38280,
       "preview": "dashboards/previews/moto-hub-studio.touring.png",
       "previewSha256": "df06b52b798bd158ee3ca40b2aed5dd77b5fd42fa2171c4e57870a315ecd4954"
     },
@@ -1465,8 +1465,8 @@
       "id": "moto-hub-studio.track-day",
       "name": "Track Day",
       "author": "moto-hub-studio",
-      "description": "A GPS lap timer for track days. Ride over the start line and press SELECT on the handlebar to set it; every pass after that closes a lap. Shows the running lap time, laps done, last and best lap and the gap to your best, and the maximum lean left and right from the phone's sensors. PREVIOUS resets the timer (SELECT again sets a new line and starts over). With an OBD adapter you also get shift lights, a rev arc and the gear; without one the speed fills that space. Landscape and portrait. Also laid out for ultra-wide 1280x480 screens.",
-      "version": "2",
+      "description": "A GPS lap timer for track days. Ride over the start line and press SELECT on the handlebar to set it; every pass after that closes a lap. Shows the running lap time, laps done, last and best lap and the gap to your best, and the maximum lean left and right from the phone's sensors. PREVIOUS resets the timer (SELECT again sets a new line and starts over). With an OBD adapter you also get shift lights, a rev arc and the gear; without one the speed fills that space. Landscape and portrait. Also laid out for ultra-wide 1280x480 screens. Handlebar: NEXT switches dashboard, double SELECT goes back to the previous one.",
+      "version": "3",
       "kind": "track",
       "tags": [
         "track",
@@ -1525,8 +1525,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.track-day.mhd",
-      "sha256": "a8abab16ea5a4bd8dd478746953258f605229a3ff5b7482133766daf17cb9695",
-      "bytes": 36238,
+      "sha256": "b8d761a27173952d5b09f8218f599f6a31703aeeae07ea7197b7769ceeb43465",
+      "bytes": 36313,
       "preview": "dashboards/previews/moto-hub-studio.track-day.png",
       "previewSha256": "2af85cdb0737d6172547165a47c28f19cd7119b1b10791ab916e97b9d1bf97c1"
     },
@@ -1534,8 +1534,8 @@
       "id": "moto-hub-studio.twin-arc",
       "name": "Twin Arc",
       "author": "moto-hub-studio",
-      "description": "Two half-moon arcs close the screen: speed in orange on the left, revs in teal on the right with shift lights under a framed dark map. The riding mode reads CITY, CRUISE or SPORT from what the bike is doing.",
-      "version": "1",
+      "description": "Two half-moon arcs close the screen: speed in orange on the left, revs in teal on the right with shift lights under a framed dark map. The riding mode reads CITY, CRUISE or SPORT from what the bike is doing. Handlebar: UP/DOWN switch dashboard, double SELECT goes back, SELECT zooms the map.",
+      "version": "2",
       "kind": "ride",
       "tags": [
         "sport",
@@ -1584,8 +1584,8 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.twin-arc.mhd",
-      "sha256": "0f9c62700ac66be87205455915459da268872c054a28954af770b88dc3723a26",
-      "bytes": 35093,
+      "sha256": "e21a1e3c641f0f6d0b7f71222b2755d15d08a3e2067b3b1ce161b09e260c4406",
+      "bytes": 35179,
       "preview": "dashboards/previews/moto-hub-studio.twin-arc.png",
       "previewSha256": "4f58ea702e47ff1c8f2ca4019cccc8a22b5fbf1571dda46da7e35156d2fd542f"
     }
