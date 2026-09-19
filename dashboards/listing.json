@@ -340,5 +340,15 @@
       "module"
     ],
     "featured": false
+  },
+  "moto-hub-studio.player-one": {
+    "kind": "ride",
+    "tags": [
+      "8-bit",
+      "pixel-art",
+      "retro",
+      "3d"
+    ],
+    "featured": true
   }
 }

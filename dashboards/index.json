@@ -80,6 +80,80 @@
       "previewSha256": "7f27855c9fa19d6ee91c1ad7e69bdf3632db9de827a01d1cf738dc9ce12eb419"
     },
     {
+      "id": "moto-hub-studio.player-one",
+      "name": "Player One",
+      "author": "moto-hub-studio",
+      "description": "An 80s console platformer with the real road inside it. The 3D rider's-eye view is the playfield, framed in pixels under a status bar: SCORE is your trip, TIME the minutes you have been riding, three hearts are the phone battery and HEAT the coolant (the outside temperature without an OBD adapter). A pixel rider rides the brick ground in front of the road, clouds drift past and the CRT scanlines never switch off. The deck below has the speed in arcade digits with a block meter, POWER as ten shift lamps and the gear beside a spinning coin; without an OBD adapter they become STAGE (altitude) and the average speed. Banners blink when they must: POWER UP! past 8500 rpm, WARNING! when the coolant goes over 110, PAUSED when you stop and READY? until the GPS has a fix. Every fixed word is hand-drawn pixel art, so the lettering stays 8-bit on any screen. Layouts for 16:9, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, SELECT zooms the view, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "8-bit",
+        "pixel-art",
+        "retro",
+        "3d"
+      ],
+      "featured": true,
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.image",
+        "decor.rect",
+        "map.pov3d",
+        "signal.bar",
+        "signal.gear",
+        "signal.leds",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.player-one.mhd",
+      "sha256": "94fd418bfa889bc77536cc14e34732be7e984e158ce8a1c4cb23bf5af43ae16e",
+      "bytes": 44284,
+      "preview": "dashboards/previews/moto-hub-studio.player-one.png",
+      "previewSha256": "052ccfea6f1ae2a8ed6dfbbd75fd9cb3779541724d213e32bf0d67640adb896f"
+    },
+    {
       "id": "moto-hub-studio.ride-modes",
       "name": "Ride Modes",
       "author": "moto-hub-studio",
