@@ -218,5 +218,127 @@
       "ultra-wide"
     ],
     "featured": false
+  },
+  "moto-hub-studio.pov-visor": {
+    "kind": "ride",
+    "tags": [
+      "3d",
+      "hud",
+      "lean"
+    ],
+    "featured": true
+  },
+  "moto-hub-studio.pov-jet-hud": {
+    "kind": "ride",
+    "tags": [
+      "3d",
+      "hud",
+      "lean",
+      "tapes"
+    ],
+    "featured": false
+  },
+  "moto-hub-studio.pov-cinema": {
+    "kind": "touring",
+    "tags": [
+      "3d",
+      "cinema",
+      "minimal"
+    ],
+    "featured": false
+  },
+  "moto-hub-studio.pov-windscreen": {
+    "kind": "ride",
+    "tags": [
+      "3d",
+      "analogue",
+      "obd"
+    ],
+    "featured": false
+  },
+  "moto-hub-studio.pov-pillars": {
+    "kind": "ride",
+    "tags": [
+      "3d",
+      "triptych"
+    ],
+    "featured": false
+  },
+  "moto-hub-studio.pov-rally-scope": {
+    "kind": "touring",
+    "tags": [
+      "3d",
+      "rally",
+      "turns"
+    ],
+    "featured": false
+  },
+  "moto-hub-studio.pov-skywriter": {
+    "kind": "minimal",
+    "tags": [
+      "3d",
+      "big-speed"
+    ],
+    "featured": true
+  },
+  "moto-hub-studio.pov-drone-feed": {
+    "kind": "minimal",
+    "tags": [
+      "3d",
+      "camera",
+      "telemetry"
+    ],
+    "featured": false
+  },
+  "moto-hub-studio.pov-turbo-stage": {
+    "kind": "ride",
+    "tags": [
+      "3d",
+      "arcade",
+      "rpm"
+    ],
+    "featured": false
+  },
+  "moto-hub-studio.pov-pass-hunter": {
+    "kind": "touring",
+    "tags": [
+      "3d",
+      "mountain",
+      "altitude"
+    ],
+    "featured": false
+  },
+  "moto-hub-studio.aa-side-rail": {
+    "kind": "ride",
+    "tags": [
+      "android-auto",
+      "module"
+    ],
+    "featured": true
+  },
+  "moto-hub-studio.aa-top-deck": {
+    "kind": "ride",
+    "tags": [
+      "android-auto",
+      "module"
+    ],
+    "featured": false
+  },
+  "moto-hub-studio.aa-dial-drive": {
+    "kind": "ride",
+    "tags": [
+      "android-auto",
+      "module",
+      "analogue"
+    ],
+    "featured": false
+  },
+  "moto-hub-studio.aa-frame": {
+    "kind": "ride",
+    "tags": [
+      "android-auto",
+      "module"
+    ],
+    "featured": false
   }
 }

@@ -2,6 +2,84 @@
   "schema": 1,
   "dashboards": [
     {
+      "id": "moto-hub-studio.aa-side-rail",
+      "name": "AA Side Rail",
+      "author": "moto-hub-studio",
+      "description": "Needs the Android Auto module. Android Auto keeps its own proportions (16:9, 5:3 on small TFTs, 9:16 in portrait) and nothing is drawn over it. One rail on the right: clock, speed, gear and revs with an OBD adapter; trip and altitude without. Where the screen leaves room under Android Auto: a rev strip and coolant, or average, top speed and trip time without OBD. Layouts for 16:9, 5:3, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "android-auto",
+        "module"
+      ],
+      "featured": true,
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "engine": "projection",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": "projection",
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.line",
+        "decor.rect",
+        "decor.text",
+        "map.projection",
+        "signal.gear",
+        "signal.revStrip",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.aa-side-rail.mhd",
+      "sha256": "af3185a60bc31a0ea394777bc1080c959c2bc441d72219ca185e7785b96f35b6",
+      "bytes": 25971,
+      "preview": "dashboards/previews/moto-hub-studio.aa-side-rail.png",
+      "previewSha256": "7f27855c9fa19d6ee91c1ad7e69bdf3632db9de827a01d1cf738dc9ce12eb419"
+    },
+    {
       "id": "moto-hub-studio.ride-modes",
       "name": "Ride Modes",
       "author": "moto-hub-studio",
@@ -68,6 +146,149 @@
       "bytes": 274889,
       "preview": "dashboards/previews/moto-hub-studio.ride-modes.png",
       "previewSha256": "1073b2ca11c606d7b120d25163e21b3bea120bd8d5a3ca9590ddac4ae886809b"
+    },
+    {
+      "id": "moto-hub-studio.pov-skywriter",
+      "name": "Skywriter",
+      "author": "moto-hub-studio",
+      "description": "The speed written in the sky - the one empty part of a rider's-eye view - so the road stays completely clear. Gear and revs in the top corners with an OBD adapter. Without an OBD adapter the engine readings give way to trip and altitude. A small turn chip appears with a route. Layouts for 16:9, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, SELECT zooms the view, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "minimal",
+      "tags": [
+        "3d",
+        "big-speed"
+      ],
+      "featured": true,
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.text",
+        "map.pov3d",
+        "nav.nextTurnChip",
+        "signal.gear",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.pov-skywriter.mhd",
+      "sha256": "e16dc3388c9d960c0ca5ce80985bb6db97f3418381904403ce0efb3ef4fc2b40",
+      "bytes": 20944,
+      "preview": "dashboards/previews/moto-hub-studio.pov-skywriter.png",
+      "previewSha256": "bbd6edc924b77e36cfb4686efd7a7fd36825927e258a2363c78bef171f597080"
+    },
+    {
+      "id": "moto-hub-studio.pov-visor",
+      "name": "Visor",
+      "author": "moto-hub-studio",
+      "description": "The 3D rider's-eye view fills the screen like a helmet visor: a faint horizon line tilts with your lean, the speed floats on glass at the bottom, heading and phone battery on a thin bar above, the turn arrow appears only with a route. Gear and revs with an OBD adapter. Without an OBD adapter the engine readings give way to trip and altitude. Layouts for 16:9, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, SELECT zooms the view, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "3d",
+        "hud",
+        "lean"
+      ],
+      "featured": true,
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.rect",
+        "decor.text",
+        "map.pov3d",
+        "nav.maneuverArrow",
+        "signal.gear",
+        "signal.horizon",
+        "signal.lamp",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.pov-visor.mhd",
+      "sha256": "a8014f4aad1053bb660a2c43ef8aa3f38041f62b2df57ad055d3557cb676ae74",
+      "bytes": 27138,
+      "preview": "dashboards/previews/moto-hub-studio.pov-visor.png",
+      "previewSha256": "4d77c4d2d810b58ff55ea15dae63a587d7f43793f07f7cfd4c7971a841cdbb3a"
     },
     {
       "id": "moto-hub-studio.wow-3d-ride",
@@ -227,6 +448,241 @@
       "bytes": 28607,
       "preview": "dashboards/previews/moto-hub-studio.map-widgets.png",
       "previewSha256": "ef32a95c59fd751fce1c04c4a030f8ed084372148f2ce08787341f8816a461e2"
+    },
+    {
+      "id": "moto-hub-studio.aa-dial-drive",
+      "name": "AA Dial & Drive",
+      "author": "moto-hub-studio",
+      "description": "Needs the Android Auto module. Android Auto keeps its own proportions (16:9, 5:3 on small TFTs, 9:16 in portrait) and nothing is drawn over it. An analogue speed dial beside it with gear and revs with an OBD adapter, trip and altitude without; more readings under Android Auto where the screen leaves room. Layouts for 16:9, 5:3, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "android-auto",
+        "module",
+        "analogue"
+      ],
+      "featured": false,
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "engine": "projection",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": "projection",
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.rect",
+        "decor.text",
+        "map.projection",
+        "signal.arc",
+        "signal.gear",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.aa-dial-drive.mhd",
+      "sha256": "ce14cf69d4238e411e68f8cceafc07689a00a0b3079b43aaded5c871b6223036",
+      "bytes": 29304,
+      "preview": "dashboards/previews/moto-hub-studio.aa-dial-drive.png",
+      "previewSha256": "511270ba8fb37df57de2e8b3ee38d76f2f2484eb604cbbdbf6920086b55edd80"
+    },
+    {
+      "id": "moto-hub-studio.aa-frame",
+      "name": "AA Frame",
+      "author": "moto-hub-studio",
+      "description": "Needs the Android Auto module. Android Auto keeps its own proportions (16:9, 5:3 on small TFTs, 9:16 in portrait) and nothing is drawn over it. Android Auto in the middle with a wing of data on each side - speed and trip on the left, gear and coolant on the right with an OBD adapter (altitude and average without) - a status header above and a rev strip below (a pace bar without OBD). Layouts for 16:9, 5:3, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "android-auto",
+        "module"
+      ],
+      "featured": false,
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "engine": "projection",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": "projection",
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.line",
+        "decor.rect",
+        "decor.text",
+        "map.projection",
+        "signal.bar",
+        "signal.gear",
+        "signal.lamp",
+        "signal.revStrip",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.aa-frame.mhd",
+      "sha256": "39ccf7f2561f7f89e512f99ceb5b719df95068b502806623cf0856c5cec60971",
+      "bytes": 27890,
+      "preview": "dashboards/previews/moto-hub-studio.aa-frame.png",
+      "previewSha256": "658254627643a2a2c9428530c888937f00d59dec9569dc5e9ea8fdd7e220ab4a"
+    },
+    {
+      "id": "moto-hub-studio.aa-top-deck",
+      "name": "AA Top Deck",
+      "author": "moto-hub-studio",
+      "description": "Needs the Android Auto module. Android Auto keeps its own proportions (16:9, 5:3 on small TFTs, 9:16 in portrait) and nothing is drawn over it. A deck of numbers above it - gear, revs, speed, coolant, clock (trip, average and altitude without an OBD adapter) - and a thin bar on each side: speed on the left, revs on the right (phone battery without OBD). Layouts for 16:9, 5:3, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "android-auto",
+        "module"
+      ],
+      "featured": false,
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "engine": "projection",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": "projection",
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.rect",
+        "decor.text",
+        "map.projection",
+        "signal.bar",
+        "signal.gear",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.aa-top-deck.mhd",
+      "sha256": "b8c94a1041f0ed173f0fa255eb5567b296e07a9fe7b9665cf5168f9f362a6163",
+      "bytes": 21625,
+      "preview": "dashboards/previews/moto-hub-studio.aa-top-deck.png",
+      "previewSha256": "c62595a34c2a092cc1e2dd79977b39dd8d88e8be219ccc44c5fb6187c88e6b1f"
     },
     {
       "id": "moto-hub-studio.portrait-aviator-hud",
@@ -404,6 +860,77 @@
       "previewSha256": "c39901f74bd7ab349ff53125fe4b462c27d2d187454646cf4d484b1414aeb60d"
     },
     {
+      "id": "moto-hub-studio.pov-cinema",
+      "name": "Cinema",
+      "author": "moto-hub-studio",
+      "description": "The 3D rider's-eye view in 2.39:1 between two black bars, like a film: the next instruction is the title, speed and readings are the subtitles. Gear, revs and coolant with an OBD adapter. Without an OBD adapter the engine readings give way to trip, average speed and altitude. Layouts for 16:9, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, SELECT zooms the view, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "touring",
+      "tags": [
+        "3d",
+        "cinema",
+        "minimal"
+      ],
+      "featured": false,
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.line",
+        "decor.text",
+        "map.pov3d",
+        "signal.gear",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.pov-cinema.mhd",
+      "sha256": "d8ac015210118f7f4e1993fa6f940311ae9efb2192001c98c85ee35feafc2d65",
+      "bytes": 21044,
+      "preview": "dashboards/previews/moto-hub-studio.pov-cinema.png",
+      "previewSha256": "6fad28cbd9646cd90b223c213ab21eba918e0c649c99c1711691141d9a00ede8"
+    },
+    {
       "id": "cyber.grid.v1",
       "name": "Cyber Grid",
       "author": "moto-hub-studio",
@@ -483,6 +1010,79 @@
       "previewSha256": "dc4f9ee2c34b8bcaf493abae3b6ed43f9792ea5de4caef3dfca8b16baecee0a6"
     },
     {
+      "id": "moto-hub-studio.pov-drone-feed",
+      "name": "Drone Feed",
+      "author": "moto-hub-studio",
+      "description": "The 3D rider's-eye view framed like a camera feed: corner brackets, a reticle, REC while the GPS has a fix, altitude, heading and satellites as telemetry, speed bottom right. Gear and revs with an OBD adapter. Without an OBD adapter the engine readings give way to trip distance. Layouts for 16:9, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, SELECT zooms the view, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "minimal",
+      "tags": [
+        "3d",
+        "camera",
+        "telemetry"
+      ],
+      "featured": false,
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.ellipse",
+        "decor.line",
+        "decor.text",
+        "map.pov3d",
+        "signal.gear",
+        "signal.lamp",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.pov-drone-feed.mhd",
+      "sha256": "d36f6f22d9b3bf9ebdce5197fab826978bf9995e5d8364ad002deca2b1d80dae",
+      "bytes": 30874,
+      "preview": "dashboards/previews/moto-hub-studio.pov-drone-feed.png",
+      "previewSha256": "e2955ff26630ff86d911f674ce93ce0516df70a4abf17f25f9c208ed7be83546"
+    },
+    {
       "id": "moto-hub-studio.portrait-explorer",
       "name": "Explorer",
       "author": "moto-hub-studio",
@@ -536,6 +1136,79 @@
       "bytes": 137787,
       "preview": "dashboards/previews/moto-hub-studio.portrait-explorer.png",
       "previewSha256": "0954e3ae7836eb616c41bceed1da2839cdd6d3f7ffde99a701eab63647d18c6e"
+    },
+    {
+      "id": "moto-hub-studio.pov-jet-hud",
+      "name": "Jet HUD",
+      "author": "moto-hub-studio",
+      "description": "A fighter head-up display over the 3D rider's-eye view: speed and altitude tapes, a heading rule, an artificial horizon with lean and pitch, everything in one green. Gear and revs with an OBD adapter. Without an OBD adapter the engine readings give way to trip and average speed. Mount the phone firmly and level it parked upright. Layouts for 16:9, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, SELECT levels the horizon, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "3d",
+        "hud",
+        "lean",
+        "tapes"
+      ],
+      "featured": false,
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.rect",
+        "decor.text",
+        "map.pov3d",
+        "signal.gear",
+        "signal.horizon",
+        "signal.tape",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.pov-jet-hud.mhd",
+      "sha256": "6e8625ddd0e537a35adeeaa415cb2d1702fe502d22ff081b271a64dbdcb0a324",
+      "bytes": 31680,
+      "preview": "dashboards/previews/moto-hub-studio.pov-jet-hud.png",
+      "previewSha256": "868436179488aa4fecdcb575f22b790deffae1d0941bc2acca8b6b2470d34a01"
     },
     {
       "id": "moto-hub-studio.portrait-mission-control",
@@ -1132,6 +1805,149 @@
       "previewSha256": "7abdc60f51f00c1af9f5989c361ba5d15513848bf633f48ccccce4bc8202e03c"
     },
     {
+      "id": "moto-hub-studio.pov-pass-hunter",
+      "name": "Pass Hunter",
+      "author": "moto-hub-studio",
+      "description": "For mountain roads: an altitude tape, climb rate, outside temperature and the elevation profile of the route ahead over the 3D rider's-eye view (the last five minutes of altitude without a route). Coolant with an OBD adapter. Without an OBD adapter the engine readings give way to trip distance. Layouts for 16:9, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, SELECT zooms the view, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "touring",
+      "tags": [
+        "3d",
+        "mountain",
+        "altitude"
+      ],
+      "featured": false,
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.rect",
+        "decor.text",
+        "map.pov3d",
+        "nav.elevation",
+        "signal.tape",
+        "signal.text",
+        "signal.trend",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.pov-pass-hunter.mhd",
+      "sha256": "d96123d6fd2fff953ec3c4d7553f89fa3d6e24395d1f9313052315a183b8cbad",
+      "bytes": 22973,
+      "preview": "dashboards/previews/moto-hub-studio.pov-pass-hunter.png",
+      "previewSha256": "f5029ad1e803918e22f4dc1b6b39dac350a1dac1753a779a852a89fcfcecc770"
+    },
+    {
+      "id": "moto-hub-studio.pov-pillars",
+      "name": "Pillars",
+      "author": "moto-hub-studio",
+      "description": "One 3D rider's-eye view cut into a triptych by two solid pillars that carry the numbers: speed with its bar on the left, gear and revs on the right with an OBD adapter. Without an OBD adapter the engine readings give way to altitude, trip and average speed. In portrait the pillars turn into two beams. Layouts for 16:9, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, SELECT zooms the view, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "3d",
+        "triptych"
+      ],
+      "featured": false,
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.rect",
+        "decor.text",
+        "map.pov3d",
+        "signal.bar",
+        "signal.gear",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.pov-pillars.mhd",
+      "sha256": "f9a7d9320b5f2f73677872aec18593b5b7a1055e13cced59c4c5dbaf3b0d3909",
+      "bytes": 19729,
+      "preview": "dashboards/previews/moto-hub-studio.pov-pillars.png",
+      "previewSha256": "4c4adc1bba81e909a92b98640a5c39a9723cb3d148a2b0ac57bd7f666f7840ef"
+    },
+    {
       "id": "moto-hub-studio.potion-ride",
       "name": "Potion Ride",
       "author": "moto-hub-studio",
@@ -1183,6 +1999,80 @@
       "bytes": 736124,
       "preview": "dashboards/previews/moto-hub-studio.potion-ride.png",
       "previewSha256": "0cebcb85632a6e34512db4c25e577ef55f0fcc505cf58509b343a5811434b50f"
+    },
+    {
+      "id": "moto-hub-studio.pov-rally-scope",
+      "name": "Rally Scope",
+      "author": "moto-hub-studio",
+      "description": "The 3D rider's-eye view in a square sight with a reticle, big speed and heading on one side, the next turns on the other (top and average speed without a route). Gear and revs with an OBD adapter. Without an OBD adapter the engine readings give way to trip and altitude. Layouts for 16:9, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, SELECT zooms the view, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "touring",
+      "tags": [
+        "3d",
+        "rally",
+        "turns"
+      ],
+      "featured": false,
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.ellipse",
+        "decor.line",
+        "decor.rect",
+        "decor.text",
+        "map.pov3d",
+        "nav.turnLadder",
+        "signal.gear",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.pov-rally-scope.mhd",
+      "sha256": "46ef35a33def44b682e6e94649f0bec07f82ba25aa32acab1b59d50735d9afd3",
+      "bytes": 30221,
+      "preview": "dashboards/previews/moto-hub-studio.pov-rally-scope.png",
+      "previewSha256": "bf201d9a969db92b15f0f53108f77dd9ee5983dd78b846b941e5e11b08c548fd"
     },
     {
       "id": "moto-hub-studio.red-flash-obd-pov",
@@ -1615,6 +2505,78 @@
       "previewSha256": "2af85cdb0737d6172547165a47c28f19cd7119b1b10791ab916e97b9d1bf97c1"
     },
     {
+      "id": "moto-hub-studio.pov-turbo-stage",
+      "name": "Turbo Stage",
+      "author": "moto-hub-studio",
+      "description": "An arcade racer's screen over the 3D rider's-eye view: SPEED, TIME and STAGE across the top, a numbered rev strip with the gear below with an OBD adapter. Without an OBD adapter the engine readings give way to a pace bar driven by GPS speed. Layouts for 16:9, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, SELECT zooms the view, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "3d",
+        "arcade",
+        "rpm"
+      ],
+      "featured": false,
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.rect",
+        "decor.text",
+        "map.pov3d",
+        "nav.nextTurnChip",
+        "signal.bar",
+        "signal.gear",
+        "signal.revStrip",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.pov-turbo-stage.mhd",
+      "sha256": "b645603ef644615c01ccd61a9d8948b4e6e5a5f8706ab53980cfcfeab0f6a74e",
+      "bytes": 22751,
+      "preview": "dashboards/previews/moto-hub-studio.pov-turbo-stage.png",
+      "previewSha256": "5c9bf6e74be14fc91d8f873b864e58a62b8119ccf4649950168444a256eeb1b4"
+    },
+    {
       "id": "moto-hub-studio.twin-arc",
       "name": "Twin Arc",
       "author": "moto-hub-studio",
@@ -1691,6 +2653,78 @@
       "bytes": 42621,
       "preview": "dashboards/previews/moto-hub-studio.twin-arc.png",
       "previewSha256": "a519e21ffa00b55f1f96aba72606eecc201ef4ba9c8912f4cf19ac6010258425"
+    },
+    {
+      "id": "moto-hub-studio.pov-windscreen",
+      "name": "Windscreen",
+      "author": "moto-hub-studio",
+      "description": "The road through the windscreen and an analogue cluster on the cowl under it: a speed dial, a rev dial with gear and coolant with an OBD adapter. Without an OBD adapter the engine readings give way to an altitude dial, trip and average speed. Layouts for 16:9, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, SELECT zooms the view, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "3d",
+        "analogue",
+        "obd"
+      ],
+      "featured": false,
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.line",
+        "decor.text",
+        "map.pov3d",
+        "signal.arc",
+        "signal.gear",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.pov-windscreen.mhd",
+      "sha256": "d8e46a2d32a9ada040db2f3d19f32718031d05c4a1f101c47a03e485c418159e",
+      "bytes": 27501,
+      "preview": "dashboards/previews/moto-hub-studio.pov-windscreen.png",
+      "previewSha256": "04c8aaa6058e76c3ad2083e2330cfebd45d4b54ccca6fd7ae215ccb56e7c54d4"
     }
   ]
 }
