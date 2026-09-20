@@ -2,6 +2,88 @@
   "schema": 1,
   "dashboards": [
     {
+      "id": "moto-hub-studio.aa-comic",
+      "name": "AA Comic",
+      "author": "moto-hub-studio",
+      "description": "Needs the Android Auto module. Android Auto keeps its own proportions (16:9, 5:3 on small TFTs, 9:16 in portrait) and nothing is drawn over it. The ride drawn as a comic page: inked panels with halftone dots, a speech balloon that reads out the next turn (\"Let's ride!\" with no route) and a shouted VROOM. The coloured cells hold speed, gear and revs with an OBD adapter, speed, trip and altitude without; coolant, outside temperature and phone battery in the strip below where the screen leaves room. Layouts for 16:9, 5:3, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "android-auto",
+        "module",
+        "comic",
+        "colourful",
+        "animated"
+      ],
+      "featured": true,
+      "published": "2026-09-20",
+      "updated": "2026-09-20",
+      "engine": "projection",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": "projection",
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "container.group",
+        "decor.clock",
+        "decor.ellipse",
+        "decor.line",
+        "decor.rect",
+        "decor.text",
+        "map.projection",
+        "signal.gear",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.aa-comic.mhd",
+      "sha256": "a04c67fc514a86765b2d465160c8cc8c60f5601081744db463137588f29c93f3",
+      "bytes": 44949,
+      "preview": "dashboards/previews/moto-hub-studio.aa-comic.png",
+      "previewSha256": "8cd056940bc56d345b1eb25f0d9ad178868b74a4640c50bdd14c2cf6f3213630"
+    },
+    {
       "id": "moto-hub-studio.aa-side-rail",
       "name": "AA Side Rail",
       "author": "moto-hub-studio",
@@ -78,6 +160,89 @@
       "bytes": 25971,
       "preview": "dashboards/previews/moto-hub-studio.aa-side-rail.png",
       "previewSha256": "7f27855c9fa19d6ee91c1ad7e69bdf3632db9de827a01d1cf738dc9ce12eb419"
+    },
+    {
+      "id": "moto-hub-studio.aa-sunset-drive",
+      "name": "AA Sunset Drive",
+      "author": "moto-hub-studio",
+      "description": "Needs the Android Auto module. Android Auto keeps its own proportions (16:9, 5:3 on small TFTs, 9:16 in portrait) and nothing is drawn over it. A synthwave sunset around it: a banded sun with the speed glowing over it, a neon grid running to the horizon and the revs burning along it (a pace bar without an OBD adapter). Gear, revs and coolant with an adapter; trip, altitude and average without. Outside temperature, trip time, phone battery and top speed along the bottom. Layouts for 16:9, 5:3, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "android-auto",
+        "module",
+        "synthwave",
+        "neon",
+        "animated"
+      ],
+      "featured": true,
+      "published": "2026-09-20",
+      "updated": "2026-09-20",
+      "engine": "projection",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": "projection",
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.ellipse",
+        "decor.line",
+        "decor.rect",
+        "decor.text",
+        "map.projection",
+        "signal.bar",
+        "signal.gear",
+        "signal.revStrip",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.aa-sunset-drive.mhd",
+      "sha256": "2c400724d772d57ee798f91d2bdbab7bb9b3866ce4e93747f4183708943db48b",
+      "bytes": 45726,
+      "preview": "dashboards/previews/moto-hub-studio.aa-sunset-drive.png",
+      "previewSha256": "c36f670a7c0c4ffe43cbf7753993ea455a1b6a1ac03d3d54021e9510d60a9c2e"
     },
     {
       "id": "moto-hub-studio.player-one",
@@ -680,6 +845,177 @@
       "bytes": 27890,
       "preview": "dashboards/previews/moto-hub-studio.aa-frame.png",
       "previewSha256": "658254627643a2a2c9428530c888937f00d59dec9569dc5e9ea8fdd7e220ab4a"
+    },
+    {
+      "id": "moto-hub-studio.aa-hi-fi",
+      "name": "AA Hi-Fi",
+      "author": "moto-hub-studio",
+      "description": "Needs the Android Auto module. Android Auto keeps its own proportions (16:9, 5:3 on small TFTs, 9:16 in portrait) and nothing is drawn over it. A wooden stereo front: the record is the speedometer, the readings are a graphic equaliser and the track playing is on the grille above. Throttle, revs, coolant, battery and load drive the equaliser with an OBD adapter, phone and GPS readings without; gear, revs and coolant beside the deck, trip, altitude and average without an adapter. Layouts for 16:9, 5:3, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "android-auto",
+        "module",
+        "retro",
+        "analogue",
+        "animated"
+      ],
+      "featured": false,
+      "published": "2026-09-20",
+      "updated": "2026-09-20",
+      "engine": "projection",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": "projection",
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.ellipse",
+        "decor.line",
+        "decor.rect",
+        "decor.text",
+        "map.projection",
+        "signal.arc",
+        "signal.bar",
+        "signal.gear",
+        "signal.lamp",
+        "signal.revStrip",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.aa-hi-fi.mhd",
+      "sha256": "93550e1947975f6748a879b6219941186829085ff810f9fc9c4cec390baa7bb0",
+      "bytes": 63172,
+      "preview": "dashboards/previews/moto-hub-studio.aa-hi-fi.png",
+      "previewSha256": "f58ac30975416a055bbb6b1faafaff46d7ca263656f993e71d20b35bbaa0999c"
+    },
+    {
+      "id": "moto-hub-studio.aa-porthole",
+      "name": "AA Porthole",
+      "author": "moto-hub-studio",
+      "description": "Needs the Android Auto module. Android Auto keeps its own proportions (16:9, 5:3 on small TFTs, 9:16 in portrait) and nothing is drawn over it. Android Auto behind a riveted brass porthole at the bottom of the sea, with drifting bubbles and a sonar dial for the speed. Gear, revs, coolant and throttle with an OBD adapter; trip, altitude, average and top speed without. A lean horizon and the rev strip below where the screen leaves room. Layouts for 16:9, 5:3, 2:1, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, SELECT levels the lean gauge (press it parked and upright), double SELECT goes back to the previous dashboard.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "android-auto",
+        "module",
+        "lean",
+        "inclinometer",
+        "animated"
+      ],
+      "featured": false,
+      "published": "2026-09-20",
+      "updated": "2026-09-20",
+      "engine": "projection",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": "projection",
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "decor.clock",
+        "decor.ellipse",
+        "decor.line",
+        "decor.rect",
+        "decor.text",
+        "map.projection",
+        "signal.arc",
+        "signal.bar",
+        "signal.gear",
+        "signal.horizon",
+        "signal.revStrip",
+        "signal.tape",
+        "signal.text",
+        "signal.value"
+      ],
+      "path": "dashboards/files/moto-hub-studio.aa-porthole.mhd",
+      "sha256": "fcdb0bb4a4c3fc7704f19a173c6a206230c0355106ee62ae5f3643b3c978634c",
+      "bytes": 56779,
+      "preview": "dashboards/previews/moto-hub-studio.aa-porthole.png",
+      "previewSha256": "44ead09267200c3caaa7f86a46f17b3e0b5431d29aad9ab721210d7ea5f3013e"
     },
     {
       "id": "moto-hub-studio.aa-top-deck",

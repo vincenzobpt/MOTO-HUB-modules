@@ -350,5 +350,49 @@
       "3d"
     ],
     "featured": true
+  },
+  "moto-hub-studio.aa-sunset-drive": {
+    "kind": "ride",
+    "tags": [
+      "android-auto",
+      "module",
+      "synthwave",
+      "neon",
+      "animated"
+    ],
+    "featured": true
+  },
+  "moto-hub-studio.aa-comic": {
+    "kind": "ride",
+    "tags": [
+      "android-auto",
+      "module",
+      "comic",
+      "colourful",
+      "animated"
+    ],
+    "featured": true
+  },
+  "moto-hub-studio.aa-porthole": {
+    "kind": "ride",
+    "tags": [
+      "android-auto",
+      "module",
+      "lean",
+      "inclinometer",
+      "animated"
+    ],
+    "featured": false
+  },
+  "moto-hub-studio.aa-hi-fi": {
+    "kind": "ride",
+    "tags": [
+      "android-auto",
+      "module",
+      "retro",
+      "analogue",
+      "animated"
+    ],
+    "featured": false
   }
 }
