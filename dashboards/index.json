@@ -157,8 +157,8 @@
       "id": "moto-hub-studio.ride-modes",
       "name": "Ride Modes",
       "author": "moto-hub-studio",
-      "description": "A ride-mode menu in the style of a modern TFT: gear, speed and status on the left, a card per mode on the right. Step through SPORT, TRACK, RAIN, OFFROAD and CUSTOM with the handlebar and press SELECT: the card opens the dashboard for that mode (Sport Strip, Track Day, Night Ride, Offroad, My Bike - install the ones you want from the Community; BACK on those returns here). Each card says what its profile shows. Works without an OBD adapter. Ultra-wide 1280x480, 800x384 and 16:9 layouts.",
-      "version": "1",
+      "description": "A ride-mode menu in the style of a modern TFT: gear, speed and status on the left, a card per mode on the right. Step through SPORT, TRACK, RAIN, OFFROAD and CUSTOM with the handlebar and press SELECT: the card opens the dashboard for that mode (Sport Strip, Track Day, Night Ride, Offroad, My Bike - install the ones you want from the Community; BACK on those returns here). Each card names the four things that change in that mode, in large type over a dimmed panel so they read from the saddle. Works without an OBD adapter. Ultra-wide 1280x480, 800x384 and 16:9 layouts.",
+      "version": "2",
       "kind": "ride",
       "tags": [
         "menu",
@@ -216,10 +216,10 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.ride-modes.mhd",
-      "sha256": "f8690d2a63a8b7b625e5ced701dd0f8399fdfcb50d0579a955170321864e7128",
-      "bytes": 274889,
+      "sha256": "67fe0389522dc48009708b762ed0809312af2bcbb3737b0217e24f64a58e540d",
+      "bytes": 275567,
       "preview": "dashboards/previews/moto-hub-studio.ride-modes.png",
-      "previewSha256": "1073b2ca11c606d7b120d25163e21b3bea120bd8d5a3ca9590ddac4ae886809b"
+      "previewSha256": "da640f7ecce07c210c8ba483ab9f13c3def752d39b4248b51682c3b8af3e1a6f"
     },
     {
       "id": "moto-hub-studio.pov-skywriter",
@@ -2332,7 +2332,7 @@
       "name": "Sport Strip",
       "author": "moto-hub-studio",
       "description": "The riding screen of the Ride Modes menu: a wide rev strip numbered 1-11 that fills from the left with a marker on the revs and a red zone, the gear and a three-digit speed in your km/h or mph, then OBD status, estimated range with a bar and the ride mode. Past 10500 rpm the whole screen flashes. Without an adapter the strip shows trip distance, average and top speed instead. SELECT opens the Ride Modes menu, BACK returns to it. Ultra-wide 1280x480, 800x384 and 16:9 layouts.",
-      "version": "2",
+      "version": "3",
       "kind": "engine",
       "tags": [
         "rpm",
@@ -2389,10 +2389,10 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.sport-strip.mhd",
-      "sha256": "a45a72c44359e58f7163d051335171a32e2b9b9a4f4ed8f79aa3c423cccdb4de",
-      "bytes": 17038,
+      "sha256": "c3eaa7be5940cd5a07791e9e236f5b48b54bb6274cc12483123479d240674452",
+      "bytes": 18281,
       "preview": "dashboards/previews/moto-hub-studio.sport-strip.png",
-      "previewSha256": "bfb58cb37dfec054672cb09bc9595c8dd55fcdcf1121b9f5747c1914734798e3"
+      "previewSha256": "dc48a3d90b31d91c17eedb94ddf7009f817860c1ac375e43320d004f67aa0471"
     },
     {
       "id": "moto-hub-studio.portrait-terminal",
