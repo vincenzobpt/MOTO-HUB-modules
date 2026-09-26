@@ -2,6 +2,10 @@
 
 Loadable modules for MOTO-HUB, the community dashboards, and the lists the app reads to find them.
 
+Browse the dashboards in the **[gallery on motohub.techub.eu](https://motohub.techub.eu/dashboards.html)** ·
+the app: **[MOTO-HUB ADV-SOLO](https://github.com/vincenzobpt/MOTO-HUB-ADV-SOLO-releases)** ·
+help and sharing: **[Discord](https://discord.gg/FzhXZtPhC8)**
+
 MOTO-HUB ships knowing how to run a projection on a motorcycle's dashboard — the compositor, the
 encoder, the transport — but not what to project. A module supplies that, and arrives with its own
 screens and its own name: an app with nothing installed here has nothing to offer and says so.
@@ -54,11 +58,25 @@ index promised.
 
 | Module | Licence | Source |
 | --- | --- | --- |
-| `android-auto` | AGPL-3.0-only | published with its release |
+| `android-auto` | AGPL-3.0-only | [MOTO-HUB-module-sdk](https://github.com/vincenzobpt/MOTO-HUB-module-sdk/tree/main/modules/android-auto), tagged `android-auto-<version>` for every release |
+
+Want to write a module of your own? The **[MOTO-HUB module SDK](https://github.com/vincenzobpt/MOTO-HUB-module-sdk)** has the module API (Apache-2.0),
+the Gradle plugin that packages and signs a `.mhm`, an example module and the documentation.
 
 ## Community dashboards
 
-The dashboards riders share, shown in the app under **Ride → Dashboard map → Community**.
+The dashboards riders share, shown in the app under **Ride → Dashboards → Community**, and on the web
+in the **[dashboard gallery](https://motohub.techub.eu/dashboards.html)**.
+
+<p align="center">
+<img src="dashboards/previews/moto-hub-studio.pov-visor.png" alt="Visor: a 3D rider's-eye view with speed, trip and altitude" width="32%">
+<img src="dashboards/previews/moto-hub-studio.player-one.png" alt="Player One: an 8-bit game over a 3D view of the road" width="32%">
+<img src="dashboards/previews/moto-hub-studio.aa-sunset-drive.png" alt="AA Sunset Drive: a synthwave sunset speedometer beside the Android Auto area" width="32%">
+<br>
+<img src="dashboards/previews/moto-hub-studio.pov-skywriter.png" alt="Skywriter: the speed written in the sky above the road, gear and revs in the corners" width="32%">
+<img src="dashboards/previews/moto-hub-studio.aa-comic.png" alt="AA Comic: comic-book panels for speed, gear and revs around the Android Auto area" width="32%">
+<img src="dashboards/previews/moto-hub-studio.wow-3d-ride.png" alt="WOW 3D Ride: speed and gear on one side, the next turn on the other, the road clear between" width="32%">
+</p>
 
 ```
 dashboards/
@@ -70,7 +88,8 @@ dashboards/
 
 ### Adding a dashboard
 
-1. Make it in the MOTO-HUB Dashboard Editor and save it as `.mhd`, with a preview image.
+1. Make it in **MOTO-HUB Studio**, the desktop editor (in private beta: [ask for it on Discord](https://discord.gg/FzhXZtPhC8)),
+   and save it as `.mhd`, with a preview image.
    Give it an id of your own (`yourname.alpine-split`): ids starting with `motohub.` belong to
    the dashboards the app ships.
 2. Put the file in `dashboards/files/`, named `<id>.mhd`.
@@ -124,3 +143,8 @@ A dashboard carries no code: the worst a bad file can do is draw badly. The app 
 and the files from this repository's raw host (no GitHub API, no token), checks each download
 against the SHA-256 in the index, and then imports it through the same validator as a file picked
 from the phone's storage - where a dashboard came from changes nothing about what it may do.
+
+## Community
+
+Questions, a module idea, or a dashboard to show off: the **[MOTO-HUB Discord](https://discord.gg/FzhXZtPhC8)**.
+News and release notes for every MOTO-HUB app are on **[motohub.techub.eu](https://motohub.techub.eu)**.
