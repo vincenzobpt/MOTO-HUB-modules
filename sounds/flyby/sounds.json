@@ -1,0 +1,38 @@
+{
+  "pack": "flyby-sounds",
+  "format": 1,
+  "version": 1,
+  "base": "https://github.com/vincenzobpt/MOTO-HUB-modules/releases/download/flyby-sounds-1/",
+  "banks": [
+    {
+      "name": "bass",
+      "size": 4682220,
+      "sha256": "eb1e36ecc517da61eea681ff50ad61344f834b24c2426da0f1c8d48dea11b684"
+    },
+    {
+      "name": "drums-brush",
+      "size": 1470497,
+      "sha256": "3458ead449196fae885f1dbcb54b7c3f996be57c7c9f3c07f1b97c24bf3b246e"
+    },
+    {
+      "name": "drums-kit",
+      "size": 3671063,
+      "sha256": "20eb61c27131cdca80ea455a9077f9601bcc411eff18e0942683884a91211e73"
+    },
+    {
+      "name": "guitar-clean",
+      "size": 4846796,
+      "sha256": "8e720967f0013eef6247e123560163b37438ec7b85726fa66511127f8c94e2b9"
+    },
+    {
+      "name": "guitar-drive",
+      "size": 5200282,
+      "sha256": "75a76850ae9c828c504c3273dd697dab1249f48d7e92e44758c243e3ad3c3e4d"
+    },
+    {
+      "name": "piano",
+      "size": 4867996,
+      "sha256": "15883a61e5c8417e2602634ab050087bdf74e32ce7773dd0f508dc4606a66e1a"
+    }
+  ]
+}
