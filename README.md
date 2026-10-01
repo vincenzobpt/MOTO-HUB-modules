@@ -50,6 +50,16 @@ Append an object to `index.json`:
 
 `owner`/`repository` say where the releases are; a module hosted elsewhere points there instead.
 
+Four optional fields put the module on the app's Ride page, in a banner shown only to riders who
+do not have it yet (ADV-SOLO 0.1.32 or newer; older apps ignore them):
+
+- `tagline` — the line under the name; `summary` when absent.
+- `image` — a 16:10 picture (1280×800 WebP works well), as a path in this repository or an
+  `https://` URL. Keep the bottom third quiet: the name and the tagline are written over it.
+- `accent` — the module's colour, `#RRGGBB`.
+- `contractVersion` — the contract the published package needs; an app that speaks less does not
+  advertise it.
+
 The index only advertises. Nothing in it is trusted: the app still verifies whatever it downloads
 against its own key, and refuses a package whose manifest says something different from what the
 index promised.
@@ -59,6 +69,7 @@ index promised.
 | Module | Licence | Source |
 | --- | --- | --- |
 | `android-auto` | AGPL-3.0-only | [MOTO-HUB-module-sdk](https://github.com/vincenzobpt/MOTO-HUB-module-sdk/tree/main/modules/android-auto), tagged `android-auto-<version>` for every release |
+| `motohub-flyby` | Proprietary | Closed source |
 
 Want to write a module of your own? The **[MOTO-HUB module SDK](https://github.com/vincenzobpt/MOTO-HUB-module-sdk)** has the module API (Apache-2.0),
 the Gradle plugin that packages and signs a `.mhm`, an example module and the documentation.

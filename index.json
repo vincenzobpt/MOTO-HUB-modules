@@ -3,6 +3,20 @@
     "id": "android-auto",
     "displayName": "Android Auto",
     "summary": "Runs Android Auto on the motorcycle's screen.",
+    "tagline": "Android Auto on the motorcycle's screen: maps, music and calls.",
+    "image": "modules/android-auto/card.webp",
+    "accent": "#5BA8F0",
+    "owner": "vincenzobpt",
+    "repository": "MOTO-HUB-modules"
+  },
+  {
+    "id": "motohub-flyby",
+    "displayName": "Flyby",
+    "summary": "Turns a ride, a saved route or the NAV route into a 3D film.",
+    "tagline": "Your rides, flown again: a 3D film of any ride, with a soundtrack written for it.",
+    "image": "modules/motohub-flyby/card.webp",
+    "accent": "#FFB23F",
+    "contractVersion": 16,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
   }
