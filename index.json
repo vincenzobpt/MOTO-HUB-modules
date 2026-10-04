@@ -16,7 +16,27 @@
     "tagline": "Your rides, flown again: a 3D film of any ride, with a soundtrack written for it.",
     "image": "modules/motohub-flyby/card.webp",
     "accent": "#FFB23F",
-    "contractVersion": 16,
+    "contractVersion": 23,
+    "owner": "vincenzobpt",
+    "repository": "MOTO-HUB-modules"
+  },
+  {
+    "id": "flyby-route-simulator",
+    "displayName": "Flyby Route Simulator",
+    "summary": "Plans a ride you have not done yet and simulates it for a Flyby film.",
+    "tagline": "Rides you haven't done yet: curated Experiences across Europe, simulated for a Flyby film.",
+    "accent": "#7FD17A",
+    "contractVersion": 22,
+    "owner": "vincenzobpt",
+    "repository": "MOTO-HUB-modules"
+  },
+  {
+    "id": "dashcam",
+    "displayName": "Dashcam",
+    "summary": "Connects a Wi-Fi dashcam: live view, recording, photos, settings and card files.",
+    "tagline": "Your Wi-Fi dashcam in the app, and on the Dashboard's map panel.",
+    "accent": "#E8665C",
+    "contractVersion": 20,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
   }

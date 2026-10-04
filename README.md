@@ -70,6 +70,8 @@ index promised.
 | --- | --- | --- |
 | `android-auto` | AGPL-3.0-only | [MOTO-HUB-module-sdk](https://github.com/vincenzobpt/MOTO-HUB-module-sdk/tree/main/modules/android-auto), tagged `android-auto-<version>` for every release |
 | `motohub-flyby` | Proprietary | Closed source |
+| `flyby-route-simulator` | AGPL-3.0-only | [MOTO-HUB-module-sdk](https://github.com/vincenzobpt/MOTO-HUB-module-sdk/tree/main/modules/flyby-route-simulator), tagged `flyby-route-simulator-<version>` |
+| `dashcam` | AGPL-3.0-only | [MOTO-HUB-module-sdk](https://github.com/vincenzobpt/MOTO-HUB-module-sdk/tree/main/modules/dashcam), tagged `dashcam-<version>` |
 
 Want to write a module of your own? The **[MOTO-HUB module SDK](https://github.com/vincenzobpt/MOTO-HUB-module-sdk)** has the module API (Apache-2.0),
 the Gradle plugin that packages and signs a `.mhm`, an example module and the documentation.
