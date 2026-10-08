@@ -16,7 +16,7 @@
     "tagline": "Your rides, flown again: a 3D film of any ride, with a soundtrack written for it.",
     "image": "modules/motohub-flyby/card.webp",
     "accent": "#FFB23F",
-    "contractVersion": 23,
+    "contractVersion": 26,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
   },
