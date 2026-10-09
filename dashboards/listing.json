@@ -394,5 +394,12 @@
       "animated"
     ],
     "featured": false
+  },
+  "moto-hub-studio.danny-dash-aa": {
+    "kind": "touring",
+    "tags": [
+      "android-auto",
+      "module"
+    ]
   }
 }

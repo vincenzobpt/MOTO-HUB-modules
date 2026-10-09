@@ -1420,6 +1420,80 @@
       "previewSha256": "dc4f9ee2c34b8bcaf493abae3b6ed43f9792ea5de4caef3dfca8b16baecee0a6"
     },
     {
+      "id": "moto-hub-studio.danny-dash-aa",
+      "name": "Danny 900dsx Dash",
+      "author": "Daniel",
+      "description": "Needs the Android Auto module. Android Auto in the top left; weather, engine load, average and top speed and outside temperature on the right (altitude instead of engine load without an OBD adapter); Wi-Fi signal, phone battery and temperature, range left, battery voltage (a speed bar without an OBD adapter) and the clock along the bottom. Layouts for 800x384, 16:9, 5:3, ultra-wide 1280x480 and portrait. Handlebar: UP/DOWN change dashboard, double SELECT goes back to the previous dashboard.",
+      "version": "2",
+      "kind": "touring",
+      "tags": [
+        "android-auto",
+        "module"
+      ],
+      "featured": false,
+      "published": "2026-10-09",
+      "updated": "2026-10-09",
+      "engine": "projection",
+      "canvas": {
+        "width": 800,
+        "height": 384
+      },
+      "layouts": [
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": "projection",
+        "app": null
+      },
+      "usesObd": true,
+      "elements": [
+        "map.projection",
+        "signal.bar",
+        "signal.text",
+        "signal.value",
+        "widget.weather"
+      ],
+      "path": "dashboards/files/moto-hub-studio.danny-dash-aa.mhd",
+      "sha256": "72e886120f42a7f4abb1a757f9423d207e91c583a1019888c200e03af3255bbf",
+      "bytes": 23443,
+      "preview": "dashboards/previews/moto-hub-studio.danny-dash-aa.png",
+      "previewSha256": "ec1e893490e2db38914f0d41f91d58b65220397d7892d427719e47139eb51630"
+    },
+    {
       "id": "moto-hub-studio.pov-drone-feed",
       "name": "Drone Feed",
       "author": "moto-hub-studio",
