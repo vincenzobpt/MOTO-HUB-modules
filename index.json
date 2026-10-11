@@ -39,5 +39,15 @@
     "contractVersion": 20,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
+  },
+  {
+    "id": "dawarich",
+    "displayName": "Dawarich",
+    "summary": "Records your rides to your own Dawarich server, or starts the Dawarich app with the ride.",
+    "tagline": "Your rides on your own Dawarich server, recorded while you ride.",
+    "accent": "#4FB3BF",
+    "contractVersion": 27,
+    "owner": "vincenzobpt",
+    "repository": "MOTO-HUB-modules"
   }
 ]
