@@ -401,5 +401,14 @@
       "android-auto",
       "module"
     ]
+  },
+  "moto-hub-studio.porthole": {
+    "kind": "touring",
+    "tags": [
+      "3d",
+      "round",
+      "animated",
+      "lean"
+    ]
   }
 }
