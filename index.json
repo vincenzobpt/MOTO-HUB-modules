@@ -50,5 +50,15 @@
     "contractVersion": 27,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
+  },
+  {
+    "id": "immich",
+    "displayName": "Immich",
+    "summary": "Shows the photos of your own Immich server on the NAV map.",
+    "tagline": "Your Immich photos on the NAV map, right where you took them.",
+    "accent": "#4250AF",
+    "contractVersion": 31,
+    "owner": "vincenzobpt",
+    "repository": "MOTO-HUB-modules"
   }
 ]
