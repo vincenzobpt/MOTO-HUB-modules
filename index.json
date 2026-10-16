@@ -6,6 +6,7 @@
     "tagline": "Android Auto on the motorcycle's screen: maps, music and calls.",
     "image": "modules/android-auto/card.webp",
     "accent": "#5BA8F0",
+    "contractVersion": 29,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
   },
