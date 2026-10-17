@@ -2436,7 +2436,7 @@
       "name": "Porthole",
       "author": "moto-hub-studio",
       "description": "Made for round TFTs like the CL-C450 (544x512): the 3D rider's-eye view fills the glass, and everything the motorcycle does not already show sits inside the round: next turn, distance and arrival (or the road you are on), altitude, air temperature, heading and lean, plus a rotating strip with trip, average, ride time, range, maximum lean, phone battery and satellites. No speed, rpm or gear: the bike draws those itself. Works without OBD. Handlebar: UP/DOWN step the strip, SELECT levels the lean reading (park upright first), double SELECT goes back to the previous dashboard.",
-      "version": "1",
+      "version": "2",
       "kind": "touring",
       "tags": [
         "3d",
@@ -2485,10 +2485,10 @@
         "signal.value"
       ],
       "path": "dashboards/files/moto-hub-studio.porthole.mhd",
-      "sha256": "b1944f5ebc886038029d4f0bf69993df65e8787396e84d413dbe4a2a5c962914",
-      "bytes": 67294,
+      "sha256": "e97e9d4b19c381e7a15f42606218703dc5d2321f6891a31250da13e4bba0a790",
+      "bytes": 65821,
       "preview": "dashboards/previews/moto-hub-studio.porthole.png",
-      "previewSha256": "60f8d2035a48f52326d62af24eeff66055fc98dbebeebc5b7808def105f3a261"
+      "previewSha256": "0db5df8536703f9f88b10adf8cc43551480f62e480b0842a862d72f4b5b2570f"
     },
     {
       "id": "moto-hub-studio.potion-ride",
