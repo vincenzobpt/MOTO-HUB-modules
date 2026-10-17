@@ -65,8 +65,9 @@
     "id": "tomtom",
     "displayName": "TomTom",
     "summary": "Live traffic, places, search and road info from your own free TomTom key.",
-    "tagline": "TomTom traffic and places on the NAV map, on your phone only.",
-    "accent": "#DF1B12",
+    "tagline": "Live traffic, places and speed limits on your NAV map.",
+    "image": "modules/tomtom/card.webp",
+    "accent": "#FF6B5B",
     "contractVersion": 32,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
