@@ -60,5 +60,15 @@
     "contractVersion": 31,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
+  },
+  {
+    "id": "tomtom",
+    "displayName": "TomTom",
+    "summary": "Live traffic, places, search and road info from your own free TomTom key.",
+    "tagline": "TomTom traffic and places on the NAV map, on your phone only.",
+    "accent": "#DF1B12",
+    "contractVersion": 32,
+    "owner": "vincenzobpt",
+    "repository": "MOTO-HUB-modules"
   }
 ]
