@@ -1622,6 +1622,99 @@
       "previewSha256": "0954e3ae7836eb616c41bceed1da2839cdd6d3f7ffde99a701eab63647d18c6e"
     },
     {
+      "id": "moto-hub-studio.head-unit-home",
+      "name": "Head Unit Home",
+      "author": "moto-hub-studio",
+      "description": "A touch dashboard for a car head unit or a touch TFT, in one amber accent on near-black. A left rail switches between Map (which also brings the map back after an app was opened in its place), Music, Phone (the phone's calling app) and the Menu; below it the rider's first three app shortcuts, the clock and the phone battery. Map shows the live map with the next turn, the arrival time and the map's own zoom and centre buttons, two panels of Ride Dashboard widgets (navigation, curve tape, route profile and trip metrics; weather, altitude, compass, daylight and phone status) that change on a tap or a swipe, and a compact music bar. A divider between the map and the panels can be dragged to give either more room (the widgets grow to fill their panels, and the position is remembered), or all the way to an edge to close the map and music bar (two panels then sit side by side) or the panels; the music bar under the map opens and closes with a tap on its handle. Music is a full-size player with a seek bar, the rider's music apps (chosen on the phone, the installed ones until then) and a volume slider. The Menu drawer holds night mode, volume, lap timer, level, trip recording and map zoom, navigate home / stop navigation, the map engine (OSM, vector, 3D, or the rider's navigation app through Shizuku) and all eight of the rider's apps. Above 10 km/h the lists and small cards disappear and only a huge speed, the gear (or the trip distance without OBD) and three huge buttons - music, next turn, phone - remain. Works without OBD or a route. Holding the clock for two seconds switches riding mode off for a passenger (the clock turns red) and back on. Layouts: 16:9 1280x720, 5:3 800x480, wide 800x384 and near-square 720x712.",
+      "version": "1.13",
+      "kind": "touring",
+      "tags": [
+        "touch",
+        "head-unit",
+        "music",
+        "apps"
+      ],
+      "featured": false,
+      "published": "2026-10-20",
+      "updated": "2026-10-20",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 480,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 720,
+          "height": 712,
+          "orientation": "landscape",
+          "when": "landscape"
+        }
+      ],
+      "orientations": [
+        "landscape"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.46"
+      },
+      "usesObd": true,
+      "elements": [
+        "container.carousel",
+        "container.drawer",
+        "container.group",
+        "container.panel",
+        "decor.clock",
+        "decor.line",
+        "decor.rect",
+        "decor.text",
+        "map.rider",
+        "nav.maneuverArrow",
+        "signal.gear",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.notificationToast",
+        "touch.quickSettings",
+        "touch.rail",
+        "touch.split",
+        "widget.altitude",
+        "widget.battery",
+        "widget.compass",
+        "widget.curve_tape",
+        "widget.navigation",
+        "widget.route_profile",
+        "widget.sun_daylight",
+        "widget.trip_metrics",
+        "widget.weather"
+      ],
+      "path": "dashboards/files/moto-hub-studio.head-unit-home.mhd",
+      "sha256": "4f0f0bedb2c20f62eafe196c01638cc01ad2ab1b8220620167929482d1224c09",
+      "bytes": 42336,
+      "preview": "dashboards/previews/moto-hub-studio.head-unit-home.png",
+      "previewSha256": "471e95bec9f76c2d304b1284c7e92f0d644097df4c7e3edb1f3f56944a413f2a"
+    },
+    {
       "id": "moto-hub-studio.pov-jet-hud",
       "name": "Jet HUD",
       "author": "moto-hub-studio",

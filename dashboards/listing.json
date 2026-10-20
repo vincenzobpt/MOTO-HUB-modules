@@ -410,5 +410,14 @@
       "animated",
       "lean"
     ]
+  },
+  "moto-hub-studio.head-unit-home": {
+    "kind": "touring",
+    "tags": [
+      "touch",
+      "head-unit",
+      "music",
+      "apps"
+    ]
   }
 }

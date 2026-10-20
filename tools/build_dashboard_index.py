@@ -51,6 +51,8 @@ MAP_ELEMENTS = {
     "map.maplibre": "maplibre",
     "map.pov3d": "pov3d",
     "map.projection": "projection",
+    # A touch dashboard's map that follows the rider's engine choice; it starts on MapLibre.
+    "map.rider": "maplibre",
 }
 RIDE_SCENE_SOURCES = {"osm": "osm", "maplibre": "maplibre", "pov3d": "pov3d", "projection": "projection"}
 
@@ -62,9 +64,14 @@ def flatten(elements):
 
 
 def all_elements(document):
+    """DashboardDocument.topLevelElements: the elements, the pages' (schema 2), and the same per variant."""
     top = list(document.get("elements") or [])
+    for page in document.get("pages") or []:
+        top.extend(page.get("elements") or [])
     for variant in document.get("variants") or []:
         top.extend(variant.get("elements") or [])
+        for page in variant.get("pages") or []:
+            top.extend(page.get("elements") or [])
     return list(flatten(top))
 
 
@@ -233,9 +240,15 @@ def main():
             problems.append(f"{name}: id {dash_id} is listed twice")
             continue
         seen.add(dash_id)
-        # The app reads a missing schema as 1 (DashboardDocument.schema defaults to it).
-        if document.get("schema", 1) != 1:
-            problems.append(f"{name}: schema must be 1")
+        # The app reads a missing schema as 1 (DashboardDocument.schema defaults to it). Schema 2 is
+        # the touch format (ADV-SOLO 0.1.46): such a file must say so in requires.app, so an older
+        # app shows "needs version" in the Community instead of failing on install.
+        schema = document.get("schema", 1)
+        if schema not in (1, 2):
+            problems.append(f"{name}: schema must be 1 or 2")
+            continue
+        if schema == 2 and not (document.get("requires") or {}).get("app"):
+            problems.append(f"{name}: a schema 2 (touch) dashboard needs requires.app")
             continue
         canvas = document.get("canvas") or {}
         if not all(isinstance(canvas.get(k), int) and 64 <= canvas[k] <= 4096 for k in ("width", "height")):
