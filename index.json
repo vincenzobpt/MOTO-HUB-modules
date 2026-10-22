@@ -27,6 +27,7 @@
     "summary": "Plans a ride you have not done yet and simulates it for a Flyby film.",
     "tagline": "Rides you haven't done yet: curated Experiences across Europe, simulated for a Flyby film.",
     "accent": "#7FD17A",
+    "image": "modules/flyby-route-simulator/card.webp",
     "contractVersion": 22,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
@@ -37,6 +38,7 @@
     "summary": "Connects a Wi-Fi dashcam: live view, recording, photos, settings and card files.",
     "tagline": "Your Wi-Fi dashcam in the app, and on the Dashboard's map panel.",
     "accent": "#E8665C",
+    "image": "modules/dashcam/card.webp",
     "contractVersion": 20,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
@@ -47,6 +49,7 @@
     "summary": "Records your rides to your own Dawarich server, or starts the Dawarich app with the ride.",
     "tagline": "Your rides on your own Dawarich server, recorded while you ride.",
     "accent": "#4FB3BF",
+    "image": "modules/dawarich/card.webp",
     "contractVersion": 27,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
@@ -57,6 +60,7 @@
     "summary": "Shows the photos of your own Immich server on the NAV map.",
     "tagline": "Your Immich photos on the NAV map, right where you took them.",
     "accent": "#4250AF",
+    "image": "modules/immich/card.webp",
     "contractVersion": 31,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
