@@ -1625,8 +1625,8 @@
       "id": "moto-hub-studio.head-unit-home",
       "name": "Head Unit Home",
       "author": "moto-hub-studio",
-      "description": "A touch dashboard for a car head unit or a touch TFT, in one amber accent on near-black. A left rail switches between Map (which also brings the map back after an app was opened in its place), Music, Phone (the phone's calling app) and the Menu; below it the rider's first three app shortcuts, the clock and the phone battery. Map shows the live map with the next turn, the arrival time and the map's own zoom and centre buttons, two panels of Ride Dashboard widgets (navigation, curve tape, route profile and trip metrics; weather, altitude, compass, daylight and phone status) that change on a tap or a swipe, and a compact music bar. A divider between the map and the panels can be dragged to give either more room (the widgets grow to fill their panels, and the position is remembered), or all the way to an edge to close the map and music bar (two panels then sit side by side) or the panels; the music bar under the map opens and closes with a tap on its handle. Music is a full-size player with a seek bar, the rider's music apps (chosen on the phone, the installed ones until then) and a volume slider. The Menu drawer holds night mode, volume, lap timer, level, trip recording and map zoom, navigate home / stop navigation, the map engine (OSM, vector, 3D, or the rider's navigation app through Shizuku) and all eight of the rider's apps. Above 10 km/h the lists and small cards disappear and only a huge speed, the gear (or the trip distance without OBD) and three huge buttons - music, next turn, phone - remain. Works without OBD or a route. Holding the clock for two seconds switches riding mode off for a passenger (the clock turns red) and back on. Layouts: 16:9 1280x720, 5:3 800x480, wide 800x384 and near-square 720x712.",
-      "version": "1.13",
+      "description": "A touch dashboard for a car head unit or a touch TFT, in one amber accent on near-black. A left rail switches between Map (which also brings the map back after an app was opened in its place), Music, Phone (the phone's calling app) and the Menu; below it the rider's first three app shortcuts, the clock and the phone battery. Map shows the live map with the next turn, the arrival time and the map's own zoom and centre buttons, two panels of Ride Dashboard widgets (navigation, curve tape, route profile and trip metrics; weather, altitude, compass, daylight and phone status) that change on a tap or a swipe, and a compact music bar. A divider between the map and the panels can be dragged to give either more room (the widgets grow to fill their panels, and the position is remembered), or all the way to an edge to close the map and music bar (two panels then sit side by side) or the panels; the music bar opens and closes with a tap on its handle. Music is a full-size player with a seek bar, the rider's music apps (chosen on the phone, the installed ones until then) and a volume slider. The Menu drawer holds night mode, volume, lap timer, level, trip recording, map zoom (mouse mode instead with the navigation app: the handlebar arrows move a pointer, OK clicks), navigate home / stop navigation, the map engine (OSM, vector, 3D, or the rider's navigation app through Shizuku) and all eight of the rider's apps. Above 10 km/h the lists and small cards disappear and only a huge speed, the gear (or the trip distance without OBD) and three huge buttons - music, next turn, phone - remain. Works without OBD or a route. Holding the clock for two seconds switches riding mode off for a passenger (the clock turns red) and back on. Layouts: 16:9 1280x720, 5:3 800x480, wide 800x384, near-square 720x712, ultra-wide 1920x720, 4:3 1024x768 and portrait 1080x1920.",
+      "version": "1.16",
       "kind": "touring",
       "tags": [
         "touch",
@@ -1666,15 +1666,34 @@
           "height": 712,
           "orientation": "landscape",
           "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
         }
       ],
       "orientations": [
-        "landscape"
+        "landscape",
+        "portrait"
       ],
       "requires": {
         "obd": false,
         "module": null,
-        "app": "0.1.46"
+        "app": "0.1.47"
       },
       "usesObd": true,
       "elements": [
@@ -1709,10 +1728,10 @@
         "widget.weather"
       ],
       "path": "dashboards/files/moto-hub-studio.head-unit-home.mhd",
-      "sha256": "4f0f0bedb2c20f62eafe196c01638cc01ad2ab1b8220620167929482d1224c09",
-      "bytes": 42336,
+      "sha256": "545ea8fa7ad58788bf21218d8ebb5af699776086d57d8225cf16a382715c2d03",
+      "bytes": 48340,
       "preview": "dashboards/previews/moto-hub-studio.head-unit-home.png",
-      "previewSha256": "471e95bec9f76c2d304b1284c7e92f0d644097df4c7e3edb1f3f56944a413f2a"
+      "previewSha256": "6507e16405bff8c0385d65eaaf227713167c90fc7dc9c2117b53d5ba134b0bff"
     },
     {
       "id": "moto-hub-studio.pov-jet-hud",
