@@ -75,5 +75,16 @@
     "contractVersion": 32,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
+  },
+  {
+    "id": "mapopt",
+    "displayName": "MapOpt",
+    "summary": "Your own Mapbox token for the 3D maps: Mapbox Standard with terrain, trees, landmarks and light.",
+    "tagline": "Mapbox Standard on your 3D POV and NAV map.",
+    "image": "modules/mapopt/card.webp",
+    "accent": "#4264FB",
+    "contractVersion": 36,
+    "owner": "vincenzobpt",
+    "repository": "MOTO-HUB-modules"
   }
 ]
