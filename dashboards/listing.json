@@ -419,5 +419,16 @@
       "music",
       "apps"
     ]
+  },
+  "moto-hub-studio.head-unit-drive": {
+    "kind": "touring",
+    "tags": [
+      "touch",
+      "head-unit",
+      "music",
+      "apps",
+      "map-app",
+      "android-auto-style"
+    ]
   }
 }

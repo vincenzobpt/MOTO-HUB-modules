@@ -1622,6 +1622,194 @@
       "previewSha256": "0954e3ae7836eb616c41bceed1da2839cdd6d3f7ffde99a701eab63647d18c6e"
     },
     {
+      "id": "moto-hub-studio.head-unit-drive",
+      "name": "Head Unit Drive",
+      "author": "moto-hub-studio",
+      "description": "A head-unit dashboard in the look of today's car-projection screens, made for the Map app (Google Maps or Waze running on the head unit, which draw their own turn card and arrival bar). One black rail floats over the map at the left: it slides in at start-up, folds into a dot after three seconds and comes back with a tap on the dot. It holds the phone battery, the clock, the rider's first three app shortcuts and four round buttons: back to the map, music, settings and the app launcher, which opens all eight shortcuts in a glass card hanging over the map. Settings is a popup with the volume, night mode, lap timer, level, trip recording, mouse mode, map zoom, navigate home / stop, Full map (on: the map runs under the cards too; off: it stops where they begin, so a navigation app centres on the room left) and the map engine. The map (or the navigation app) fills the whole screen behind everything; with OpenStreetMap, vector or 3D the dashboard draws a green next-turn card and an arrival card itself. Floating over it at the right (at the bottom on a portrait screen) an info card (weather, trip, altitude, compass, daylight and phone, one at a time: a tap or a swipe shows the next; a message takes its place while shown) and the music on its own cover, with a wave for the played part. The music card is hidden until the round music button in its corner is tapped, and its x sends it back; a tab above the cards lowers them, a tab between the two cards moves the line between them (half and half to start), a tab beside them resizes them when dragged and hides them or brings them back when tapped. A swipe up on the music card opens the music page (big cover, music apps, volume). Works without OBD or a route. Needs MOTO-HUB SOLO 0.1.49 or later. Layouts: every landscape shape from 4:3 to 4:1 (1920x720, 16:9, 18:9, 20:9, 21:9...) and five portrait shapes, so the picture fills the screen.",
+      "version": "1.11",
+      "kind": "touring",
+      "tags": [
+        "touch",
+        "head-unit",
+        "music",
+        "apps",
+        "map-app",
+        "android-auto-style"
+      ],
+      "featured": false,
+      "published": "2026-10-24",
+      "updated": "2026-10-24",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1920,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 960,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1152,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1368,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1440,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1512,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1584,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1680,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1800,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 2160,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 2520,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 2880,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 720,
+          "height": 1600,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 720,
+          "height": 1440,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 720,
+          "height": 1280,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 720,
+          "height": 1152,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 720,
+          "height": 960,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.49"
+      },
+      "usesObd": false,
+      "elements": [
+        "container.carousel",
+        "container.drawer",
+        "container.group",
+        "container.panel",
+        "container.popup",
+        "decor.clock",
+        "decor.ellipse",
+        "decor.rect",
+        "decor.text",
+        "map.rider",
+        "nav.maneuverArrow",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.notificationToast",
+        "touch.quickSettings",
+        "touch.split",
+        "widget.altitude",
+        "widget.battery",
+        "widget.compass",
+        "widget.sun_daylight",
+        "widget.trip_metrics",
+        "widget.weather"
+      ],
+      "path": "dashboards/files/moto-hub-studio.head-unit-drive.mhd",
+      "sha256": "c00e76623fe7901295e30fece3e93946bd4fda1f3bb2fff643380cf5c2a1d400",
+      "bytes": 37145,
+      "preview": "dashboards/previews/moto-hub-studio.head-unit-drive.png",
+      "previewSha256": "b40c4c2620878e1a985f5defa494b5d60485b563c1f3a6dc6a4845923b6e363b"
+    },
+    {
       "id": "moto-hub-studio.head-unit-home",
       "name": "Head Unit Home",
       "author": "moto-hub-studio",
