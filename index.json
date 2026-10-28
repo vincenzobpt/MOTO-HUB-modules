@@ -35,11 +35,11 @@
   {
     "id": "dashcam",
     "displayName": "Dashcam",
-    "summary": "Connects a Wi-Fi dashcam: live view, recording, photos, settings and card files.",
+    "summary": "Connects a Wi-Fi dashcam or an IP camera: live view, recording, photos, settings and card files.",
     "tagline": "Your Wi-Fi dashcam in the app, and on the Dashboard's map panel.",
     "accent": "#E8665C",
     "image": "modules/dashcam/card.webp",
-    "contractVersion": 20,
+    "contractVersion": 37,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
   },
