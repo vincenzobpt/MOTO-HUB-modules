@@ -61,7 +61,7 @@
     "tagline": "Your Immich photos on the NAV map, right where you took them.",
     "accent": "#4250AF",
     "image": "modules/immich/card.webp",
-    "contractVersion": 31,
+    "contractVersion": 37,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
   },
