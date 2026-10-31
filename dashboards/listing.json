@@ -430,5 +430,15 @@
       "map-app",
       "android-auto-style"
     ]
+  },
+  "moto-hub-studio.trail-deck": {
+    "kind": "touring",
+    "tags": [
+      "touch",
+      "head-unit",
+      "map-app",
+      "roadbook",
+      "companion"
+    ]
   }
 }

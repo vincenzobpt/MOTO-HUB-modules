@@ -3360,6 +3360,101 @@
       "previewSha256": "2af85cdb0737d6172547165a47c28f19cd7119b1b10791ab916e97b9d1bf97c1"
     },
     {
+      "id": "moto-hub-studio.trail-deck",
+      "name": "Trail Deck",
+      "author": "moto-hub-studio",
+      "description": "An adventure-app dashboard for a head unit running the Map app (Google Maps or Waze on the head unit, which draw their own turn card and arrival bar). A status bar along the top (phone battery gauge, GPS precision in metres coloured green / orange / red, outside temperature, clock) and a bottom menu with four sections - Home, Map, Devices, Roadbook - the speedo in its middle (heading, speed, speed camera or mountain pass warning; a tap opens the Trip view, a long press the remote menu) and the section's own buttons at the right, ending with the Quick Menu. Home: three rows of cards beside the map, Home 1 (app shortcuts, GPS dashboard with the lean horizon, useful indicators) or Home 2 (favourite places, music, trip info) swapped with the round 1/2 button; drag the tab to share the room with the map, tap it to hide the rows. Map: the map over the whole room; with OpenStreetMap, vector or 3D the dashboard adds a follow button, a turn card with a NAV badge and arrival line that pulses near the turn, floating altitude / trip / road cards and a layers button. Devices: the three widgets chosen for the Companion display in MOTO-HUB, in that order. Roadbook: the rally roadbook with ODO, CAP and ALT panels. Quick Actions slide in beside the map (recorder, lap line, level, night, go home, places, quick toggles, map layers). The remote controller menu (handlebar Back) lists eight colour-coded families - safety, navigation, devices, save, map, media, trip, system - one per page. Works without OBD or a route. Needs MOTO-HUB SOLO 0.1.57 or later. Layouts: 1920x720 head units (8:3), 16:9, 4:3 and 9:16 portrait.",
+      "version": "1.5",
+      "kind": "touring",
+      "tags": [
+        "touch",
+        "head-unit",
+        "map-app",
+        "roadbook",
+        "companion"
+      ],
+      "featured": false,
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1920,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 960,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 720,
+          "height": 1280,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.57"
+      },
+      "usesObd": false,
+      "elements": [
+        "container.carousel",
+        "container.drawer",
+        "container.group",
+        "container.panel",
+        "container.popup",
+        "container.sheet",
+        "decor.clock",
+        "decor.ellipse",
+        "decor.line",
+        "decor.rect",
+        "decor.text",
+        "map.rider",
+        "nav.hazardSlot",
+        "nav.locationCard",
+        "nav.maneuverArrow",
+        "nav.nextTurnChip",
+        "signal.bar",
+        "signal.horizon",
+        "signal.lamp",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.notificationToast",
+        "touch.quickSettings",
+        "touch.split",
+        "widget.companion",
+        "widget.roadbook"
+      ],
+      "path": "dashboards/files/moto-hub-studio.trail-deck.mhd",
+      "sha256": "adf8849d330f087875e02d3ce949412e93978b1e7b7effcbf2ebc834663860ec",
+      "bytes": 60594,
+      "preview": "dashboards/previews/moto-hub-studio.trail-deck.png",
+      "previewSha256": "c68eff66767ac271b5bcafac7a168874960afd917ab144674cfb91449b542346"
+    },
+    {
       "id": "moto-hub-studio.pov-turbo-stage",
       "name": "Turbo Stage",
       "author": "moto-hub-studio",
