@@ -1626,7 +1626,7 @@
       "name": "Head Unit Drive",
       "author": "moto-hub-studio",
       "description": "A head-unit dashboard in the look of today's car-projection screens, made for the Map app (Google Maps or Waze running on the head unit, which draw their own turn card and arrival bar). One black rail floats over the map at the left: it slides in at start-up, folds into a dot after three seconds and comes back with a tap on the dot. It holds the phone battery, the clock, the rider's first three app shortcuts and four round buttons: back to the map, music, settings and the app launcher, which opens all eight shortcuts in a glass card hanging over the map. Settings is a popup with the volume, night mode, lap timer, level, trip recording, mouse mode, map zoom, navigate home / stop, Full map (on: the map runs under the cards too; off: it stops where they begin, so a navigation app centres on the room left) and the map engine. The map (or the navigation app) fills the whole screen behind everything; with OpenStreetMap, vector or 3D the dashboard draws a green next-turn card and an arrival card itself. Floating over it at the right (at the bottom on a portrait screen) an info card (weather, trip, altitude, compass, daylight and phone, one at a time: a tap or a swipe shows the next; a message takes its place while shown) and the music on its own cover, with a wave for the played part. The music card is hidden until the round music button in its corner is tapped, and its x sends it back; a tab above the cards lowers them, a tab between the two cards moves the line between them (half and half to start), a tab beside them resizes them when dragged and hides them or brings them back when tapped. A swipe up on the music card opens the music page (big cover, music apps, volume). Works without OBD or a route. Needs MOTO-HUB SOLO 0.1.49 or later. Layouts: every landscape shape from 4:3 to 4:1 (1920x720, 16:9, 18:9, 20:9, 21:9...) and five portrait shapes, so the picture fills the screen.",
-      "version": "1.11",
+      "version": "1.15",
       "kind": "touring",
       "tags": [
         "touch",
@@ -1804,8 +1804,8 @@
         "widget.weather"
       ],
       "path": "dashboards/files/moto-hub-studio.head-unit-drive.mhd",
-      "sha256": "c00e76623fe7901295e30fece3e93946bd4fda1f3bb2fff643380cf5c2a1d400",
-      "bytes": 37145,
+      "sha256": "3229813a11c74039aa7ad15f98c90257ed2d7c28fb702eb67f6e024b77bfe3d8",
+      "bytes": 37177,
       "preview": "dashboards/previews/moto-hub-studio.head-unit-drive.png",
       "previewSha256": "b40c4c2620878e1a985f5defa494b5d60485b563c1f3a6dc6a4845923b6e363b"
     },
@@ -1814,7 +1814,7 @@
       "name": "Head Unit Home",
       "author": "moto-hub-studio",
       "description": "A touch dashboard for a car head unit or a touch TFT, in one amber accent on near-black. A left rail switches between Map (which also brings the map back after an app was opened in its place), Music, Phone (the phone's calling app) and the Menu; below it the rider's first three app shortcuts, the clock and the phone battery. Map shows the live map with the next turn, the arrival time and the map's own zoom and centre buttons, two panels of Ride Dashboard widgets (navigation, curve tape, route profile and trip metrics; weather, altitude, compass, daylight and phone status) that change on a tap or a swipe, and a compact music bar. A divider between the map and the panels can be dragged to give either more room (the widgets grow to fill their panels, and the position is remembered), or all the way to an edge to close the map and music bar (two panels then sit side by side) or the panels; the music bar opens and closes with a tap on its handle. Music is a full-size player with a seek bar, the rider's music apps (chosen on the phone, the installed ones until then) and a volume slider. The Menu drawer holds night mode, volume, lap timer, level, trip recording, map zoom (mouse mode instead with the navigation app: the handlebar arrows move a pointer, OK clicks), navigate home / stop navigation, the map engine (OSM, vector, 3D, or the rider's navigation app through Shizuku) and all eight of the rider's apps. Above 10 km/h the lists and small cards disappear and only a huge speed, the gear (or the trip distance without OBD) and three huge buttons - music, next turn, phone - remain. Works without OBD or a route. Holding the clock for two seconds switches riding mode off for a passenger (the clock turns red) and back on. Layouts: 16:9 1280x720, 5:3 800x480, wide 800x384, near-square 720x712, ultra-wide 1920x720, 4:3 1024x768 portrait 1080x1920, 4:5 portrait 800x1000 and a phone held upright 1080x2400.",
-      "version": "1.17",
+      "version": "1.18",
       "kind": "touring",
       "tags": [
         "touch",
@@ -1928,8 +1928,8 @@
         "widget.weather"
       ],
       "path": "dashboards/files/moto-hub-studio.head-unit-home.mhd",
-      "sha256": "41bddd47ccf9ac19e7c7e3faf63e265f192d2066e44ae253160c2c297152741d",
-      "bytes": 54740,
+      "sha256": "fb7cbf996032f7ba968e5a805b26d1f90ed664134b204203c0414ea3fbfc31e7",
+      "bytes": 37894,
       "preview": "dashboards/previews/moto-hub-studio.head-unit-home.png",
       "previewSha256": "6507e16405bff8c0385d65eaaf227713167c90fc7dc9c2117b53d5ba134b0bff"
     },
@@ -3364,7 +3364,7 @@
       "name": "Trail Deck",
       "author": "moto-hub-studio",
       "description": "An adventure-app dashboard for a head unit running the Map app (Google Maps or Waze on the head unit, which draw their own turn card and arrival bar). A status bar along the top (phone battery gauge, GPS precision in metres coloured green / orange / red, outside temperature, clock) and a bottom menu with four sections - Home, Map, Devices, Roadbook - the speedo in its middle (heading, speed, speed camera or mountain pass warning; a tap opens the Trip view, a long press the remote menu) and the section's own buttons at the right, ending with the Quick Menu. Home: three rows of cards beside the map, Home 1 (app shortcuts, GPS dashboard with the lean horizon, useful indicators) or Home 2 (favourite places, music, trip info) swapped with the round 1/2 button; drag the tab to share the room with the map, tap it to hide the rows. Map: the map over the whole room; with OpenStreetMap, vector or 3D the dashboard adds a follow button, a turn card with a NAV badge and arrival line that pulses near the turn, floating altitude / trip / road cards and a layers button. Devices: the three widgets chosen for the Companion display in MOTO-HUB, in that order. Roadbook: the rally roadbook with ODO, CAP and ALT panels. Quick Actions slide in beside the map (recorder, lap line, level, night, go home, places, quick toggles, map layers). The remote controller menu (handlebar Back) lists eight colour-coded families - safety, navigation, devices, save, map, media, trip, system - one per page. Works without OBD or a route. Needs MOTO-HUB SOLO 0.1.57 or later. Layouts: 1920x720 head units (8:3), 16:9, 4:3 and 9:16 portrait.",
-      "version": "1.5",
+      "version": "1.6",
       "kind": "touring",
       "tags": [
         "touch",
@@ -3449,10 +3449,10 @@
         "widget.roadbook"
       ],
       "path": "dashboards/files/moto-hub-studio.trail-deck.mhd",
-      "sha256": "adf8849d330f087875e02d3ce949412e93978b1e7b7effcbf2ebc834663860ec",
-      "bytes": 60594,
+      "sha256": "3a4ee03b5933e881f231dd088ef798bf8d1c1c498c0a56222b3c93300111b087",
+      "bytes": 60690,
       "preview": "dashboards/previews/moto-hub-studio.trail-deck.png",
-      "previewSha256": "c68eff66767ac271b5bcafac7a168874960afd917ab144674cfb91449b542346"
+      "previewSha256": "abe2b3dd2c2238cc76eb0e3c22115a39e8999aa3b372bda43d3f42af259d8ff6"
     },
     {
       "id": "moto-hub-studio.pov-turbo-stage",
