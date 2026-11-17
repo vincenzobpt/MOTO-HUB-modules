@@ -1638,7 +1638,7 @@
       ],
       "featured": false,
       "published": "2026-10-24",
-      "updated": "2026-11-11",
+      "updated": "2026-11-17",
       "engine": "maplibre",
       "canvas": {
         "width": 1920,
@@ -1824,7 +1824,7 @@
       ],
       "featured": false,
       "published": "2026-10-20",
-      "updated": "2026-11-11",
+      "updated": "2026-11-17",
       "engine": "maplibre",
       "canvas": {
         "width": 1280,
