@@ -86,5 +86,16 @@
     "contractVersion": 36,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
+  },
+  {
+    "id": "wt9011",
+    "displayName": "WT9011 IMU",
+    "summary": "Lean angle and g-forces from a WitMotion WT9011DCL on the motorcycle, recorded in your trips instead of the phone's sensors.",
+    "tagline": "A motion sensor on the bike, by sur00t.",
+    "image": "modules/wt9011/card.webp",
+    "accent": "#2DD4BF",
+    "contractVersion": 43,
+    "owner": "vincenzobpt",
+    "repository": "MOTO-HUB-modules"
   }
 ]
