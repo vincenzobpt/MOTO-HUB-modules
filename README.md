@@ -101,8 +101,15 @@ dashboards/
 
 ### Adding a dashboard
 
-1. Make it in **MOTO-HUB Studio**, the desktop editor (in private beta: [ask for it on Discord](https://discord.gg/FzhXZtPhC8)),
-   and save it as `.mhd`, with a preview image.
+The simple way: make it in **[MOTO-HUB Studio](https://motohub.techub.eu/studio-manual/)**, the desktop
+editor ([free licence](https://motohub.techub.eu/studio/licence/)), and press **Share with the community** in Dash or in Dashboards. Studio
+checks the file, gives it an id under your public nickname (`yournick.alpine-split`) and sends it
+for review. Once it is approved it appears here and in the app; Studio shows where it stands under
+**My submissions**.
+
+By pull request, if you prefer:
+
+1. Make it in MOTO-HUB Studio and save it as `.mhd`, with a preview image.
    Give it an id of your own (`yourname.alpine-split`): ids starting with `motohub.` belong to
    the dashboards the app ships.
 2. Put the file in `dashboards/files/`, named `<id>.mhd`.

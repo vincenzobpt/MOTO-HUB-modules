@@ -18,6 +18,12 @@ on:
 permissions:
   contents: write
 
+# Licenze Studio publishes a dashboard as two commits (file, then listing.json): one rebuild at a time,
+# so the second never loses the push race against the first.
+concurrency:
+  group: dashboards-index-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   validate:
     if: github.event_name == 'pull_request'
@@ -53,4 +59,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Rebuild dashboards/index.json"
+          # A newer commit (e.g. listing.json right after the file) may have landed meanwhile: its own
+          # run is queued behind this one and rebuilds the index again, so rebasing onto it is enough.
+          git pull --rebase origin "${GITHUB_REF_NAME}"
           git push

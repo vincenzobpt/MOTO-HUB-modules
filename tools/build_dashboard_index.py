@@ -4,6 +4,7 @@
 Usage:
     python3 tools/build_dashboard_index.py           # validate, extract previews, write the index
     python3 tools/build_dashboard_index.py --check   # validate only, exit 1 on any problem
+    python3 tools/build_dashboard_index.py --check --root <dir>   # same, on a copy (<dir>/dashboards/...)
 
 Everything the app filters on - every layout's resolution and orientation, map engine, whether an
 OBD adapter is needed or merely used, whether a module is needed, which elements are on it - is
@@ -25,7 +26,18 @@ import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+def repository_root():
+    """--root <dir> points at a copy (Licenze Studio checks a dashboard there before publishing it)."""
+    args = sys.argv[1:]
+    if "--root" in args:
+        at = args.index("--root")
+        if at + 1 >= len(args):
+            sys.exit("--root needs a directory")
+        return Path(args[at + 1]).resolve()
+    return Path(__file__).resolve().parent.parent
+
+
+ROOT = repository_root()
 DASHBOARDS = ROOT / "dashboards"
 FILES = DASHBOARDS / "files"
 PREVIEWS = DASHBOARDS / "previews"
@@ -38,7 +50,7 @@ KINDS = {"ride", "touring", "engine", "track", "minimal"}
 TAG = re.compile(r"^[a-z0-9][a-z0-9-]{0,23}$")
 
 MAX_FILE_BYTES = 4 * 1024 * 1024
-MAX_DOCUMENT_BYTES = 512 * 1024
+MAX_DOCUMENT_BYTES = 1024 * 1024  # what the phone accepts (DashboardPackage)
 MAX_PREVIEW_BYTES = 1024 * 1024
 MAX_ENTRIES = 64
 PNG_MAGIC = b"\x89PNG\r\n\x1a\n"
@@ -173,7 +185,7 @@ def read_package(path, problems):
     for info in names:
         if info.filename == "dashboard.json":
             if info.file_size > MAX_DOCUMENT_BYTES:
-                problems.append(f"{path.name}: dashboard.json is larger than 512 KB")
+                problems.append(f"{path.name}: dashboard.json is larger than 1 MB")
                 return None, None, data
             try:
                 document = json.loads(archive.read(info).decode("utf-8"))
@@ -206,6 +218,9 @@ def git_dates(path):
 
 def main():
     check_only = "--check" in sys.argv[1:]
+    if not FILES.is_dir():
+        print(f"No {FILES} folder.")
+        return 1
     problems = []
     listing = {}
     if LISTING.exists():
