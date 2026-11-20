@@ -1285,6 +1285,123 @@
       "previewSha256": "97ef1289916c5ac64f4d38f71845ec26bc08b3428b41c87844791618b9bf4295"
     },
     {
+      "id": "vincenzo.aviator-hud",
+      "name": "Aviator HUD",
+      "author": "Vincenzo",
+      "description": "Fighter-jet green over the 3D rider's-eye view: speed and gear on the left, the next turn and the clock on the right. Gear needs an OBD adapter. Made in Studio's Dash: open it there to change cards, colours and docks.",
+      "version": "1",
+      "kind": "touring",
+      "tags": [
+        "dash",
+        "hud",
+        "3d",
+        "green",
+        "obd"
+      ],
+      "featured": false,
+      "published": "2026-11-20",
+      "updated": "2026-11-20",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": true,
+      "madeWith": "dash",
+      "elements": [
+        "container.drawer",
+        "container.panel",
+        "decor.clock",
+        "decor.text",
+        "map.pov3d",
+        "nav.maneuverArrow",
+        "signal.gear",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.quickSettings",
+        "touch.rail"
+      ],
+      "path": "dashboards/files/vincenzo.aviator-hud.mhd",
+      "sha256": "ac11bfec45e22544a038edb0b148c35a4f6c3f9a2740d13d280f1f7496363a8f",
+      "bytes": 34519,
+      "preview": "dashboards/previews/vincenzo.aviator-hud.png",
+      "previewSha256": "efde2b6817c619e4b5656273af2347e62a3ff0c9873fedd0fc1c6482d1b8491b"
+    },
+    {
       "id": "moto-hub-studio.big-and-bold",
       "name": "Big & Bold",
       "author": "moto-hub-studio",
@@ -1352,6 +1469,120 @@
       "previewSha256": "1ad1c89a7b0f43a2064228cb685eb42ec1f6962664dd603e5c4268194aa0a4d5"
     },
     {
+      "id": "vincenzo.big-bold",
+      "name": "Big & Bold",
+      "author": "Vincenzo",
+      "description": "Three huge numbers and nothing else: speed, gear and the time, white on black with yellow labels. Gear needs an OBD adapter. Made in Studio's Dash: open it there to change cards, colours and docks.",
+      "version": "1",
+      "kind": "minimal",
+      "tags": [
+        "dash",
+        "big-numbers",
+        "no-map",
+        "obd"
+      ],
+      "featured": false,
+      "published": "2026-11-20",
+      "updated": "2026-11-20",
+      "engine": "obd",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": true,
+      "madeWith": "dash",
+      "elements": [
+        "container.drawer",
+        "container.panel",
+        "decor.clock",
+        "decor.text",
+        "signal.gear",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.quickSettings",
+        "touch.rail"
+      ],
+      "path": "dashboards/files/vincenzo.big-bold.mhd",
+      "sha256": "1cad55eca1cacc8464ab062ed00d218d51803f0baafc78ee04fcde4ede0b9579",
+      "bytes": 26594,
+      "preview": "dashboards/previews/vincenzo.big-bold.png",
+      "previewSha256": "1b621a0415855ff47bd836ef3c588f29cf31a70c509e98d06c31dc10fc92ba79"
+    },
+    {
       "id": "moto-hub-studio.portrait-blueprint",
       "name": "Blueprint",
       "author": "moto-hub-studio",
@@ -1405,6 +1636,120 @@
       "bytes": 79940,
       "preview": "dashboards/previews/moto-hub-studio.portrait-blueprint.png",
       "previewSha256": "c39901f74bd7ab349ff53125fe4b462c27d2d187454646cf4d484b1414aeb60d"
+    },
+    {
+      "id": "vincenzo.blueprint",
+      "name": "Blueprint",
+      "author": "Vincenzo",
+      "description": "An engineering drawing on blueprint paper: a speed dial with trip stats, a revs dial and the route in a mini map. Revs need an OBD adapter. Made in Studio's Dash: open it there to change cards, colours and docks.",
+      "version": "1",
+      "kind": "minimal",
+      "tags": [
+        "dash",
+        "blueprint",
+        "engineering",
+        "obd"
+      ],
+      "featured": false,
+      "published": "2026-11-20",
+      "updated": "2026-11-20",
+      "engine": "obd",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": true,
+      "madeWith": "dash",
+      "elements": [
+        "container.drawer",
+        "container.panel",
+        "decor.text",
+        "signal.arc",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.quickSettings",
+        "touch.rail",
+        "widget.mini_map"
+      ],
+      "path": "dashboards/files/vincenzo.blueprint.mhd",
+      "sha256": "7f512e8940020168da8f064456890bbe0bd7640cc22489b47438123cd274a18c",
+      "bytes": 57831,
+      "preview": "dashboards/previews/vincenzo.blueprint.png",
+      "previewSha256": "4f43620421968327451781d9843417e99d1e5dfc257121a69947ad80d8457423"
     },
     {
       "id": "moto-hub-studio.pov-cinema",
@@ -1477,6 +1822,234 @@
       "bytes": 21044,
       "preview": "dashboards/previews/moto-hub-studio.pov-cinema.png",
       "previewSha256": "6fad28cbd9646cd90b223c213ab21eba918e0c649c99c1711691141d9a00ede8"
+    },
+    {
+      "id": "vincenzo.cinema",
+      "name": "Cinema",
+      "author": "Vincenzo",
+      "description": "The 3D rider's-eye view like a film between black bars: the next turn as the title, trip distance, time and average as the subtitles. Made in Studio's Dash: open it there to change cards, colours and docks.",
+      "version": "1",
+      "kind": "touring",
+      "tags": [
+        "dash",
+        "3d",
+        "cinema",
+        "gold"
+      ],
+      "featured": false,
+      "published": "2026-11-20",
+      "updated": "2026-11-20",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": false,
+      "madeWith": "dash",
+      "elements": [
+        "container.drawer",
+        "container.panel",
+        "decor.text",
+        "map.pov3d",
+        "nav.maneuverArrow",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.quickSettings",
+        "touch.rail"
+      ],
+      "path": "dashboards/files/vincenzo.cinema.mhd",
+      "sha256": "b527202e4df0f4c27524f59889bd9e2fc62a062f28b5afc6f03d269a0745589e",
+      "bytes": 21161,
+      "preview": "dashboards/previews/vincenzo.cinema.png",
+      "previewSha256": "3468507602139b2206d0c5e99ccdeb34a8c3214659688568c909106a6c403ef4"
+    },
+    {
+      "id": "vincenzo.comic",
+      "name": "Comic",
+      "author": "Vincenzo",
+      "description": "The ride as a comic page: ink-black outlines on paper, yellow, red and blue cells for speed, trip and weather, the next turn in a banner over the map. Made in Studio's Dash: open it there to change cards, colours and docks.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "dash",
+        "comic",
+        "colourful",
+        "light"
+      ],
+      "featured": false,
+      "published": "2026-11-20",
+      "updated": "2026-11-20",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": false,
+      "madeWith": "dash",
+      "elements": [
+        "container.drawer",
+        "container.panel",
+        "decor.text",
+        "map.rider",
+        "nav.maneuverArrow",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.quickSettings",
+        "touch.rail"
+      ],
+      "path": "dashboards/files/vincenzo.comic.mhd",
+      "sha256": "6ab16d0db74e03d34e86066aaf0e5247b9462538d65257687164de7b2944fb56",
+      "bytes": 36451,
+      "preview": "dashboards/previews/vincenzo.comic.png",
+      "previewSha256": "00e98ec1c07b1d6533f6d7c33078c676754051b29a27a7ef8ec27352e9a753f8"
     },
     {
       "id": "cyber.grid.v1",
@@ -1559,6 +2132,239 @@
       "previewSha256": "dc4f9ee2c34b8bcaf493abae3b6ed43f9792ea5de4caef3dfca8b16baecee0a6"
     },
     {
+      "id": "vincenzo.cyber-grid",
+      "name": "Cyber Grid",
+      "author": "Vincenzo",
+      "description": "Cyberpunk neon on black: a speed arc with shift lights above it, clock, weather and fuel on the left, the next turn, music and trip on the right. Shift lights need an OBD adapter. Made in Studio's Dash: open it there to change cards, colours and docks.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "dash",
+        "neon",
+        "cyberpunk",
+        "no-map",
+        "obd"
+      ],
+      "featured": false,
+      "published": "2026-11-20",
+      "updated": "2026-11-20",
+      "engine": "obd",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": true,
+      "madeWith": "dash",
+      "elements": [
+        "container.drawer",
+        "container.panel",
+        "decor.clock",
+        "decor.text",
+        "nav.maneuverArrow",
+        "signal.arc",
+        "signal.bar",
+        "signal.leds",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.quickSettings",
+        "touch.rail"
+      ],
+      "path": "dashboards/files/vincenzo.cyber-grid.mhd",
+      "sha256": "443a078b5021e26c5537500d338e0c24dc85f5aa0f5d7cb76fcf0224074e1b1d",
+      "bytes": 65144,
+      "preview": "dashboards/previews/vincenzo.cyber-grid.png",
+      "previewSha256": "2f34bef28998fa71ec71776f023fe9e1f349833e6726c8cffb6861f005b10527"
+    },
+    {
+      "id": "vincenzo.danny-900dsx",
+      "name": "Danny 900dsx",
+      "author": "Vincenzo",
+      "description": "The map top left with the fuel range under it; weather, average and top speed and the clock on the right, in lime on black. Made in Studio's Dash: open it there to change cards, colours and docks.",
+      "version": "1",
+      "kind": "touring",
+      "tags": [
+        "dash",
+        "lime",
+        "touring"
+      ],
+      "featured": false,
+      "published": "2026-11-20",
+      "updated": "2026-11-20",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": false,
+      "madeWith": "dash",
+      "elements": [
+        "container.drawer",
+        "container.panel",
+        "decor.clock",
+        "decor.text",
+        "map.rider",
+        "signal.bar",
+        "signal.text",
+        "signal.value",
+        "signal.weatherIcon",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.quickSettings",
+        "touch.rail"
+      ],
+      "path": "dashboards/files/vincenzo.danny-900dsx.mhd",
+      "sha256": "d429bb81ca1b326cf9cd00e56d79b729954a57a66c59d59f81ceae0c44d6599e",
+      "bytes": 34395,
+      "preview": "dashboards/previews/vincenzo.danny-900dsx.png",
+      "previewSha256": "a98d59180bd7c0e96ed3e71bae913adb833eedee0fa9456ce5724217bbcf73e8"
+    },
+    {
       "id": "moto-hub-studio.danny-dash-aa",
       "name": "Danny 900dsx Dash",
       "author": "Daniel",
@@ -1632,6 +2438,120 @@
       "bytes": 23443,
       "preview": "dashboards/previews/moto-hub-studio.danny-dash-aa.png",
       "previewSha256": "ec1e893490e2db38914f0d41f91d58b65220397d7892d427719e47139eb51630"
+    },
+    {
+      "id": "vincenzo.dial-drive",
+      "name": "Dial & Drive",
+      "author": "Vincenzo",
+      "description": "A violet speed dial beside a wide map, with average and top speed and the clock under it. Made in Studio's Dash: open it there to change cards, colours and docks.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "dash",
+        "dial",
+        "purple"
+      ],
+      "featured": false,
+      "published": "2026-11-20",
+      "updated": "2026-11-20",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": false,
+      "madeWith": "dash",
+      "elements": [
+        "container.drawer",
+        "container.panel",
+        "decor.clock",
+        "decor.text",
+        "map.rider",
+        "signal.arc",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.quickSettings",
+        "touch.rail"
+      ],
+      "path": "dashboards/files/vincenzo.dial-drive.mhd",
+      "sha256": "fba5bf6776f08dc754ad14e322739e6170be8c6f2100fac4a0071f0a29f70dd2",
+      "bytes": 40805,
+      "preview": "dashboards/previews/vincenzo.dial-drive.png",
+      "previewSha256": "867638bc3f680527838373b3bf53f44cb855071b81e6f0a81281f53f5e522d95"
     },
     {
       "id": "moto-hub-studio.pov-drone-feed",
@@ -1708,6 +2628,120 @@
       "previewSha256": "e2955ff26630ff86d911f674ce93ce0516df70a4abf17f25f9c208ed7be83546"
     },
     {
+      "id": "vincenzo.drone-feed",
+      "name": "Drone Feed",
+      "author": "Vincenzo",
+      "description": "The 3D rider's-eye view framed like a camera feed, with the clock to the second, trip and speed in a telemetry column. Made in Studio's Dash: open it there to change cards, colours and docks.",
+      "version": "1",
+      "kind": "minimal",
+      "tags": [
+        "dash",
+        "3d",
+        "camera",
+        "black-and-white"
+      ],
+      "featured": false,
+      "published": "2026-11-20",
+      "updated": "2026-11-20",
+      "engine": "pov3d",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": false,
+      "madeWith": "dash",
+      "elements": [
+        "container.drawer",
+        "container.panel",
+        "decor.clock",
+        "decor.text",
+        "map.pov3d",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.quickSettings",
+        "touch.rail"
+      ],
+      "path": "dashboards/files/vincenzo.drone-feed.mhd",
+      "sha256": "d8f9ba434290a53eff85754576fae2890f1a38506579eb3277ee1d06a52a195f",
+      "bytes": 24996,
+      "preview": "dashboards/previews/vincenzo.drone-feed.png",
+      "previewSha256": "3c17a5482d054f4c3f35288d8a12c97ea2582b2a6e6493e9754bbe426327cd74"
+    },
+    {
       "id": "moto-hub-studio.portrait-explorer",
       "name": "Explorer",
       "author": "moto-hub-studio",
@@ -1762,6 +2796,120 @@
       "bytes": 137787,
       "preview": "dashboards/previews/moto-hub-studio.portrait-explorer.png",
       "previewSha256": "0954e3ae7836eb616c41bceed1da2839cdd6d3f7ffde99a701eab63647d18c6e"
+    },
+    {
+      "id": "vincenzo.frame",
+      "name": "Frame",
+      "author": "Vincenzo",
+      "description": "The map in the middle with a wing of data on each side: speed and trip on the left, gear, clock and weather on the right, in teal with glowing cut corners. Gear needs an OBD adapter. Made in Studio's Dash: open it there to change cards, colours and docks.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "dash",
+        "teal",
+        "obd"
+      ],
+      "featured": false,
+      "published": "2026-11-20",
+      "updated": "2026-11-20",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": true,
+      "madeWith": "dash",
+      "elements": [
+        "container.drawer",
+        "container.panel",
+        "decor.clock",
+        "decor.text",
+        "map.rider",
+        "signal.gear",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.quickSettings",
+        "touch.rail"
+      ],
+      "path": "dashboards/files/vincenzo.frame.mhd",
+      "sha256": "06f15d2f2a8913b600547b8a8b1a813b67f767f7a730bbec08a68fafbd00b7c0",
+      "bytes": 42540,
+      "preview": "dashboards/previews/vincenzo.frame.png",
+      "previewSha256": "c1b636d05936be753cf87352f4217a8d9e8ec0020fb03a42ba4d9dfac4a568f5"
     },
     {
       "id": "moto-hub-studio.head-unit-drive",
@@ -2076,6 +3224,124 @@
       "bytes": 37909,
       "preview": "dashboards/previews/moto-hub-studio.head-unit-home.png",
       "previewSha256": "6507e16405bff8c0385d65eaaf227713167c90fc7dc9c2117b53d5ba134b0bff"
+    },
+    {
+      "id": "vincenzo.hi-fi",
+      "name": "Hi-Fi",
+      "author": "Vincenzo",
+      "description": "A walnut stereo: a ring speedometer, the music on a vinyl record, gear and revs as an equaliser, beside the map. Gear and revs need an OBD adapter. Made in Studio's Dash: open it there to change cards, colours and docks.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "dash",
+        "music",
+        "retro",
+        "obd"
+      ],
+      "featured": false,
+      "published": "2026-11-20",
+      "updated": "2026-11-20",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": true,
+      "madeWith": "dash",
+      "elements": [
+        "container.drawer",
+        "container.panel",
+        "decor.clock",
+        "decor.ellipse",
+        "decor.text",
+        "map.rider",
+        "signal.arc",
+        "signal.bar",
+        "signal.gear",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.quickSettings",
+        "touch.rail"
+      ],
+      "path": "dashboards/files/vincenzo.hi-fi.mhd",
+      "sha256": "3fa795c222d8e44532314f8f035471564fcf022eec8a2a46cb33a230f26e47f7",
+      "bytes": 56822,
+      "preview": "dashboards/previews/vincenzo.hi-fi.png",
+      "previewSha256": "ee3ddb7c758b9ed391f3906381a42ae3c251811bbd1d37c0717d16496f25ed92"
     },
     {
       "id": "moto-hub-studio.pov-jet-hud",
@@ -2960,6 +4226,122 @@
       "previewSha256": "0db5df8536703f9f88b10adf8cc43551480f62e480b0842a862d72f4b5b2570f"
     },
     {
+      "id": "vincenzo.porthole",
+      "name": "Porthole",
+      "author": "Vincenzo",
+      "description": "Brass and deep sea: rounded brass-rimmed cards, a sonar-style speed ring, trip stats, gear, clock and weather around the map. Gear needs an OBD adapter. Made in Studio's Dash: open it there to change cards, colours and docks.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "dash",
+        "sea",
+        "brass",
+        "obd"
+      ],
+      "featured": false,
+      "published": "2026-11-20",
+      "updated": "2026-11-20",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": true,
+      "madeWith": "dash",
+      "elements": [
+        "container.drawer",
+        "container.panel",
+        "decor.clock",
+        "decor.text",
+        "map.rider",
+        "signal.arc",
+        "signal.gear",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.quickSettings",
+        "touch.rail"
+      ],
+      "path": "dashboards/files/vincenzo.porthole.mhd",
+      "sha256": "a54747805c66cd3c96bbbbaf8785cc18ea15637732a4069691aff04a02596b65",
+      "bytes": 51332,
+      "preview": "dashboards/previews/vincenzo.porthole.png",
+      "previewSha256": "ff2a84097f0cd027154bf15357c4e627f4db13dae21ee2c6972f140675d5d980"
+    },
+    {
       "id": "moto-hub-studio.potion-ride",
       "name": "Potion Ride",
       "author": "moto-hub-studio",
@@ -3271,6 +4653,122 @@
       "previewSha256": "0d5690669e5f8ea85a09fbe0865996d7c82d0ca7eb8e44f9e5811ba219316a2d"
     },
     {
+      "id": "vincenzo.side-rail",
+      "name": "Side Rail",
+      "author": "Vincenzo",
+      "description": "A wide map and one rail on the right: clock, speed, gear and revs, in blue on black. Gear and revs need an OBD adapter. Made in Studio's Dash: open it there to change cards, colours and docks.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "dash",
+        "minimal",
+        "blue",
+        "obd"
+      ],
+      "featured": false,
+      "published": "2026-11-20",
+      "updated": "2026-11-20",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": true,
+      "madeWith": "dash",
+      "elements": [
+        "container.drawer",
+        "container.panel",
+        "decor.clock",
+        "decor.text",
+        "map.rider",
+        "signal.bar",
+        "signal.gear",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.quickSettings",
+        "touch.rail"
+      ],
+      "path": "dashboards/files/vincenzo.side-rail.mhd",
+      "sha256": "1d83d541e4ee9fcdc94509e6de59df4f25d33beb60bb541a4a333867a19d8704",
+      "bytes": 32685,
+      "preview": "dashboards/previews/vincenzo.side-rail.png",
+      "previewSha256": "8d1378d69904865577796ddbe812cbffb7e3d98fca8e8026a22151f818d86daa"
+    },
+    {
       "id": "moto-hub-studio.sport-strip",
       "name": "Sport Strip",
       "author": "moto-hub-studio",
@@ -3339,6 +4837,122 @@
       "previewSha256": "dc48a3d90b31d91c17eedb94ddf7009f817860c1ac375e43320d004f67aa0471"
     },
     {
+      "id": "vincenzo.sunset-drive",
+      "name": "Sunset Drive",
+      "author": "Vincenzo",
+      "description": "Synthwave: a neon speed arc over a purple sky, trip in a row and the revs burning along the bottom of the map. Revs need an OBD adapter. Made in Studio's Dash: open it there to change cards, colours and docks.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "dash",
+        "synthwave",
+        "neon",
+        "obd"
+      ],
+      "featured": false,
+      "published": "2026-11-20",
+      "updated": "2026-11-20",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": true,
+      "madeWith": "dash",
+      "elements": [
+        "container.drawer",
+        "container.panel",
+        "decor.text",
+        "map.rider",
+        "signal.arc",
+        "signal.bar",
+        "signal.revStrip",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.quickSettings",
+        "touch.rail"
+      ],
+      "path": "dashboards/files/vincenzo.sunset-drive.mhd",
+      "sha256": "9d84d15c791d12802889098d224786449a7fde899fe07878691ce7d44ca28a75",
+      "bytes": 48386,
+      "preview": "dashboards/previews/vincenzo.sunset-drive.png",
+      "previewSha256": "5061a576465b2ba8065e6292d53c54d992f9337d366b2ba9a4532e51b78deafd"
+    },
+    {
       "id": "moto-hub-studio.portrait-terminal",
       "name": "Terminal",
       "author": "moto-hub-studio",
@@ -3390,6 +5004,121 @@
       "bytes": 136920,
       "preview": "dashboards/previews/moto-hub-studio.portrait-terminal.png",
       "previewSha256": "6a1b6918ac65aa11c7e1b56c838a266618545319d5bd5e6ca7a591bacca0be6d"
+    },
+    {
+      "id": "vincenzo.top-deck",
+      "name": "Top Deck",
+      "author": "Vincenzo",
+      "description": "A deck of trip numbers above the map, speed and gear on the left, the clock and fuel on the right, in amber. Gear needs an OBD adapter. Made in Studio's Dash: open it there to change cards, colours and docks.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [
+        "dash",
+        "amber",
+        "obd"
+      ],
+      "featured": false,
+      "published": "2026-11-20",
+      "updated": "2026-11-20",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": true,
+      "madeWith": "dash",
+      "elements": [
+        "container.drawer",
+        "container.panel",
+        "decor.clock",
+        "decor.text",
+        "map.rider",
+        "signal.bar",
+        "signal.gear",
+        "signal.text",
+        "signal.value",
+        "touch.appGrid",
+        "touch.button",
+        "touch.mediaCard",
+        "touch.quickSettings",
+        "touch.rail"
+      ],
+      "path": "dashboards/files/vincenzo.top-deck.mhd",
+      "sha256": "578a603cb10c9fc125eaaeb008605fd4e915363449e55962d2d32821e7adb4ce",
+      "bytes": 36906,
+      "preview": "dashboards/previews/vincenzo.top-deck.png",
+      "previewSha256": "bb63f66944093f7c109ca85e329c998ebb5f6b63e510d08feacdfb8668018d22"
     },
     {
       "id": "moto-hub-studio.touring",
