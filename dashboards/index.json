@@ -65,6 +65,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "container.group",
         "decor.clock",
@@ -144,6 +145,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.line",
@@ -225,6 +227,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.ellipse",
@@ -334,6 +337,7 @@
         "app": "0.1.72"
       },
       "usesObd": true,
+      "madeWith": "dash",
       "elements": [
         "container.drawer",
         "container.group",
@@ -420,6 +424,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.image",
@@ -487,6 +492,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "container.carousel",
         "container.panel",
@@ -560,6 +566,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.text",
         "map.pov3d",
@@ -630,6 +637,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.rect",
@@ -705,6 +713,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "container.panel",
         "decor.clock",
@@ -782,6 +791,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "container.carousel",
         "decor.clock",
@@ -869,6 +879,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.rect",
@@ -946,6 +957,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.line",
@@ -1029,6 +1041,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.ellipse",
@@ -1114,6 +1127,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.ellipse",
@@ -1197,6 +1211,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.rect",
@@ -1250,6 +1265,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "container.group",
         "decor.clock",
@@ -1320,6 +1336,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.line",
@@ -1371,6 +1388,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.image",
@@ -1444,6 +1462,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.line",
@@ -1514,6 +1533,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "chrome.atmosphere",
         "container.carousel",
@@ -1599,6 +1619,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "map.projection",
         "signal.bar",
@@ -1668,6 +1689,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.ellipse",
@@ -1722,6 +1744,7 @@
         "app": null
       },
       "usesObd": false,
+      "madeWith": "editor",
       "elements": [
         "container.panel",
         "decor.image",
@@ -1895,6 +1918,7 @@
         "app": "0.1.49"
       },
       "usesObd": false,
+      "madeWith": "editor",
       "elements": [
         "container.carousel",
         "container.drawer",
@@ -2015,6 +2039,7 @@
         "app": "0.1.47"
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "container.carousel",
         "container.drawer",
@@ -2109,6 +2134,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.rect",
         "decor.text",
@@ -2124,123 +2150,6 @@
       "bytes": 31680,
       "preview": "dashboards/previews/moto-hub-studio.pov-jet-hud.png",
       "previewSha256": "868436179488aa4fecdcb575f22b790deffae1d0941bc2acca8b6b2470d34a01"
-    },
-    {
-      "id": "vincenzo.mh-gui-classic",
-      "name": "MH GUI - Classic",
-      "author": "Vincenzo",
-      "description": "A classic style dashboard with multiple sub-dashes. It uses optional OBD data and Android apps. You need to configure the dashboard buttons for your own applications and actions. Enjoy!",
-      "version": "1",
-      "kind": "ride",
-      "tags": [],
-      "featured": false,
-      "published": "2026-11-20",
-      "updated": "2026-11-20",
-      "engine": "pov3d",
-      "canvas": {
-        "width": 1280,
-        "height": 720
-      },
-      "layouts": [
-        {
-          "width": 1280,
-          "height": 720,
-          "orientation": "landscape",
-          "when": "landscape"
-        },
-        {
-          "width": 1200,
-          "height": 720,
-          "orientation": "landscape",
-          "when": "landscape"
-        },
-        {
-          "width": 800,
-          "height": 384,
-          "orientation": "landscape",
-          "when": "landscape"
-        },
-        {
-          "width": 1024,
-          "height": 768,
-          "orientation": "landscape",
-          "when": "landscape"
-        },
-        {
-          "width": 1920,
-          "height": 720,
-          "orientation": "landscape",
-          "when": "landscape"
-        },
-        {
-          "width": 1080,
-          "height": 1920,
-          "orientation": "portrait",
-          "when": "portrait"
-        },
-        {
-          "width": 1280,
-          "height": 800,
-          "orientation": "landscape",
-          "when": "landscape"
-        },
-        {
-          "width": 1024,
-          "height": 600,
-          "orientation": "landscape",
-          "when": "landscape"
-        },
-        {
-          "width": 768,
-          "height": 1024,
-          "orientation": "portrait",
-          "when": "portrait"
-        },
-        {
-          "width": 1200,
-          "height": 1920,
-          "orientation": "portrait",
-          "when": "portrait"
-        }
-      ],
-      "orientations": [
-        "landscape",
-        "portrait"
-      ],
-      "requires": {
-        "obd": false,
-        "module": null,
-        "app": "0.1.72"
-      },
-      "usesObd": true,
-      "elements": [
-        "container.drawer",
-        "container.group",
-        "container.panel",
-        "decor.clock",
-        "decor.ellipse",
-        "decor.image",
-        "decor.text",
-        "map.app",
-        "map.camera",
-        "map.pov3d",
-        "scene.obd.classic",
-        "signal.sparkline",
-        "signal.text",
-        "signal.value",
-        "signal.weatherIcon",
-        "touch.appGrid",
-        "touch.button",
-        "touch.mediaCard",
-        "touch.quickSettings",
-        "touch.rail",
-        "widget.riderPanel"
-      ],
-      "path": "dashboards/files/vincenzo.mh-gui-classic.mhd",
-      "sha256": "2419a5ed3a49d63482452891cbba29801f2d3c2d5051e8611e66169d74cb9679",
-      "bytes": 137813,
-      "preview": "dashboards/previews/vincenzo.mh-gui-classic.png",
-      "previewSha256": "e093dd9035f8e11ce92dc7b35b860c8334b702a10d47daaeee9cc45787123697"
     },
     {
       "id": "moto-hub-studio.portrait-mission-control",
@@ -2292,6 +2201,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.rect",
@@ -2363,6 +2273,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "container.carousel",
         "decor.clock",
@@ -2432,6 +2343,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.ellipse",
@@ -2500,6 +2412,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.image",
@@ -2570,6 +2483,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.line",
@@ -2623,6 +2537,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.image",
@@ -2699,6 +2614,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.ellipse",
@@ -2754,6 +2670,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.image",
         "decor.line",
@@ -2818,6 +2735,7 @@
         "app": null
       },
       "usesObd": false,
+      "madeWith": "editor",
       "elements": [
         "container.panel",
         "decor.clock",
@@ -2892,6 +2810,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.rect",
         "decor.text",
@@ -2963,6 +2882,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.rect",
@@ -3017,6 +2937,7 @@
         "app": null
       },
       "usesObd": false,
+      "madeWith": "editor",
       "elements": [
         "container.carousel",
         "container.group",
@@ -3075,6 +2996,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.image",
@@ -3147,6 +3069,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.ellipse",
@@ -3220,6 +3143,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.rect",
@@ -3275,6 +3199,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.image",
@@ -3329,6 +3254,7 @@
         "app": null
       },
       "usesObd": false,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.image",
@@ -3394,6 +3320,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.rect",
@@ -3448,6 +3375,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.image",
@@ -3509,6 +3437,7 @@
         "app": null
       },
       "usesObd": false,
+      "madeWith": "editor",
       "elements": [
         "container.panel",
         "decor.clock",
@@ -3578,6 +3507,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.line",
@@ -3659,6 +3589,7 @@
         "app": "0.1.57"
       },
       "usesObd": false,
+      "madeWith": "editor",
       "elements": [
         "container.carousel",
         "container.drawer",
@@ -3752,6 +3683,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.rect",
         "decor.text",
@@ -3824,6 +3756,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.line",
@@ -3902,6 +3835,7 @@
         "app": null
       },
       "usesObd": true,
+      "madeWith": "editor",
       "elements": [
         "decor.clock",
         "decor.line",
