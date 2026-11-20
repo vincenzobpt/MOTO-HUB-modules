@@ -326,6 +326,8 @@ def main():
                 "app": requires.get("app"),
             },
             "usesObd": uses_obd(document),
+            # Made in Studio's Dash (the file carries its look.json) or element by element in Dashboards.
+            "madeWith": "dash" if "look.json" in zipfile.ZipFile(io.BytesIO(data)).namelist() else "editor",
             "elements": elements,
             "path": f"dashboards/files/{name}",
             "sha256": hashlib.sha256(data).hexdigest(),

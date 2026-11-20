@@ -140,6 +140,9 @@ Everything the app filters on is read from the file itself, never typed by hand:
   is meaningless without an ELM327 adapter.
 - **`usesObd`** — the dashboard reads engine values (an OBD gauge, signal or condition). Those stay
   blank or hidden until an adapter is paired; the rest of the dashboard works without one.
+- **`madeWith`** — `dash` when the file was made in MOTO-HUB Studio's Dash (it carries a
+  `look.json`), `editor` when it was drawn element by element in Dashboards. Studio's Community
+  page filters on it; apps that do not know the field ignore it.
 - the map engine (the first map element decides; no map means the OBD session), a module it
   needs, the minimum app version, and the elements used.
 
@@ -151,7 +154,8 @@ Everything the app filters on is read from the file itself, never typed by hand:
 ],
 "orientations": ["landscape", "portrait"],
 "requires": { "obd": false, "module": null, "app": null },
-"usesObd": true
+"usesObd": true,
+"madeWith": "editor"
 ```
 
 Published and updated dates are the file's first and last commit. Each entry carries the
