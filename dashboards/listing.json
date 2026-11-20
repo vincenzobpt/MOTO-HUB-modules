@@ -447,5 +447,138 @@
       "android-auto-replacement"
     ],
     "featured": true
+  },
+  "vincenzo.comic": {
+    "kind": "ride",
+    "tags": [
+      "dash",
+      "comic",
+      "colourful",
+      "light"
+    ]
+  },
+  "vincenzo.dial-drive": {
+    "kind": "ride",
+    "tags": [
+      "dash",
+      "dial",
+      "purple"
+    ]
+  },
+  "vincenzo.frame": {
+    "kind": "ride",
+    "tags": [
+      "dash",
+      "teal",
+      "obd"
+    ]
+  },
+  "vincenzo.hi-fi": {
+    "kind": "ride",
+    "tags": [
+      "dash",
+      "music",
+      "retro",
+      "obd"
+    ]
+  },
+  "vincenzo.porthole": {
+    "kind": "ride",
+    "tags": [
+      "dash",
+      "sea",
+      "brass",
+      "obd"
+    ]
+  },
+  "vincenzo.side-rail": {
+    "kind": "ride",
+    "tags": [
+      "dash",
+      "minimal",
+      "blue",
+      "obd"
+    ]
+  },
+  "vincenzo.sunset-drive": {
+    "kind": "ride",
+    "tags": [
+      "dash",
+      "synthwave",
+      "neon",
+      "obd"
+    ]
+  },
+  "vincenzo.top-deck": {
+    "kind": "ride",
+    "tags": [
+      "dash",
+      "amber",
+      "obd"
+    ]
+  },
+  "vincenzo.aviator-hud": {
+    "kind": "touring",
+    "tags": [
+      "dash",
+      "hud",
+      "3d",
+      "green",
+      "obd"
+    ]
+  },
+  "vincenzo.big-bold": {
+    "kind": "minimal",
+    "tags": [
+      "dash",
+      "big-numbers",
+      "no-map",
+      "obd"
+    ]
+  },
+  "vincenzo.blueprint": {
+    "kind": "minimal",
+    "tags": [
+      "dash",
+      "blueprint",
+      "engineering",
+      "obd"
+    ]
+  },
+  "vincenzo.cinema": {
+    "kind": "touring",
+    "tags": [
+      "dash",
+      "3d",
+      "cinema",
+      "gold"
+    ]
+  },
+  "vincenzo.cyber-grid": {
+    "kind": "ride",
+    "tags": [
+      "dash",
+      "neon",
+      "cyberpunk",
+      "no-map",
+      "obd"
+    ]
+  },
+  "vincenzo.danny-900dsx": {
+    "kind": "touring",
+    "tags": [
+      "dash",
+      "lime",
+      "touring"
+    ]
+  },
+  "vincenzo.drone-feed": {
+    "kind": "minimal",
+    "tags": [
+      "dash",
+      "3d",
+      "camera",
+      "black-and-white"
+    ]
   }
 }
