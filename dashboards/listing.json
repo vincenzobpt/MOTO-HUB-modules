@@ -440,5 +440,12 @@
       "roadbook",
       "companion"
     ]
+  },
+  "vincenzo.mh-gui-classic": {
+    "kind": "ride",
+    "tags": [
+      "android-auto-replacement"
+    ],
+    "featured": true
   }
 }
