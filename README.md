@@ -4,7 +4,8 @@ Loadable modules for MOTO-HUB, the community dashboards, and the lists the app r
 
 Browse the dashboards in the **[gallery on motohub.techub.eu](https://motohub.techub.eu/dashboards.html)** ·
 the app: **[MOTO-HUB ADV-SOLO](https://github.com/vincenzobpt/MOTO-HUB-ADV-SOLO-releases)** ·
-help and sharing: **[Discord](https://discord.gg/FzhXZtPhC8)**
+help and sharing: **[Discord](https://discord.gg/FzhXZtPhC8)** ·
+follow the page: **[Facebook](https://www.facebook.com/motohub.techub.eu/)**
 
 MOTO-HUB ships knowing how to run a projection on a motorcycle's dashboard — the compositor, the
 encoder, the transport — but not what to project. A module supplies that, and arrives with its own
