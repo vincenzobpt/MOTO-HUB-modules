@@ -5580,6 +5580,56 @@
       "bytes": 27501,
       "preview": "dashboards/previews/moto-hub-studio.pov-windscreen.png",
       "previewSha256": "04c8aaa6058e76c3ad2083e2330cfebd45d4b54ccca6fd7ae215ccb56e7c54d4"
+    },
+    {
+      "id": "kantviator.zontes-368g-dash",
+      "name": "Zontes 368G Dash",
+      "author": "KantViator",
+      "description": "An Essential native Dash for Zontes 368.",
+      "version": "1",
+      "kind": "ride",
+      "tags": [],
+      "featured": false,
+      "published": "2026-11-23",
+      "updated": "2026-11-23",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1280,
+        "height": 535
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 535,
+          "orientation": "landscape",
+          "when": "landscape"
+        }
+      ],
+      "orientations": [
+        "landscape"
+      ],
+      "requires": {
+        "obd": true,
+        "module": "projection",
+        "app": "0.1.46"
+      },
+      "usesObd": true,
+      "madeWith": "editor",
+      "elements": [
+        "chrome.atmosphere",
+        "chrome.header",
+        "decor.image",
+        "map.rider",
+        "signal.lamp",
+        "signal.value",
+        "widget.now_playing",
+        "widget.weather"
+      ],
+      "path": "dashboards/files/kantviator.zontes-368g-dash.mhd",
+      "sha256": "b7d50ea769dfa5cd8bd5994953ca8d0bace17aca08e66ff7b86c55f476056046",
+      "bytes": 25694,
+      "preview": "dashboards/previews/kantviator.zontes-368g-dash.png",
+      "previewSha256": "4ef96acfb6c84743268bb77e37225d766349b58cecc336015528b9d5f43f7e7c"
     }
   ]
 }
