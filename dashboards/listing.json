@@ -580,5 +580,13 @@
       "camera",
       "black-and-white"
     ]
+  },
+  "kantviator.zontes-368g-dash": {
+    "kind": "touring",
+    "tags": [
+      "zontes",
+      "obd",
+      "368g"
+    ]
   }
 }
