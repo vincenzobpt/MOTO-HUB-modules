@@ -97,5 +97,16 @@
     "contractVersion": 43,
     "owner": "vincenzobpt",
     "repository": "MOTO-HUB-modules"
+  },
+  {
+    "id": "paddock",
+    "displayName": "Paddock",
+    "summary": "Ride together, privately: open a room with a QR code, see your friends live on the NAV map, chat and call them. No account, end-to-end encrypted.",
+    "tagline": "Group rides with your friends, open source.",
+    "image": "modules/paddock/card.webp",
+    "accent": "#FF7A1A",
+    "contractVersion": 39,
+    "owner": "vincenzobpt",
+    "repository": "MOTO-HUB-modules"
   }
 ]
