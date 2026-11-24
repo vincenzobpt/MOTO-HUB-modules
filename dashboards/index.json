@@ -254,9 +254,7 @@
       "description": "A classic style dashboard with multiple sub-dashes. It uses optional OBD data and Android apps. You need to configure the dashboard buttons for your own applications and actions. Enjoy!",
       "version": "2",
       "kind": "ride",
-      "tags": [
-        "android-auto-replacement"
-      ],
+      "tags": [],
       "featured": true,
       "published": "2026-11-20",
       "updated": "2026-11-24",
