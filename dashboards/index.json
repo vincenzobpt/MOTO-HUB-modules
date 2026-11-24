@@ -252,14 +252,14 @@
       "name": "MH GUI - Classic",
       "author": "Vincenzo",
       "description": "A classic style dashboard with multiple sub-dashes. It uses optional OBD data and Android apps. You need to configure the dashboard buttons for your own applications and actions. Enjoy!",
-      "version": "1",
+      "version": "2",
       "kind": "ride",
       "tags": [
         "android-auto-replacement"
       ],
       "featured": true,
       "published": "2026-11-20",
-      "updated": "2026-11-20",
+      "updated": "2026-11-24",
       "engine": "pov3d",
       "canvas": {
         "width": 1280,
@@ -345,6 +345,7 @@
         "decor.clock",
         "decor.ellipse",
         "decor.image",
+        "decor.rect",
         "decor.text",
         "map.app",
         "map.camera",
@@ -362,10 +363,10 @@
         "widget.riderPanel"
       ],
       "path": "dashboards/files/vincenzo.mh-gui-classic.mhd",
-      "sha256": "2419a5ed3a49d63482452891cbba29801f2d3c2d5051e8611e66169d74cb9679",
-      "bytes": 137813,
+      "sha256": "6082e2168c1fb53c822792aee5adacb9b3f090202937de64a9898a9ef94d8adc",
+      "bytes": 138991,
       "preview": "dashboards/previews/vincenzo.mh-gui-classic.png",
-      "previewSha256": "e093dd9035f8e11ce92dc7b35b860c8334b702a10d47daaeee9cc45787123697"
+      "previewSha256": "5b57df481e9de5f80f7674e9ed1238972b77260d8a6222ff510722534c8b7e47"
     },
     {
       "id": "moto-hub-studio.player-one",
@@ -5587,8 +5588,12 @@
       "author": "KantViator",
       "description": "An Essential native Dash for Zontes 368.",
       "version": "1",
-      "kind": "ride",
-      "tags": [],
+      "kind": "touring",
+      "tags": [
+        "zontes",
+        "obd",
+        "368g"
+      ],
       "featured": false,
       "published": "2026-11-23",
       "updated": "2026-11-23",
