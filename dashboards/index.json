@@ -3417,6 +3417,116 @@
       "previewSha256": "868436179488aa4fecdcb575f22b790deffae1d0941bc2acca8b6b2470d34a01"
     },
     {
+      "id": "eduven97.midnight",
+      "name": "Midnight",
+      "author": "Eduven97",
+      "description": "",
+      "version": "1",
+      "kind": "ride",
+      "tags": [],
+      "featured": false,
+      "published": "2026-11-25",
+      "updated": "2026-11-25",
+      "engine": "maplibre",
+      "canvas": {
+        "width": 1280,
+        "height": 720
+      },
+      "layouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1200,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 800,
+          "height": 384,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1920,
+          "height": 720,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1080,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "orientation": "landscape",
+          "when": "landscape"
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "orientation": "portrait",
+          "when": "portrait"
+        },
+        {
+          "width": 1200,
+          "height": 1920,
+          "orientation": "portrait",
+          "when": "portrait"
+        }
+      ],
+      "orientations": [
+        "landscape",
+        "portrait"
+      ],
+      "requires": {
+        "obd": false,
+        "module": null,
+        "app": "0.1.72"
+      },
+      "usesObd": true,
+      "madeWith": "dash",
+      "elements": [
+        "container.panel",
+        "decor.clock",
+        "decor.text",
+        "map.rider",
+        "signal.arc",
+        "signal.bar",
+        "signal.gear",
+        "signal.leds",
+        "signal.text",
+        "signal.value",
+        "touch.button",
+        "touch.mediaCard",
+        "widget.navigation"
+      ],
+      "path": "dashboards/files/eduven97.midnight.mhd",
+      "sha256": "3fcb92461981ede1d2bbaba30e1b6aee30ec6fb39147a97dd17d0110f4f4cbb8",
+      "bytes": 57995,
+      "preview": "dashboards/previews/eduven97.midnight.png",
+      "previewSha256": "2cd6b69378cc8e46be9d1a7c16d0ee2c20f8575808eeec0e4d5629cee212799f"
+    },
+    {
       "id": "moto-hub-studio.portrait-mission-control",
       "name": "Mission Control",
       "author": "moto-hub-studio",
